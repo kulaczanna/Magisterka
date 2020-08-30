@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  30 AUG 2020 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  31 AUG 2020 01:10
 entering extended mode
 **./ImmunochemiotherapyModel.tex
 (ImmunochemiotherapyModel.tex
@@ -1928,40 +1928,50 @@ erapii -- symulacje wykonane dla modelu leczonego guza[] 119
 
 [119 <./rysunki/wykres_p2.jpg> <./rysunki/stezenie_p2.jpg>]
 Rozdzia\PlPrIeC {\l } 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2215--2216
+
+ []
+
 [120
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 2224--2225
+
+ []
+
+[121] [122]
 Rozdzia\PlPrIeC {\l } 11.
 
-Overfull \hbox (21.10864pt too wide) in paragraph at lines 2217--2218
+Overfull \hbox (21.10864pt too wide) in paragraph at lines 2248--2250
 []\OT4/cmr/m/n/12 W przy-szªo-±ci, ana-li-z¦ mo»-na roz-sze-rzy¢ o im-mu-no-te-
 ra-pi¦ z wy-ko-rzy-sta-niem interferonu-
  []
 
-[121
+[123
 
-] [122] [123
+] [124] [125
 
-] [124] [125]
-Underfull \hbox (badness 10000) in paragraph at lines 2288--2289
+] [126] [127]
+Underfull \hbox (badness 10000) in paragraph at lines 2320--2321
 []\OT4/cmr/m/n/12 https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-kt
 ora-zabija-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2289--2290
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2322
 []\OT4/cmr/m/n/12 https://healthcare-in-europe.com/en/news/new-t-cell-could-mak
 e-universal-
  []
 
-) (Dodatek.tex [126]
+) (Dodatek.tex [128]
 Rozdzia\PlPrIeC {\l } 12.
 
 Overfull \hbox (26.34036pt too wide) in paragraph at lines 8--33
  [][] 
  []
 
-) [127
+) [129
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
@@ -1975,10 +1985,10 @@ d.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 10779 strings out of 480930
- 186997 string characters out of 2898823
+ 10782 strings out of 480930
+ 187018 string characters out of 2898823
  619812 words of memory out of 3000000
- 26023 multiletter control sequences out of 15000+200000
+ 26024 multiletter control sequences out of 15000+200000
  549238 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,52p,2189b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2008,9 +2018,9 @@ l/plsy10.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/pl/plsy6.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/pl/plsy8.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/pl/plti12.pfb>
-Output written on ImmunochemiotherapyModel.pdf (135 pages, 2860622 bytes).
+Output written on ImmunochemiotherapyModel.pdf (137 pages, 2870534 bytes).
 PDF statistics:
- 1962 PDF objects out of 2073 (max. 8388607)
- 393 named destinations out of 1000 (max. 500000)
+ 1987 PDF objects out of 2073 (max. 8388607)
+ 395 named destinations out of 1000 (max. 500000)
  813 words of extra memory for PDF output out of 10000 (max. 10000000)
 

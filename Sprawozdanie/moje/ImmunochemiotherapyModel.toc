@@ -52,8 +52,8 @@
 \contentsline {section}{\numberline {9.4}Scenariusz IV -- zmiany kolejno\'sci wdro\.zenia poszczeg\'olnych terapii}{112}{section.9.4}%
 \contentsline {section}{\numberline {9.5}Scenariusz V -- por\'ownanie stanu uk\IeC {\l }adu immunologicznego u\nobreakspace {}r\'o\.znych pacjent\'ow}{116}{section.9.5}%
 \contentsline {chapter}{\numberline {10.}Podsumowanie}{120}{chapter.10}%
-\contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{121}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Interferony}{121}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Nowa odmiana limfocyt\'ow typu T}{122}{section.11.2}%
-\contentsline {chapter}{\numberline {12.}Dodatek}{127}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{127}{section.12.1}%
+\contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{123}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Interferony}{123}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Nowa odmiana limfocyt\'ow typu T}{124}{section.11.2}%
+\contentsline {chapter}{\numberline {12.}Dodatek}{129}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{129}{section.12.1}%
