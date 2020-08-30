@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  29 AUG 2020 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  30 AUG 2020 17:47
 entering extended mode
 **./ImmunochemiotherapyModel.tex
 (ImmunochemiotherapyModel.tex
@@ -1932,18 +1932,24 @@ Rozdzia\PlPrIeC {\l } 10.
 
 ]
 Rozdzia\PlPrIeC {\l } 11.
+
+Overfull \hbox (21.10864pt too wide) in paragraph at lines 2217--2218
+[]\OT4/cmr/m/n/12 W przy-szªo-±ci, ana-li-z¦ mo»-na roz-sze-rzy¢ o im-mu-no-te-
+ra-pi¦ z wy-ko-rzy-sta-niem interferonu-
+ []
+
 [121
 
 ] [122] [123
 
 ] [124] [125]
-Underfull \hbox (badness 10000) in paragraph at lines 2279--2280
+Underfull \hbox (badness 10000) in paragraph at lines 2288--2289
 []\OT4/cmr/m/n/12 https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-kt
 ora-zabija-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2280--2281
+Underfull \hbox (badness 10000) in paragraph at lines 2289--2290
 []\OT4/cmr/m/n/12 https://healthcare-in-europe.com/en/news/new-t-cell-could-mak
 e-universal-
  []
@@ -2002,9 +2008,9 @@ l/plsy10.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/pl/plsy6.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/pl/plsy8.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/pl/plti12.pfb>
-Output written on ImmunochemiotherapyModel.pdf (135 pages, 2856366 bytes).
+Output written on ImmunochemiotherapyModel.pdf (135 pages, 2860622 bytes).
 PDF statistics:
- 1950 PDF objects out of 2073 (max. 8388607)
+ 1962 PDF objects out of 2073 (max. 8388607)
  393 named destinations out of 1000 (max. 500000)
  813 words of extra memory for PDF output out of 10000 (max. 10000000)
 
