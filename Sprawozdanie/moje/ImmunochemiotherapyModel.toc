@@ -11,10 +11,10 @@
 \contentsline {chapter}{\numberline {3.}Leczenie nowotwor\'ow}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Chemioterapia}{14}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Immunoterapia}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Nieswoista bierna immunoterapia}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Nieswoista bierna immunoterapia}{17}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Swoista bierna immunoterapia}{18}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Nieswoista czynna immunoterapia}{18}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Swoista czynna immunoterapia}{19}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Swoista czynna immunoterapia}{18}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Leczenie skojarzone}{19}{section.3.3}%
 \contentsline {chapter}{\numberline {4.}Model matematyczny}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Za\IeC {\l }o\.zenia modelu}{20}{section.4.1}%
@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {8.3}Scenariusz III -- zmiana dawki TIL}{71}{section.8.3}%
 \contentsline {section}{\numberline {8.4}Scenariusz IV -- zmiana liczby powt\'orze\'n cyklu IL-2}{74}{section.8.4}%
 \contentsline {section}{\numberline {8.5}Scenariusz V -- zmiana dnia rozpocz\k ecia immunoterapii}{78}{section.8.5}%
-\contentsline {chapter}{\numberline {9.}Leczenie skojarzonymi metodami chemioterapii i\nobreakspace {}immunoterapii -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{82}{chapter.9}%
+\contentsline {chapter}{\numberline {9.}Leczenie metodami skojarzonymi -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{82}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Scenariusz I -- zmiana warunk\'ow pocz\k atkowych chemioterapii}{84}{section.9.1}%
 \contentsline {subsection}{\numberline {9.1.1}Zmiana d\IeC {\l }ugo\'sci cyklu chemioterapii}{85}{subsection.9.1.1}%
 \contentsline {subsection}{\numberline {9.1.2}Zmiana dawki dozowanego cytostatyka}{88}{subsection.9.1.2}%
