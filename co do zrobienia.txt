@@ -1,10 +1,17 @@
 3) JEDNOSTKIIIIIIII Dodaæ jednostki do dawek leków!!!!!!!!!! xD !!!!!!!!!!!!!!!!!!!!!!!!!!!! xDXDXDXDxd
 Proszê pamiêtaæ o jednostkach na wykresach przy stê¿eniu leków brakuje jednostki!!!, 
 
-8) przejrzeæ kilka razy ca³oœæ pod k¹tem spójnoœci i przejrzystoœci
+8) przejrzeæ kilka razy ca³oœæ pod k¹tem spójnoœci i przejrzystoœci i opisaæ s³upkowe
 
-16) poprawki rozdzia³ 9
+17) raz sformu³owaæ co analizujemy a w konkretnych scenariuszach wskazywac na nowe elementy
 
+18) to powinno ju¿ siê pojawic w podejmowanym problemie to jest w³aœnie to ró¿nica miêdzy pacjentami. 
+Od razu widaæ, ze zbadano kilka cech jednoczeœnie a mo¿na by badaæ która z cech ma dominuj¹cy wp³yw 
+(juz ma Pani kierunki dalszego rozwoju pracy do ostatecznego podsumowania). 
+
+19) istnieje mozliwosc dopasowania symulacji (modelu) do indywidualnego pacjenta
+(jego cech osobnicznych) w celu okreslenia optymalnego dla niego leczenia skojarzonego.
+>>> to bardzo wa¿ny wniosek, daj¹cy mo¿liwoœæ terapii spersonalizowanej (te¿ podkreœliæ w podsumowaniu)
 -----
 
 5. wniosek/odniesienie do wykresu z promieniem

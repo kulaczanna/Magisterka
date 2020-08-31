@@ -11,10 +11,10 @@
 \contentsline {chapter}{\numberline {3.}Leczenie nowotwor\'ow}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Chemioterapia}{14}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Immunoterapia}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Nieswoista bierna immunoterapia}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Nieswoista bierna immunoterapia}{18}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Swoista bierna immunoterapia}{18}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Nieswoista czynna immunoterapia}{18}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Swoista czynna immunoterapia}{18}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Swoista czynna immunoterapia}{19}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Leczenie skojarzone}{19}{section.3.3}%
 \contentsline {chapter}{\numberline {4.}Model matematyczny}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Za\IeC {\l }o\.zenia modelu}{20}{section.4.1}%
@@ -49,8 +49,8 @@
 \contentsline {subsection}{\numberline {9.2.2}Zmiana liczby powt\'orze\'n cyklu IL-2 dla\nobreakspace {}leczenia bez wykorzystania TIL}{102}{subsection.9.2.2}%
 \contentsline {subsection}{\numberline {9.2.3}Zmiana dnia rozpocz\k ecia immunoterapii dla\nobreakspace {}leczenia bez wykorzystania TIL}{104}{subsection.9.2.3}%
 \contentsline {section}{\numberline {9.3}Scenariusz III -- zmiana warunk\'ow pocz\k atkowych immunoterapii (dawki IL-2) w\nobreakspace {}celu uzyskania pozytywnego efektu leczenia dla\nobreakspace {}okre\'slonych warunk\'ow pocz\k atkowych chemioterapii}{107}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Scenariusz IV -- zmiany kolejno\'sci wdro\.zenia poszczeg\'olnych terapii}{112}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Scenariusz V -- por\'ownanie stanu uk\IeC {\l }adu immunologicznego u\nobreakspace {}r\'o\.znych pacjent\'ow}{116}{section.9.5}%
+\contentsline {section}{\numberline {9.4}Scenariusz IV -- zmiany kolejno\'sci wdro\.zenia poszczeg\'olnych terapii}{111}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Scenariusz V -- por\'ownanie stanu uk\IeC {\l }adu immunologicznego u\nobreakspace {}r\'o\.znych pacjent\'ow}{115}{section.9.5}%
 \contentsline {chapter}{\numberline {10.}Podsumowanie}{120}{chapter.10}%
 \contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{123}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Interferony}{123}{section.11.1}%
