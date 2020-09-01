@@ -1450,22 +1450,27 @@ W przeciwieñstwie do~leczenia metod¹ chemioterapii, liczba powtórzeñ cyklu lecze
 
 \newpage
 \section{Scenariusz V -- zmiana dnia rozpoczêcia immunoterapii}
-\noindent \textbf{Podejmowany problem:} \newline Analiza zmian odpowiedzi uk³adu immunologicznego (tj. liczby komórek nowotworowych oraz~komórek uk³adu odpornoœciowego) po~120 dniach symulacji w~zale¿noœci od~dnia rozpoczêcia immunoterapii (dozowania IL-2 lub TIL).
+\noindent \textbf{Podejmowany problem:} \newline Zmiany dnia rozpoczêcia immunoterapii (dozowania IL-2 lub TIL).
 
-\noindent \newline \textbf{Warunki pocz¹tkowe:} \newline Wielkoœæ (tj. pocz¹tkow¹ liczbê komórek) nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1}. Warunki pocz¹tkowe dla~immunoterapii, tj. d³ugoœæ cyklu, czas dozowania, schemat cyklu, dawkê dozowanego leku, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia immunoterapii dla~IL-2 i~TIL przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}.
 
-\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~Tab. \ref{parametry_modelu_z1}.
+\noindent \newline \textbf{Warunki pocz¹tkowe:} 
+\begin{itemize}
+\item dla~pocz¹tkowej wielkoœci badanych populacji, tj. pocz¹tkow¹ liczbê komórek nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1},
+\item dla~immunoterapii, tj. d³ugoœæ cyklu, czas dozowania, schemat cyklu, dawkê dozowanych leków (IL-2 i TIL), liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}.
+\end{itemize}
+
+\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~\ref{parametry_modelu_z1}.
 
 \noindent \newline \textbf{Czas symulacji:} \newline Czas symulacji wynosi³ $T_{k}$ = 120 dni. 
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cego siê dnia rozpoczêcia immunoterapii zebrano w~Tab. \ref{zmiany_dnia_rozpoczecia_immunoterapii_IL2}. \newline
 
 \newpage
-Tab. \ref{zmiany_dnia_rozpoczecia_immunoterapii_IL2} przedstawia jak~zmieniano dzieñ rozpoczêcia immunoterapii, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni $T(120)$, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni. Analizê przeprowadzono dla~zmieniaj¹cego siê dnia rozpoczêcia dozowania IL-2 oraz~TIL.
+Tab. \ref{zmiany_dnia_rozpoczecia_immunoterapii_IL2} przedstawia jak~zmieniano dzieñ rozpoczêcia immunoterapii. Dodatkowo, w~tabeli zamieszczono dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~zmieniaj¹cego siê dnia rozpoczêcia dozowania IL-2 oraz~TIL.
 
 \begin{table}[h!]
 	\centering
-	\caption[Wyniki symulacji - immunoterapia, scenariusz V, zmiana dnia rozpoczêcia immunoterapii (dozowania IL-2 lub TIL)]{Dzieñ rozpoczêcia immunoterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni $T(120)$ oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni dla~IL-2 (przy dozowaniu TIL zgodnie z~warunkami pocz¹tkowymi (\ref{warunki_pocz¹tkowe_immunoterapii})) oraz~dla~TIL (przy dozowaniu IL-2 zgodnie z~warunkami pocz¹tkowymi (\ref{warunki_pocz¹tkowe_immunoterapii})).}
+	\caption[Wyniki symulacji - immunoterapia, scenariusz V, zmiana dnia rozpoczêcia immunoterapii (dozowania IL-2 lub TIL)]{Dzieñ rozpoczêcia immunoterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~IL-2 (przy dozowaniu TIL zgodnie z~warunkami pocz¹tkowymi (\ref{warunki_pocz¹tkowe_immunoterapii})) oraz~dla~TIL (przy dozowaniu IL-2 zgodnie z~warunkami pocz¹tkowymi (\ref{warunki_pocz¹tkowe_immunoterapii})).}
 \label{zmiany_dnia_rozpoczecia_immunoterapii_IL2}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
         \multicolumn{5}{|c|}{IL-2} \\ \hline \hline
@@ -1492,11 +1497,15 @@ Tab. \ref{zmiany_dnia_rozpoczecia_immunoterapii_IL2} przedstawia jak~zmieniano d
 \end{table} 
 
 \newpage 
-Rys. \ref{wykresy_zmiany_dnia_rozpoczecia_immunoterapii_IL2} ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~immunoterapii (dozowania IL-2) rozpoczêtej 5 dnia symulacji (Rys. \ref{wykres_zmiany_dnia_rozpoczecia_immunoterapii_IL2}), a~tak¿e zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 (Rys. \ref{stezenie_zmiany_dnia_rozpoczecia_immunoterapii_IL2}). Dawka IL-2 wynosi $V_I = 5 \cdot 10^{6}$, dawka TIL wynosi $V_L = 10^{9}$. Czas dawkowania IL-2 wynosi 7 godzin i~12 minut. Czas dawkowania TIL wynosi 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu IL-2 wynosi 4 godziny i~48 minut. Rozpoczêcie dozowania TIL nastêpuje w~8 dniu symulacji. Liczba powtórzeñ cyklu IL-2 wynosi 6, natomiast liczba powtórzeñ dozowania TIL wynosi 1. Wczeœniejsze rozpoczêcie (dzieñ 5) dozowania IL-2 wywo³uje regresjê nowotworu w~14 dniu symulacji.
+Rys. \ref{wykresy_zmiany_dnia_rozpoczecia_immunoterapii_IL2} ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~immunoterapii (dozowania IL-2) rozpoczêtej 5 dnia symulacji (Rys. \ref{wykres_zmiany_dnia_rozpoczecia_immunoterapii_IL2}), a~tak¿e zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 (Rys. \ref{stezenie_zmiany_dnia_rozpoczecia_immunoterapii_IL2}). 
+
+Dawka IL-2 $V_I = 5 \cdot 10^{6}$, dawka TIL $V_L = 10^{9}$. Czas dawkowania IL-2 wynosi³ 7 godzin i~12 minut. Czas dawkowania TIL wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu IL-2 wynosi³a 4 godziny i~48 minut. Rozpoczêcie dozowania TIL nast¹pi³o w~8 dniu symulacji. Liczba powtórzeñ cyklu IL-2 wynosi³a 6, natomiast dozowanie TIL by³o jednokrotne. 
+
+Wczeœniejsze rozpoczêcie (dzieñ 5) dozowania IL-2 wywo³uje regresjê nowotworu w~14 dniu symulacji.
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~immunoterapii (dozowania IL-2) rozpoczêtej 5 dnia. Regresja nowotworu po~czasie $T_{r}$~$\approx$ 14 dni (336 godzin).]{\label{wykres_zmiany_dnia_rozpoczecia_immunoterapii_IL2}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~immunoterapii (dozowania IL-2) rozpoczêtej 5 dnia. Widoczna (linia czerwona) regresja nowotworu po~14 dniach.]{\label{wykres_zmiany_dnia_rozpoczecia_immunoterapii_IL2}
 \includegraphics[width=0.5\textwidth]{wykres_zmiany_dnia_rozpoczecia_immunoterapii_IL2}}
 \quad
 \subfloat[Zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 dla~immunoterapii (dozowania IL-2) rozpoczêtej 5 dnia.]{\label{stezenie_zmiany_dnia_rozpoczecia_immunoterapii_IL2}
@@ -1514,7 +1523,7 @@ Rys. \ref{wykresy_zmiany_dnia_rozpoczecia_immunoterapii_IL2} ukazuje zmiany w~cz
 \item dzieñ rozpoczêcia immunoterapii (dozowania TIL) przy dozowaniu IL-2 zgodnie z~warunkami pocz¹tkowymi (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) ma~wp³yw na~czas wyst¹pienia regresji; rozpoczêcie dozowania TIL o~1 dzieñ wczeœniej skutkuje skróceniem czasu koniecznego do~wyst¹pienia regresji o~1 dzieñ, tj. dla~rozpoczêcia leczenia dnia: 3, 2 oraz~1 czas do~regresji wynosi, odpowiednio: 10, 9 oraz~8 dni.
 \end{itemize}
 
-Podobnie, jak~w~przypadku chemioterapii, skutecznoœæ leczenia zale¿y od~dnia jej rozpoczêcia, a~przyspieszenie jej o~zaledwie kilka dni mo¿e decydowaæ o~wyst¹pieniu regresji nowotworu. Równoczeœnie, dzieñ rozpoczêcia immunoterapii nie~wp³ywa znacz¹co na~czas od~momentu rozpoczêcia leczenia do~momentu wyst¹pienia regresji.
+Podobnie, jak~w~przypadku chemioterapii, skutecznoœæ leczenia zale¿y od~dnia jej~rozpoczêcia, a~przyspieszenie jej~o~zaledwie kilka dni mo¿e decydowaæ o~wyst¹pieniu regresji nowotworu. Równoczeœnie, dzieñ rozpoczêcia immunoterapii nie~wp³ywa znacz¹co na~czas od~momentu rozpoczêcia leczenia do~momentu wyst¹pienia regresji.
 
 \newpage
 \chapter{Leczenie metodami skojarzonymi -- symulacje wykonane dla~modelu leczonego guza} \label{sym_ch_i}
