@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  1 SEP 2020 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  1 SEP 2020 23:50
 entering extended mode
 **./ImmunochemiotherapyModel.tex
 (ImmunochemiotherapyModel.tex
@@ -1837,18 +1837,18 @@ oznych_terapii2.jpg> <./rysunki/stezenie_czasy_wdrozenia_roznych_terapii2.jpg>]
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [114]
-Overfull \hbox (9.04095pt too wide) in paragraph at lines 2188--2189
+Overfull \hbox (4.14517pt too wide) in paragraph at lines 2188--2189
 \OT4/cmr/m/n/12 Parametry dla mo-de-lu z uwzgl¦d-nie-niem pro-ce-su le-cze-nia 
-przed-sta-wia Tab. [][]9.14[][] oraz Tab.
+przed-sta-wia Tab. [][]9.14[][] oraz [][]5.4[][]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2225--2226
+Underfull \hbox (badness 10000) in paragraph at lines 2211--2212
 
  []
 
 [115]
-Overfull \hbox (0.855pt too wide) in paragraph at lines 2233--2239
+Overfull \hbox (0.855pt too wide) in paragraph at lines 2219--2225
  [][] 
  []
 
@@ -1856,53 +1856,50 @@ File: ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg Graphic file (type
  jpg)
 <use ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg>
 Package pdftex.def Info: ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg
-  used on input line 2248.
+  used on input line 2236.
 (pdftex.def)             Requested size: 198.45662pt x 148.84pt.
 File: ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.jpg Graphic file (ty
 pe jpg)
 <use ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.jpg>
 Package pdftex.def Info: ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.j
-pg  used on input line 2251.
+pg  used on input line 2239.
 (pdftex.def)             Requested size: 198.45662pt x 112.72557pt.
 <./rysunki/wykres_p2.jpg, id=1726, 562.1pt x 421.575pt>
 File: ./rysunki/wykres_p2.jpg Graphic file (type jpg)
 <use ./rysunki/wykres_p2.jpg>
-Package pdftex.def Info: ./rysunki/wykres_p2.jpg  used on input line 2254.
+Package pdftex.def Info: ./rysunki/wykres_p2.jpg  used on input line 2242.
 (pdftex.def)             Requested size: 198.45662pt x 148.84pt.
+
+Underfull \hbox (badness 1308) in paragraph at lines 2242--2242
+ \OT4/cmr/m/n/10 im-mu-no-te-ra-pii (Tab. [][]9.13[][]) oraz daw-ki IL- 
+ []
+
 <./rysunki/stezenie_p2.jpg, id=1735, 380.17032pt x 208.52907pt>
 File: ./rysunki/stezenie_p2.jpg Graphic file (type jpg)
 <use ./rysunki/stezenie_p2.jpg>
-Package pdftex.def Info: ./rysunki/stezenie_p2.jpg  used on input line 2257.
+Package pdftex.def Info: ./rysunki/stezenie_p2.jpg  used on input line 2245.
 (pdftex.def)             Requested size: 198.45662pt x 108.85892pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[116]
-
-LaTeX Warning: Text page 117 contains only floats.
-
-
-Overfull \vbox (7.27069pt too high) has occurred while \output is active []
-
-
-[117 <./rysunki/wykres_p2.jpg> <./rysunki/stezenie_p2.jpg>] [118]
+[116] [117 <./rysunki/wykres_p2.jpg> <./rysunki/stezenie_p2.jpg>] [118]
 Rozdzia\PlPrIeC {\l } 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2281--2282
+Underfull \hbox (badness 10000) in paragraph at lines 2269--2270
 
  []
 
 [119
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2291
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2279
 
  []
 
 [120] [121]
 Rozdzia\PlPrIeC {\l } 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2317--2318
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2306
 
  []
 
@@ -1911,13 +1908,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2317--2318
 ] [123] [124
 
 ] [125] [126]
-Underfull \hbox (badness 10000) in paragraph at lines 2374--2375
+Underfull \hbox (badness 10000) in paragraph at lines 2362--2363
 []\OT4/cmr/m/n/12 https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-kt
 ora-zabija-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2375--2376
+Underfull \hbox (badness 10000) in paragraph at lines 2363--2364
 []\OT4/cmr/m/n/12 https://healthcare-in-europe.com/en/news/new-t-cell-could-mak
 e-universal-
  []
@@ -1981,7 +1978,7 @@ blic/pl/plsy6.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/pl/plsy7.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/pl/plsy8.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/pl/plti12.pfb>
-Output written on ImmunochemiotherapyModel.pdf (137 pages, 2885811 bytes).
+Output written on ImmunochemiotherapyModel.pdf (137 pages, 2885476 bytes).
 PDF statistics:
  2010 PDF objects out of 2073 (max. 8388607)
  394 named destinations out of 1000 (max. 500000)

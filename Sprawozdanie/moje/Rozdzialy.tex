@@ -2158,7 +2158,7 @@ W leczeniu skojarzonym, poza tym jakie metody s¹~wykorzystywane, wa¿ne jest tak¿
 
 \begin{table}[h!]
 	\centering
-	\caption{Warunki pocz¹tkowe chemioterapii dla~modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór z~uwzglêdnieniem procesu leczenia skojarzonymi metodami chemioterapii (z~wykorzystaniem niewielkiej dawki cytostatyka) i~immunoterapii.}\label{warunki_pocz¹tkowe_chemioterapii_light}
+	\caption{Warunki pocz¹tkowe chemioterapii dla~modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór z~uwzglêdnieniem procesu leczenia skojarzonymi metodami chemioterapii (z~wykorzystaniem bardzo ma³ej dawki cytostatyka) i~immunoterapii.}\label{warunki_pocz¹tkowe_chemioterapii_light}
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		D³ugoœæ & Czas dozowania & Schemat & Dawka & Liczba & Dzieñ \\
 		cyklu & cytostatyka & cyklu & dozowanego & powtórzeñ & rozpoczêcia \\ 
@@ -2185,7 +2185,7 @@ W leczeniu skojarzonym, poza tym jakie metody s¹~wykorzystywane, wa¿ne jest tak¿
 \end{table}
 
 \newpage
-\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu z~uwzglêdnieniem procesu leczenia przedstawia Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}.
+\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu z~uwzglêdnieniem procesu leczenia przedstawia Tab. \ref{parametry_modelu_2_pacjentow} oraz~\ref{parametry_modelu_z1}.
 
 \begin{table}[h!]
 	\centering
@@ -2205,30 +2205,16 @@ W leczeniu skojarzonym, poza tym jakie metody s¹~wykorzystywane, wa¿ne jest tak¿
 		j & $2,49 \cdot 10^{-2}$ & $2,49 \cdot 10^{-2}$ & $\beta$ & $1,2 \cdot 10^{-2}$ & $8 \cdot 10^{-3}$ \\ \hline
 		\end{tabular}
 \end{table}
-
-
-%\multicolumn{4}{|c|}{Pacjent 1} \\ \hline \hline
-%		Parametr & Wartoœæ & Parametr & Wartoœæ \\ \hline
-%		a & $4,31 \cdot 10^{-1}$ & k & $3,66 \cdot 10^{7}$ \\ \hline
-%		b & $1,02 \cdot 10^{-9}$ & m & $2,04 \cdot 10^{-1}$ \\ \hline
-%		c & $6,41 \cdot 10^{-11}$ & q & $1,42 \cdot 10^{-6}$ \\ \hline
-%		d & $2,34$ & p & $3,42 \cdot 10^{-6}$ \\ \hline
-%		e & $2,08 \cdot 10^{-7}$ & s & $8,39 \cdot 10^{-2}$ \\ \hline
-%		l & $2,09$ & $r_{1}$ & $1,1 \cdot 10^{-7}$ \\ \hline
-%		f & $4,12 \cdot 10^{-2}$ & $r_{2}$ & $6,5 \cdot 10^{-11}$ \\ \hline
-%		g & $1,25 \cdot 10^{-2}$ & u & $3 \cdot 10^{-10}$ \\ \hline
-%		h & $2,02 \cdot 10^{7}$ & $\alpha$ & $7,5 \cdot 10^{8}$ \\ \hline
-%		j & $2,49 \cdot 10^{-2}$ & $\beta$ & $1,2 \cdot 10^{-2}$ \\ \hline
 		
 \noindent \newline \textbf{Czas symulacji:} \newline Czas symulacji wynosi³ $T_{k}$ = 120 dni. 
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~pacjentów 1 oraz~2 zebrano w~Tab. \ref{rozni_pacjenci}. \newline
 
-Tab. \ref{rozni_pacjenci} przedstawia dzieñ regresji nowotworu, liczbê komórek nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni $T(120)$ oraz~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni dla~pacjentów 1 oraz~2.
+Tab. \ref{rozni_pacjenci} przedstawia dzieñ regresji nowotworu, liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji oraz~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~pacjentów 1 oraz~2.
 
 \begin{table}[h!]
 	\centering
-	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz V, porównanie stanu uk³adu immunologicznego u~ró¿nych pacjentów]{Dzieñ regresji nowotworu, liczba komórek nowotworowych w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni $T(120)$ oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni dla~warunków pocz¹tkowych (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light} i~\ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) dla~pacjentów 1 i~2.}
+	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz V, porównanie stanu uk³adu immunologicznego u~ró¿nych pacjentów]{Dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~warunków pocz¹tkowych (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light} i~\ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) dla~pacjentów 1 i~2.}
 \label{rozni_pacjenci}
 \begin{tabular}{|c|c|c|c|c|} \hline 
 		Pacjent & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
@@ -2238,24 +2224,26 @@ Tab. \ref{rozni_pacjenci} przedstawia dzieñ regresji nowotworu, liczbê komórek n
 		\end{tabular}
 \end{table} 
 
-Przyk³adowo, Rys. \ref{wykresy_p2} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii u~pacjenta 2 (Rys. \ref{wykres_p2}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_p2}). Warunki pocz¹tkowe chemioterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, natomiast immunoterapii Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}. 
+Przyk³adowo, Rys. \ref{wykresy_p2} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii u~pacjenta 2 (Rys. \ref{wykres_p2}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_p2}). 
 
-Leczenie skojarzone skuteczne u~pacjenta 1 nie~ma~pozytywnego skutku w~przypadku pacjenta 2 (ze wzglêdu na~jego cechy osobnicze takie, jak: tempo dezaktywacji limfocytów $T_{CD8+}$ oraz~komórek NK przez~komórki nowotworu, cytotoksycznoœæ limfocytów $T_{CD8+}$ czy~liczba kr¹¿¹cych limfocytów i~tempo ich wymierania, reprezentowane przez~parametry w~Tab. \ref{parametry_modelu_2_pacjentow}). Liczba komórek nowotworowych stabilizuje siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~45 dniu symulacji.
+Warunki pocz¹tkowe chemioterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, natomiast immunoterapii Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}. 
+
+Leczenie skojarzone skuteczne u~pacjenta 1 nie~mia³o~pozytywnego skutku w~przypadku pacjenta 2 (ze wzglêdu na~jego cechy osobnicze takie, jak: tempo dezaktywacji limfocytów $T_{CD8+}$ oraz~komórek NK przez~komórki nowotworu, cytotoksycznoœæ limfocytów $T_{CD8+}$ czy~liczba kr¹¿¹cych limfocytów i~tempo ich wymierania, reprezentowane przez~parametry w~Tab. \ref{parametry_modelu_2_pacjentow}). Liczba komórek nowotworowych ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~45 dniu symulacji.
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~pacjenta 1 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, immunoterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light} oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Widoczna regresja nowotworu po~czasie $T_{s}$~$\approx$ 19 dni (456 godzin) oko³o wartoœci.]{\label{wykres_zmiana_immuno_okreslone_chemiopol}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~pacjenta 1 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}), immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$ z~ widoczn¹ (linia czzerwona) regresj¹ nowotworu po~19 dniach.]{\label{wykres_zmiana_immuno_okreslone_chemiopol}
 \includegraphics[width=0.45\textwidth]{wykres_zmiana_immuno_okreslone_chemiopol}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~pacjenta 1 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, immunoterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light} oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_zmiana_immuno_okreslone_chemiopol}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~pacjenta 1 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}), immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_zmiana_immuno_okreslone_chemiopol}
 \includegraphics[width=0.45\textwidth]{stezenie_zmiana_immuno_okreslone_chemiopol}}
 \quad
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~pacjenta 2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, immunoterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light} oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Stabilizacja liczby komórek nowotworowych po~czasie $T_{s}$~$\approx$ 45 dni (1080 godzin) oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_p2}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~pacjenta 2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}), immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$ z~widoczn¹ (linia czerwona) stabilizacj¹ liczby komórek nowotworowych po~45 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_p2}
 \includegraphics[width=0.45\textwidth]{wykres_p2}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~pacjenta 2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, immunoterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light} oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_p2}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~pacjenta 2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}), immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_p2}
 \includegraphics[width=0.45\textwidth]{stezenie_p2}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz V, porównanie stanu uk³adu immunologicznego u~ró¿nych pacjentów]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas leczenia skojarzonego cytostatyka oraz~IL-2 dla~pacjenta 2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}, immunoterapii umieszczonych w~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light} oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz V, porównanie stanu uk³adu immunologicznego u~ró¿nych pacjentów]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~pacjentów 1 i~2 (Tab. \ref{parametry_modelu_2_pacjentow} oraz~Tab. \ref{parametry_modelu_z1}) dla~warunków pocz¹tkowych chemioterapii (Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light}), immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_p2}
 \end{figure}
 
