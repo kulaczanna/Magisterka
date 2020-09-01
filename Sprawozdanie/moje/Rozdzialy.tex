@@ -1,40 +1,40 @@
-\chapter{Wprowadzenie}
+\chapter{Wstêp}
 % \setlength{\parindent}{50pt} tak~siê robi wciêcia
 % \indent akapit
-\section{Streszczenie}
-W~pracy przedstawiono model opisuj¹cy odpowiedŸ uk³adu immunologicznego na~rozwijaj¹cy siê w~organizmie nowotwór. Model ten~oparty jest na~modelu de~Pillis \cite{19}. Obejmuje on rozwój komórek nowotworowych w~organizmie oraz~odpowiedŸ uk³adu immunologicznego -- w~tym, tak~zwanych ,,naturalnych zabójców'', czyli komórek NK (ang. Natural Killer cells), limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych.
-Nastêpnie model zosta³ poddany modyfikacji (równie¿ w~oparciu o model de~Pillis \cite{19}) polegaj¹cej na~uwzglêdnieniu procesu leczenia nowotworu skojarzonymi metodami chemioterapii (z u¿yciem leku cytostatycznego) i~immunoterapii z~u¿yciem pewnej grupy cytokin\footnote{Cytokiny -- bia³ka o~niskiej masie cz¹steczkowej bior¹ce udzia³ w~przekazywaniu informacji pomiêdzy komórkami; odgrywaj¹ istotn¹ rolê w~odpowiedzi zapalnej, apoptozie, wzroœcie i~ró¿nicowaniu komórek \cite{16}.}, tj. interleukin-2 (IL-2) oraz~limfocytów naciekaj¹cych nowotwór TIL (ang. Tumor Infiltrating Lymphocytes).
+
+W~pracy przedstawiono model opisuj¹cy odpowiedŸ uk³adu immunologicznego na~rozwijaj¹cy siê w~organizmie nowotwór. Model ten~oparty jest na~modelu de~Pillis \cite{19}. Obejmuje on rozwój komórek nowotworowych w~organizmie oraz~odpowiedŸ komórek uk³adu immunologicznego w~tym, tak~zwanych ,,naturalnych zabójców'' (ang. Natural Killer cells (NK)), limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych.
+W~pracy model ten zosta³ poddany modyfikacji (w~oparciu o model de~Pillis \cite{19}) polegaj¹cej na~uwzglêdnieniu procesu leczenia nowotworu skojarzonymi metodami chemioterapii (z u¿yciem leku cytostatycznego) oraz~immunoterapii z~u¿yciem pewnej grupy cytokin\footnote{Cytokiny -- bia³ka o~niskiej masie cz¹steczkowej bior¹ce udzia³ w~przekazywaniu informacji pomiêdzy komórkami; odgrywaj¹ istotn¹ rolê w~odpowiedzi zapalnej, apoptozie, wzroœcie i~ró¿nicowaniu komórek \cite{16}.}, tj. interleukin-2 (IL-2) oraz~limfocytów naciekaj¹cych nowotwór TIL (ang. Tumor-Infiltrating Lymphocytes\footnote{Limfocyty naciekaj¹ce nowotwór TIL - pewien rodzaj komórek uk³adu immunologicznego, które przedostaj¹ siê z~krwi do nowotworu pacjenta; limfocyty te potrafi¹ rozpoznawaæ i niszczyæ komórki nowotworowe; w~terapii nowotworowej, limfocyty TIL s¹ pobierane z guza pacjenta, nastêpnie namna¿ane w laboratorium i przetaczane ponownie do organizmu pacjenta w celu wzmocnienia jego uk³adu odpornoœciowego \cite{41}.}).
 
 \section{Cel pracy}
 Celem pracy by³o:
 \begin{itemize}
-\item utworzenie modelu rozwoju nowotworu w~organizmie z~uwzglêdnieniem leczenia skojarzonymi metodami chemioterapii i~immunoterapii,
-\item przeprowadzenie symulacji leczenia nowotworu metod¹ chemioterapii, immunoterapii oraz~skojarzonych metod chemioterapii i~immunoterapii,
-\item analiza rozwi¹zañ modelu opisuj¹cego leczenie wy³¹cznie metod¹ chemioterapii,
-\item analiza rozwi¹zañ modelu opisuj¹cego leczenie wy³¹cznie metod¹ immunoterapii,
-\item analiza rozwi¹zañ modelu opisuj¹cego leczenie zarówno metod¹ chemioterapii, jak~i~immunoterapii.
+\item zaimplementowaie modelu rozwoju nowotworu w~organizmie z~uwzglêdnieniem leczenia skojarzonymi metodami chemioterapii i~immunoterapii,
+\item przeprowadzenie symulacji leczenia nowotworu metod¹ chemioterapii, immunoterapii oraz~skojarzonymi metodami chemioterapii i~immunoterapii,
+\item analiza rozwi¹zañ modelu nieuwzglêdniaj¹cego leczenia (dla zmian pocz¹tkowej liczby komórek nowotworowych oraz limfocytów kr¹¿¹cych),
+\item analiza rozwi¹zañ modelu opisuj¹cego leczenie wy³¹cznie metod¹ chemioterapii (dla zmian d³ugoœci cyklu, dawki dozowanego cytostatyka, liczby powtórzeñ cyklu oraz dnia rozpoczêcia chemioterapii),
+\item analiza rozwi¹zañ modelu opisuj¹cego leczenie wy³¹cznie metod¹ immunoterapii (dla zmian pocz¹tkowej liczby komórek nowotworowych, dawki IL-2, dawki TIL, liczby powtórzeñ cyklu IL-2 oraz dnia rozpoczêcia immunoterapii),
+\item analiza rozwi¹zañ modelu opisuj¹cego leczenie zarówno metod¹ chemioterapii, jak~i~immunoterapii (dla zmian warunków pocz¹tkowych chemioterapii, warunków pocz¹tkowych immunoterapii, kolejnoœci wdro¿enia poszczególnych terapii oraz dla pacjentów o ró¿nej kondycji uk³adów immunologicznych).
 \end{itemize}
 
-\newpage
 \section{Uk³ad pracy}
 Praca sk³ada siê z~nastêpuj¹cych czêœci:
 \begin{itemize}
 \item wstêpu teoretycznego zawieraj¹cego informacje na~temat rodzajów nowotworów i~sposobów ich rozwoju oraz~niektórych metod ich leczenia, a~tak¿e dotycz¹cych budowy i~sposobu dzia³ania uk³adu immunologicznego,
-\item przedstawienia zaimplementowanego modelu, na~którym przeprowadzano symulacje,
+\item przedstawienia zaimplementowanego modelu, na~którym przeprowadzano symulacje (za³o¿eñ, równañ, opisu, parametrów),
 \item opisu dokonanych symulacji i~scenariuszy, wed³ug których zosta³y przeprowadzone,
 \item analizy wyników symulacji i~wynikaj¹cych z~nich wniosków,
-\item podsumowania.
+\item podsumowania oraz perspektyw rozwoju niniejszej pracy.
 \end{itemize}
 
-\chapter{Wstêp}
+\chapter{Wprowadzenie teoretyczne}
 \section{Procesy nowotworowe}
-Nowotworem okreœla siê nieprawid³owe komórki w~organizmie, których wzrost odbywa siê w~sposób niekontrolowany \cite{1, 2}. Czasami (najczêœciej w~przypadku zmian zapalnych) naprzemiennie z~pojêciem nowotwór, stosowane jest okreœlenie guz \cite{24}. W~zdrowym organizmie wystêpuje równowaga pomiêdzy tempem podzia³ów komórkowych a~utrat¹ komórek. W~przypadku nowotworu ginie mniej komórek ni¿~przybywa \cite{3}. W~efekcie spontanicznej proliferacji komórek nowotworowych sk³adaj¹ca siê z~nich struktura zaczyna niszczyæ narz¹d, w~którym wyst¹pi³ proces nowotworowy. Niektóre z~komórek nowotworowych mog¹ oderwaæ siê od~pozosta³ych, przedostaæ siê do~naczyñ krwionoœnych i~limfatycznych, a~w~konsekwencji dawaæ przerzuty do~innych narz¹dów \cite {2}. Powstawanie nowotworu wi¹¿e siê z~wieloma zmianami materia³u genetycznego. Rozpoczêcie tego procesu zale¿y zarówno od~wielkoœci zmiany, jak~i~miejsca, w~którym wyst¹pi³a\cite{3}. 
+Nowotworem okreœla siê nieprawid³owe komórki w~organizmie, których wzrost odbywa siê w~sposób niekontrolowany \cite{1, 2}. Czasami (najczêœciej w~przypadku zmian zapalnych) naprzemiennie z~pojêciem nowotwór, stosowane jest okreœlenie guz \cite{24}. W~zdrowym organizmie wystêpuje równowaga pomiêdzy tempem podzia³ów komórek a~ich obumieraniem. W~przypadku nowotworu ginie mniej komórek ni¿~przybywa \cite{3}. W~efekcie spontanicznej proliferacji komórek nowotworowych sk³adaj¹ca siê z~nich struktura zaczyna niszczyæ narz¹d, w~którym wyst¹pi³ proces nowotworowy. Niektóre z~komórek nowotworowych mog¹ oderwaæ siê od~pozosta³ych, przedostaæ siê do~naczyñ krwionoœnych i~limfatycznych, a~w~konsekwencji dawaæ przerzuty do~innych narz¹dów \cite {2}. Powstawanie nowotworu wi¹¿e siê z~wieloma zmianami materia³u genetycznego. Rozpoczêcie tego procesu zale¿y zarówno od~wielkoœci zmiany, jak~i~miejsca, w~którym wyst¹pi³a\cite{3}. 
 
 Transformacja komórkowa oznacza wielostopniowy proces, podczas którego na~ka¿dym etapie zachodz¹ zmiany genetyczne prowadz¹ce do~zaburzeñ wzrostu komórek prawid³owych\cite{24}.
 
-Na~powierzchni komórek nowotworowych pojawiaj¹ siê zmienione albo~obce antygeny, a~tak¿e zanikaj¹ cz¹steczki charakterystyczne dla~komórek w³asnych organizmu. Zmiany te,~zazwyczaj s¹~rozpoznawane przez~uk³ad odpornoœciowy, co~umo¿liwia skuteczn¹ walkê z~komórkami nowotworowymi. Jednak rozwojowi nowotworu towarzysz¹ ró¿ne mechanizmy maskuj¹ce, które powoduj¹ nierozpoznawalnoœæ komórek z³oœliwie transformowanych, co~pozwala na~,,ucieczkê'' nowotworu przed~detekcj¹ przez~uk³ad immunologiczny. Na~tej nierozpoznawalnoœci skupia siê immunoterapia, która jest~jednym ze~sposobów leczenia nowotworów\cite{31}.
+Na~powierzchni komórek nowotworowych pojawiaj¹ siê zmienione albo~obce antygeny, natomiast zanikaj¹ cz¹steczki charakterystyczne dla~komórek w³asnych organizmu. Zmiany te,~zazwyczaj s¹~rozpoznawane przez~uk³ad odpornoœciowy, co~umo¿liwia skuteczn¹ walkê z~komórkami nowotworowymi. Jednak rozwojowi nowotworu czêsto towarzyszy aktywacja ró¿nych mechanizmów maskuj¹cych obecnoœæ komórek z³oœliwie transformowanych, które powoduj¹, ¿e komórki te staj¹ siê ,,niewidoczne'' dla~uk³adu immunologicznego. Na~tych mechanizmach maskuj¹cych skupia siê immunoterapia, która jest~jednym ze~sposobów leczenia nowotworów\cite{31}.
 
-Zachodz¹ce zmiany genetyczne zwi¹zane s¹~z~ró¿nymi zmianami fizjologicznymi zachodz¹cymi w~komórce, w~szczególnoœci z~\cite{24}:
+Jedn¹ z~g³ównych przyczyn wystêpowania procesów nowotworowych, s¹ pojawiaj¹ce siê zmiany genetyczne zwi¹zane z~ró¿nymi zmianami fizjologicznymi zachodz¹cymi w~komórce, w~szczególnoœci z~\cite{24}:
 \begin{itemize}
 \item samowystarczalnoœci¹ w~wytwarzaniu sygna³ów do~wzrostu,
 \item niewra¿liwoœci¹ na~inhibitory sygna³ów wzrostu,
@@ -46,32 +46,33 @@ Zachodz¹ce zmiany genetyczne zwi¹zane s¹~z~ró¿nymi zmianami fizjologicznymi zach
 \item unikaniem destrukcji immunologicznej.
 \end{itemize} 
 
-Warto tak¿e~zwróciæ uwagê na~zmiany systemów naprawy DNA oraz~zmiany systemów reguluj¹cych podstawowe procesy komórkowe (na przyk³ad wzrost, ró¿nicowanie, apoptozê\footnote{Apoptoza -- œmieræ programowana, œmieræ samobójcza komórki zachodz¹ca w~warunkach fizjologicznych \cite{12}.}). Na~skutek zmian systemów naprawczych dochodzi do~szybkiej i~du¿ej niestabilnoœci genomu. Zmiany w~systemach reguluj¹cych, powoduj¹ natomiast, powolny proces zaburzenia homeostazy komórki oraz~stopniowo narastaj¹c¹ niestabilnoœæ genomu. Choroby nowotworowe w~wiêkszoœci rozwijaj¹ siê w~tym drugim przypadku (tj. na~skutek zmian w~systemach reguluj¹cych), dlatego od~pojawienia siê pocz¹tkowej zmiany do~klinicznego wykrycia guza mija zazwyczaj wiele lat\cite{3}.
+Oprócz wy¿ej wymienionych zmian zachodz¹cych w komórce, warto tak¿e~zwróciæ uwagê na~zmiany systemów naprawy DNA oraz~zmiany systemów reguluj¹cych podstawowe procesy komórkowe (na przyk³ad wzrost, ró¿nicowanie, apoptozê\footnote{Apoptoza -- œmieræ programowana, œmieræ samobójcza komórki zachodz¹ca w~warunkach fizjologicznych \cite{12}.}). Na~skutek modyfikacji systemów naprawczych dochodzi do~szybkiej i~du¿ej niestabilnoœci genomu. Zmiany w~systemach reguluj¹cych, powoduj¹ z kolei, powolny proces zaburzenia homeostazy komórki oraz~stopniowo narastaj¹c¹ niestabilnoœæ genomu. Choroby nowotworowe w~wiêkszoœci rozwijaj¹ siê na~skutek zmian w~systemach reguluj¹cych, dlatego od~pojawienia siê pocz¹tkowej zmiany do~klinicznego wykrycia guza mija zazwyczaj wiele lat\cite{3}.
 
-Mechanizmy genetyczne, le¿¹ce u~podstaw wy¿ej wymienionych zmian fizjologicznych, mog¹ ró¿niæ siê miêdzy sob¹ dla~poszczególnych nowotworów, mimo to, zmiany fizjologiczne~s¹~wspólne dla~wiêkszoœci nowotworów i~odpowiadaj¹ zarówno za~prze¿ycie, jak~i~ekspresjê nowotworu\cite{24}. 
+Mechanizmy genetyczne, le¿¹ce u~podstaw wy¿ej wymienionych zmian fizjologicznych, mog¹ ró¿niæ siê dla~poszczególnych nowotworów, jednak to w³aœnie zmiany fizjologiczne~s¹~wspólne dla~wiêkszoœci nowotworów i~to~one~odpowiadaj¹ zarówno za~prze¿ycie, jak~i~rozrost nowotworu\cite{24}. 
 
 \newpage
 \section{Budowa uk³adu immunologicznego i~jego znaczenie w~procesie leczenia nowotworów}
-Na uk³ad immunologiczny sk³adaj¹ siê mechanizmy odpornoœci swoistej (nabytej) i~nieswoistej (wrodzonej) \cite{4,5,20}. Ich podzia³ przedstawia Tab. \ref{ró¿nice_miêdzy_nab_a_wrodz}. 
+Na uk³ad immunologiczny sk³adaj¹ siê mechanizmy odpornoœci swoistej (nabytej), jak i~nieswoistej (wrodzonej) \cite{4,5,20}. Ich podzia³ przedstawia Tab. \ref{ró¿nice_miêdzy_nab_a_wrodz}. 
 
-Mechanizmy odpornoœci nabytej s¹~aktywowane, gdy~zawodz¹ mechanizmy odpornoœci wrodzonej, czyli np. nie~zapobiegn¹ wnikaniu lub~nie~usun¹ patogenu \cite{20}. 
+Mechanizmy odpornoœci nabytej s¹~aktywowane, gdy~zawodz¹ mechanizmy odpornoœci wrodzonej, które np. nie~zapobiegn¹ wnikaniu lub~nie~usun¹ patogenu \cite{20}. 
 
 \begin{table}[!htb]
 	\centering
 	\caption{Mechanizmy obronne odpornoœci swoistej i~nieswoistej\cite{7}.}\label{ró¿nice_miêdzy_nab_a_wrodz}
-	\begin{tabular}{|l|l|l|p{0.35\linewidth}|} \cline{1-2} \cline{4-4} 
-		\multicolumn{2}{|c|}{Odpornoœæ} & & Dzia³anie obronne \\ \hline
-		\multirow{2}{1cm}{Nieswoista (wrodzona)} & Humoralna & Lizozym & Bakterioliza bakterii Gram dodatnich, liza bakterii Gram-ujemnych po~usuniêciu warstwy liposacharydowej\\ \cline{3-4}
-		& & Laktoferyna & Pozbawienie bakterii dostêpu do~¿elaza poprzez wi¹zanie go~\\ \cline{3-4}
-		& & Transferyna & Pozbawienie bakterii dostêpu do~¿elaza poprzez wi¹zanie go~\\ \cline{3-4}
-		& & Bia³ka ostrej fazy & Aktywacja limfocytów, makrofagów, dope³niacza na~drodze klasycznej \\ \cline{3-4}
-		& & Dope³niacz & Uaktywnienie uk³adu dope³niacza\\ \cline{3-4}
-		& & Interferony & Hamowanie transformacji limfocytów pod wp³ywem mitogenów \\
+	\begin{tabular}{|l|l|l|p{0.35\linewidth}|} \cline{1-3} \cline{4-4} 
+		\multicolumn{2}{|c|}{Odpornoœæ} & Element uk³adu & Dzia³anie obronne \\
+		\multicolumn{2}{|c|}{ } & immunologicznego & \\ \hline
+		\multirow{2}{1cm}{Nieswoista (wrodzona)} & Humoralna & Lizozym & bakterioliza bakterii Gram dodatnich, liza bakterii Gram-ujemnych po~usuniêciu warstwy liposacharydowej\\ \cline{3-4}
+		& & Laktoferyna & pozbawienie bakterii dostêpu do~¿elaza poprzez wi¹zanie go~\\ \cline{3-4}
+		& & Transferyna & pozbawienie bakterii dostêpu do~¿elaza poprzez wi¹zanie go~\\ \cline{3-4}
+		& & Bia³ka ostrej fazy & aktywacja limfocytów, makrofagów, dope³niacza na~drodze klasycznej \\ \cline{3-4}
+		& & Dope³niacz & uaktywnienie uk³adu dope³niacza\\ \cline{3-4}
+		& & Interferony & hamowanie transformacji limfocytów pod wp³ywem mitogenów \\
 		\cline{2-4}
-		& Komórkowa & Fagocyty & Fagocytoza\\ \cline{3-4}
-		& & Eozynofile & Produkcja prostoglandyn PGE1 i~PGE2, które hamuj¹ uwalnianie mediatorów przez~komórki tuczne i~bazofile \\ \cline{3-4}
-		& & Komórki K & Cytotoksycznoœæ zale¿na od~przeciwcia³\\ \cline{3-4}
-		& & Komórki NK & Spontaniczne niszczenie komórek zaka¿onych wirusem\\ \hline \cline{3-4}
+		& Komórkowa & Fagocyty & fagocytoza\\ \cline{3-4}
+		& & Eozynofile & produkcja prostoglandyn PGE1 i~PGE2, które hamuj¹ uwalnianie mediatorów przez~komórki tuczne i~bazofile \\ \cline{3-4}
+		& & Komórki K & cytotoksycznoœæ zale¿na od~przeciwcia³\\ \cline{3-4}
+		& & Komórki NK & spontaniczne niszczenie komórek zaka¿onych wirusem\\ \hline \cline{3-4}
 		\multirow{2}{3cm}{Swoista (nabyta)} & Humoralna & Immunoglobuliny \\ \cline{3-3}
 		& & Limfocyty typu B \\
 		\cline{2-3}
@@ -89,7 +90,7 @@ Uk³ad dope³niacza (komplement) tworzy grupa oko³o 40 bia³ek, które zabezpieczaj¹
 \item lektynow¹.
 \end{itemize} 
 
-Klasyczna droga aktywacji komplementu zachodzi z~udzia³em swoistych immunoglobulin, które zwi¹zane s¹~z~powierzchni¹ drobnoustrojów. Prowadzi ona~do~œmierci litycznej komórki docelowej (bakterioliza).
+Klasyczna droga aktywacji \label{klasyk} komplementu zachodzi z~udzia³em swoistych immunoglobulin, które zwi¹zane s¹~z~powierzchni¹ drobnoustrojów. Prowadzi ona~do~œmierci litycznej komórki docelowej (bakterioliza).
 
 Znacznie szybsza jest droga alternatywna (properdynowa), poniewa¿ kszta³tuje siê ona~od~momentu wnikniêcia patogenu. W~tym~przypadku drobnoustroje ulegaj¹ spontanicznej opsonizacji\footnote{Opsonizacja -- proces u³atwiaj¹cy fagocytozê \cite{13}.} przez~cz¹steczki C3b dope³niacza. U³atwia to~ich~poch³anianie przez~komórki fagocytarne.
 
@@ -115,12 +116,12 @@ Pomimo bardzo du¿ego znaczenia uk³adu immunologicznego dla~organizmu, wiele mech
 \item interleukiny (IL).
 \end{itemize}
 
-W~zwi¹zku z~wa¿n¹ funkcj¹ wy¿ej wymienionych komórek, ujêto je~w~opisywanym modelu, natomiast ich~znaczenie opisano w~dalszej czêœci pracy.
+W~zwi¹zku z~wa¿n¹ funkcj¹ wy¿ej wymienionych komórek, ujêto je~w~opisywanym modelu, natomiast ich~biologiczne znaczenie opisano w~dalszej czêœci pracy.
 
 \subsection{Komórki NK}
-Swoj¹ rolê w~odpowiedzi immunologicznej maj¹~komórki NK (limfocyty NK), czyli limfocyty cytotoksyczne\cite{30} stanowi¹ce populacjê odrêbn¹ od~limfocytów typu B~i~T\cite{7}. Limfocyty NK stanowi¹ oko³o 10\% limfocytów obecnych we~krwi \cite{5, 30, 31}. 
-Komórki NK to~efektorowe komórki cytotoksyczne bêd¹ce elementem odpornoœci nieswoistej organizmu. S¹~to du¿e komórki limfoidalne posiadaj¹ce umiejêtnoœæ rozpoznawania wielu konfiguracji molekularnych wystêpuj¹cych m.in. na~komórkach w³asnych, zaka¿onych wirusem oraz~komórkach nowotworowych\cite{29}.
-Ich~zadaniem jest~niszczenie komórek nowotworowych i~zainfekowanych wirusami \cite{5}. 
+Wa¿n¹ rolê w~odpowiedzi immunologicznej pe³ni¹~komórki NK (limfocyty NK), czyli limfocyty cytotoksyczne\cite{30} stanowi¹ce populacjê odrêbn¹ od~limfocytów typu B~i~T\cite{7}. Limfocyty NK stanowi¹ oko³o 10\% limfocytów obecnych we~krwi \cite{5, 30, 31}. 
+Komórki NK to~efektorowe komórki cytotoksyczne bêd¹ce elementem odpornoœci nieswoistej organizmu. S¹~to du¿e komórki limfoidalne posiadaj¹ce umiejêtnoœæ rozpoznawania wielu konfiguracji molekularnych wystêpuj¹cych m.in. na~powierzchni komórek w³asnych, zaka¿onych wirusem oraz~nowotworowych\cite{29}.
+Ich~g³ównym zadaniem jest~niszczenie komórek nowotworowych i~zainfekowanych wirusami \cite{5}. 
 
 Komórki NK s¹~szybkie i~skuteczne w~dzia³aniu\cite{31}. Limfocyty NK identyfikowane s¹~poprzez ekspresjê antygenu powierzchniowego CD56 i~jednoczesny brak ekspresji antygenu CD3, a~tak¿e ekspresjê receptorów CD16, CD56 oraz~CD57.
 \newpage
@@ -142,7 +143,7 @@ Zmiany nowotworowe komórek w³asnych organizmu mog¹ byæ usuwane przez~limfocyty N
 Charakterystyczn¹ cech¹ komórek NK jest brak markerów czy~receptorów antygenowych na~ich powierzchni.
 Dzia³anie komórek NK opiera siê na~rozpoznawaniu przez~receptor pektynowy reszt cukrowych, co~umo¿liwia im~cytotoksyczne zniszczenie komórki docelowej, miêdzy innymi nowotworowej. Z~kolei receptor hamuj¹cy komórki typu ,,zabójcy'' KIR (ang. Killer cells Inhibitory Receptor) zmniejsza aktywnoœæ komórek NK w~sytuacji, gdy rozpoznaj¹ one prawid³owe komórki organizmu \cite{4}.
 
-Aktywacja komórek NK zale¿y od~wypadkowego dzia³ania receptorów aktywuj¹cych i~hamuj¹cych. Pozwala to~unikn¹æ atakowania przez~komórki NK niezmienionych komórek w³asnego organizmu. G³ównymi regulatorami aktywnoœci komórek NK s¹~cz¹steczki MHC klasy I. Cz¹steczki te~s¹~obecne na~ka¿dej j¹drzastej komórce organizmu, dziêki czemu mo¿liwe jest~rozpoznawanie zdrowych komórek. Obni¿enie ekspresji cz¹steczek MHC klasy I na~komórkach nowotworowych umo¿liwia skierowanie przeciwko nim odpowiedzi komórek NK. Równoczeœnie, komórka NK musi otrzymaæ w³aœciwy sygna³ z~receptorów aktywuj¹cych, aby~docelowa komórka zosta³a zabita. Takimi receptorami w~organizmie ludzkim s¹~cz¹steczki: NKp30, NKp44, NKp46, CD16 oraz~receptory nale¿¹ce do~nadrodziny KIR.\cite{30}. Pobudzone komórki NK wywo³uj¹ lizê komórek nowotworowych lub~indukuj¹ ich~apoptozê\cite{31}.
+Aktywacja komórek NK zale¿y od~wypadkowego dzia³ania receptorów aktywuj¹cych i~hamuj¹cych. Pozwala to~unikn¹æ atakowania przez~komórki NK niezmienionych komórek w³asnego organizmu. G³ównymi regulatorami aktywnoœci komórek NK s¹~cz¹steczki MHC klasy I. Cz¹steczki te~s¹~obecne na~ka¿dej j¹drzastej komórce organizmu, dziêki czemu mo¿liwe jest~rozpoznawanie zdrowych komórek. Obni¿enie ekspresji cz¹steczek MHC klasy I na~komórkach nowotworowych umo¿liwia skierowanie przeciwko nim odpowiedzi komórek NK. Równoczeœnie, komórka NK musi otrzymaæ w³aœciwy sygna³ z~receptorów aktywuj¹cych, aby~docelowa komórka zosta³a zabita. Takimi receptorami w~organizmie ludzkim s¹~cz¹steczki: NKp30, NKp44, NKp46, CD16 oraz~receptory nale¿¹ce do~nadrodziny KIR \cite{30}. Pobudzone komórki NK wywo³uj¹ lizê komórek nowotworowych lub~indukuj¹ ich~apoptozê \cite{31}.
 
 Z wiekiem aktywnoœæ komórek NK spada (ze wzglêdu na~zwiêkszon¹ liczbê receptorów KIR \cite{5}), co~zwiêksza ryzyko œmierci spowodowanej ciê¿k¹ infekcj¹. Niekorzystnymi czynnikami maj¹cymi wp³yw na~uk³ad komórek NK s¹: stres, niska aktywnoœæ fizyczna oraz~dieta wysokot³uszczowa \cite{4}. Silna aktywnoœæ cytotoksyczna komórek NK mo¿e byæ uznana za~oznakê dobrego zdrowia \cite{5}.
 
@@ -158,7 +159,7 @@ Rys. \ref{limfocyty_T_cd8+}, na~pomarañczowych, niebieskich i~ró¿owych polach pr
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth, angle=180]{Limf_TT2}
-	\caption{Podzia³ limfocytów typu T \cite{7}.}\label{limfocyty_T_cd8+} 
+	\caption{Podzia³ (pola pomarañczowe, niebieskie i ró¿owe) oraz funkcje i cechy charakterystyczne (pola szare) limfocytów typu T \cite{7}.}\label{limfocyty_T_cd8+} 
 \end{figure}
 
 Podstaw¹ procesów immunologicznych jest~prezentacja antygenów przez~odpowiednie komórki pomocniczym limfocytom Th. Zwykle, komórkami prezentuj¹cymi antygen APC (ang. Antigen Presenting Cells) s¹~limfocyty typu B, komórki dendryczne oraz~makrofagi. Natomiast, pozosta³e komórki prezentuj¹ce antygen to~limfocyty typu T, eozynofile, fibroblasty oraz~keranocyty \cite{7}.
@@ -170,7 +171,7 @@ Miêdzy 5 a~6 dekad¹ ¿ycia ustaje czynnoœæ grasicy, czego skutkiem s¹~zmiany w~su
 Komórki nowotworowe wspó³dzia³aj¹c~z~makrofagami TAMs M2 powoduj¹ immunosupresjê\footnote{Immunosupresja -- stan charakteryzuj¹cy siê os³abieniem b¹dŸ~zahamowaniem odpowiedzi immunologicznej; dotyczy zarówno odpowiedzi typu humoralnego, jak~i~komórkowego. Wi¹¿e siê ze~zmiennymi niedoborami poszczególnych klas przeciwcia³ (IgG, IgM, IgA) oraz~spadkiem liczby i~dysfunkcj¹ komórek uk³adu odpornoœciowego, g³ównie limfocytów T, ujawniaj¹c¹ siê zahamowaniem wytwarzania cytokin \cite{26}.} uk³adu immunologicznego. W~pocz¹tkowym etapie choroby mo¿na zaobserwowaæ wzrost poziomu cytokin prozapalnych. Czynniki te~hamuj¹ cytotoksyczn¹ aktywnoœæ makrofagów. Makrofagi TAMs M2 wydzielaj¹ zwi¹zki o~dzia³aniu przeciwzapalnym, czego efektem jest~miêdzy innymi indukcja limfocytów T regulatorowych ($T_{reg}$) oraz~supresja limfocytów $T_{CD8+}$ \cite{25}. Zwiêkszona iloœæ $T_{reg}$ hamuje aktywnoœæ komórek NK, $T_{CD4}+$ i~$T_{CD8+}$, co~przyczynia siê do~rozrostu nowotworu \cite{27}.
 
 \subsection{Interleukiny}
-Interleukiny s¹~jedn¹ z~grup cytokin, która s³u¿y, miêdzy innymi, do~komunikacji pomiêdzy komórkami uk³adu odpornoœciowego. Interleukiny to~bia³ka produkowane g³ównie przez~leukocyty. 
+Interleukiny s¹~jedn¹ z~grup cytokin. S³u¿¹ one, miêdzy innymi, do~komunikacji pomiêdzy komórkami uk³adu odpornoœciowego. Interleukiny to~bia³ka produkowane g³ównie przez~leukocyty. 
 
 Ze~wzglêdu na~cechy biologiczne, w~tym ró¿nice w~budowie molekularnej i~strukturze, interleukiny zosta³y zgrupowane w~trzy rodziny \cite{8}:
 \begin{itemize}
@@ -188,7 +189,8 @@ W~procesie odpowiedzi immunologicznej, IL-2 ma~za~zadanie modulowaæ uk³ad immuno
 
 IL-2 jest~podstawowym czynnikiem proliferacji komórek efektorowych: aktywowanych limfocytów typu T, limfocytów $T_{CD4+}$ i~limfocytów $T_{CD8+}$. Zwiêksza ich~czas prze¿ycia oraz~efektywnoœæ dzia³ania. Pod~wp³ywem IL-2 komórki NK s¹~aktywowane i~stymulowane do~wydzielania szeregu cytokin. IL-2 oddzia³uje równie¿, poœrednio i~bezpoœrednio, na~inne komórki uk³adu odpornoœciowego, np.: limfocyty typu~B, makrofagi lub~monocyty\cite{34}.
 
-IL-2, wytwarzana przez~limfocyty pomocnicze $T_{h1}$, wspomaga nabyt¹ odpowiedŸ immunologiczn¹, podtrzymuj¹c proliferacjê i~zwiêkszaj¹c aktywnoœæ limfocytów typu~$T_C$~i~B oraz~komórek~NK. Dodatkowo, jest~odpowiedzialna za~indukcjê apoptozy komórek aktywowanych i~pe³ni kluczow¹ rolê w~powstawaniu limfocytów regulatorowych typu~T ($T_{reg}$) oraz~utrzymywaniu ich~liczby w~organizmie. Bierze równie¿~udzia³ w~regulacji odpowiedzi immunologicznej i~jej~wygaszaniu. IL-2 jest~niezbêdnym czynnikiem w~aktywacji i~pobudzeniu proliferacji cytotoksycznych limfocytów $T_{CD8+}$\cite{14}. \newline \newline \indent W~\cite{31} 1992~roku \textit{Agencja ¿ywnoœci i~leków} FDA (ang. Food and~Drug Administration) wyda³a zgodê na~zastosowanie IL-2 podczas leczenia raka nerki i~czerniaka, mimo~pojawiaj¹cego~siê ryzyka ciê¿kiej toksycznoœci mog¹cej prowadziæ nawet do~zgonu. Ponadto, IL-2 wykazuje krótki okres pó³trwania in~vivo oraz~mo¿e~stymulowaæ rozwój nowotworu poprzez~utrzymanie pomocniczych limfocytów regulatorowych typu~T i~promowanie œmierci komórek indukowanej aktywacj¹ AICD (ang. Activation-Induced Cell Death) limfocytów efektorowych typu~T. 
+IL-2, wytwarzana przez~limfocyty pomocnicze $T_{h1}$, wspomaga nabyt¹ odpowiedŸ immunologiczn¹, podtrzymuj¹c proliferacjê i~zwiêkszaj¹c aktywnoœæ limfocytów typu~$T_C$~i~B oraz~komórek~NK. Dodatkowo, jest~odpowiedzialna za~indukcjê apoptozy komórek aktywowanych i~pe³ni kluczow¹ rolê w~powstawaniu limfocytów regulatorowych typu~T ($T_{reg}$) oraz~utrzymywaniu ich~liczby w~organizmie. Bierze równie¿~udzia³ w~regulacji odpowiedzi immunologicznej i~jej~wygaszaniu. IL-2 jest~niezbêdnym czynnikiem w~aktywacji i~pobudzeniu proliferacji cytotoksycznych limfocytów $T_{CD8+}$\cite{14}. \newline \newline \indent W~(,,Mo¿liwoœci wykorzystania komórek NK
+w immunoterapii nowotworów'', Medycyna Ogólna i Nauki o Zdrowiu 2020, Tom 26, Nr 1, 8–16 \cite{31}) 1992~roku \textit{Agencja ¿ywnoœci i~leków} FDA (ang. Food and~Drug Administration) wyda³a zgodê na~zastosowanie IL-2 podczas leczenia raka nerki i~czerniaka, mimo~pojawiaj¹cego~siê ryzyka ciê¿kiej toksycznoœci mog¹cej prowadziæ nawet do~zgonu. Ponadto, IL-2 wykazuje krótki okres pó³trwania in~vivo oraz~mo¿e~stymulowaæ rozwój nowotworu poprzez~utrzymanie pomocniczych limfocytów regulatorowych typu~T i~promowanie œmierci komórek indukowanej aktywacj¹ AICD (ang. Activation-Induced Cell Death) limfocytów efektorowych typu~T. 
 
 Aby~zapobiec niepo¿¹danym efektom, zaprojektowano IL-2 - ,,superkinê'' posiadaj¹c¹ zwiêkszone powinowactwo do~IL-2R$\beta$. Dziêki~niej wspomagana~jest proliferacja limfocytów cytotoksycznych typu~T bez~wp³ywu na~liczbê limfocytów regulatorowych typu~T oraz~wzmocniona zostaje odpowiedŸ przeciwnowotworowa. 
 
@@ -198,7 +200,7 @@ IL-6 jest~cytokin¹ o~znacz¹cej roli w~rozwoju zespo³u wyniszczenia. Wytwarzana~j
 
 \chapter{Leczenie nowotworów}
 
-Leczenie pacjentów, u~których wyst¹pi³~nowotwór ma~na~celu osi¹gniêcie najkorzystniejszego efektu przeciwnowotworowego, ale~tak¿e zapewnienie choremu jak~najlepszej jakoœci ¿ycia. U~wielu pacjentów wskutek choroby nowotworowej dochodzi do~pogorszenia kondycji zdrowotnej, a~jedn¹ z~najczêstszych dolegliwoœci jest~os³abienie, które mo¿e byæ równoczeœnie podstawowym objawem zespo³u przewlek³ego zmêczenia (ZPZ). ZPZ jest~powodem ograniczenia codziennej aktywnoœci u~ponad 80\% \cite{38} pacjentów z~nowotworami, u~których pojawiaj¹ce siê objawy dotycz¹ nie~tylko sfery fizycznej, lecz~równie¿ psychicznej i~socjalnej. ZPZ powoduje m. in. pogorszenie zdolnoœci koncentracji uwagi, pacjenci zmuszeni s¹~do~ograniczenia lub~rezygnacji z~aktywnoœci zawodowej, co~pogarsza ich status ekonomiczny. Zazwyczaj chorzy nie~znajduj¹ zrozumienia wœród otoczenia, tak¿e~wœród osób sprawuj¹cych nad~nimi specjalistyczn¹ opiekê. Wiêkszoœæ onkologów (61\%\cite{38}) uwa¿a, ¿e ból towarzysz¹cy chorobie nowotworowej jest~najwa¿niejsz¹ dolegliwoœci¹ u~chorych, podczas gdy wiêkszoœæ pacjentów (61\%\cite{38}) uwa¿a os³abienie za~istotniejsz¹ dolegliwoœæ.
+Leczenie pacjentów onkologicznych, ma~na~celu osi¹gniêcie najkorzystniejszego efektu przeciwnowotworowego, ale~tak¿e zapewnienie choremu jak~najlepszej jakoœci ¿ycia. U~wielu pacjentów wskutek choroby nowotworowej dochodzi do~pogorszenia kondycji zdrowotnej, a~jedn¹ z~najczêstszych dolegliwoœci jest~os³abienie, które mo¿e byæ równoczeœnie podstawowym objawem zespo³u przewlek³ego zmêczenia (ZPZ). ZPZ jest~powodem ograniczenia codziennej aktywnoœci u~ponad 80\% \cite{38} pacjentów z~nowotworami, u~których pojawiaj¹ce siê objawy dotycz¹ nie~tylko sfery fizycznej, lecz~równie¿ psychicznej i~socjalnej. ZPZ powoduje m. in. pogorszenie zdolnoœci koncentracji uwagi, pacjenci zmuszeni s¹~do~ograniczenia lub~rezygnacji z~aktywnoœci zawodowej, co~pogarsza ich status ekonomiczny. Zazwyczaj chorzy nie~znajduj¹ zrozumienia wœród otoczenia, tak¿e~wœród osób sprawuj¹cych nad~nimi specjalistyczn¹ opiekê. Wiêkszoœæ onkologów (61\%\cite{38}) uwa¿a, ¿e ból towarzysz¹cy chorobie nowotworowej jest~najwa¿niejsz¹ dolegliwoœci¹ u~chorych, podczas gdy wiêkszoœæ pacjentów (61\%\cite{38}) uwa¿a os³abienie za~istotniejsz¹ dolegliwoœæ.
 
 Pierwsze objawy ZPZ pojawiaj¹ siê najczêœciej przy~rozpoczêciu leczenia, jednak czêsto wystêpuj¹ ju¿~podczas badañ diagnostycznych. U~pacjentów poddawanych chemioterapii objawy nasilaj¹ siê od~momentu do¿ylnego podania cytoststyka, osi¹gaj¹c maksymalne natê¿enie po~2-3 dniach, nastêpnie stopniowo siê zmniejszaj¹. \newline \indent Ponad 30\% chorych odczuwa os³abienie nawet pó³ roku po~zakoñczeniu chemioterapii, a~objawy ZPZ mog¹ utrzymywaæ siê czasem nawet do~3 lat\cite{38}. 
 
@@ -230,7 +232,7 @@ pieczenia\cite{39}.} czêœci koñczyn, które mog¹ ulec nasileniu wraz~z~objawami a
 %>>>> TIL -(tumor infiltrating lymphocyte) therapy: These cells are derived from lymphocytes recovered from the patient tumors. They are then incubated with high concentrations of IL-2 in vitro and are comprised of activated
 %NK cells and CTL cells. They are then injected back into the patient at the tumor site.
 
-Podczas immunoterapii dochodzi do~ingerencji w~uk³ad odpornoœciowy, która ma~na~celu wzmocnienie lub~modyfikacjê mechanizmów obronnych walcz¹cych z~nowotworem\cite{10, 27, 31}.
+Podczas immunoterapii dochodzi do~ingerencji w~uk³ad immunologiczny, która ma~na~celu wzmocnienie lub~modyfikacjê mechanizmów obronnych walcz¹cych z~nowotworem\cite{10, 27, 31}.
 Je¿eli nie~jest~mo¿liwe ca³kowite wyeliminowanie komórek nowotworowych, to~immunoterapia ma~za~zadanie czasowe zahamowanie rozwoju nowotworu oraz~wstrzymanie przerzutów. Cel~ten mo¿na osi¹gn¹æ poprzez zwiêkszenie aktywnoœci uk³adu immunologicznego lub~przez zahamowanie supresyjnego dzia³ania nowotworu\cite{27}.
 
 Zdecydowan¹ zalet¹ leczenia immunoonkologicznego w~porównaniu do~metod chirurgicznych, chemioterapii czy~radioterapii jest mniejsza inwazyjnoœæ oraz~mniejsze szkody dla~organizmu przy takich samych lub lepszych efektach leczniczych. Podstaw¹ immunoterapii s¹~nastêpuj¹ce dzia³ania\cite{27}:
@@ -262,7 +264,7 @@ Aby wywo³aæ efekt biologiczny konieczne jest po³¹czenie cytokiny ze swoistym rec
 Swoista bierna immunoterapia to~metoda leczenia nowotworu, która polega na~podawaniu pacjentowi m.in.~komórek efektorowych swoiœcie ukierunkowanych na~dan¹ komórkê nowotworow¹. Do~swoistej biernej immunoterapii zaliczamy \cite{10}:
 \begin{itemize}
 \item przeciwcia³a podawane przeciwko antygenom, które wystêpuj¹ na~komórkach nowotworowych, 
-\item terapie komórkowe, które wykorzystuj¹ limfocyty naciekaj¹ce guz (TIL); s¹~one izolowane, nastêpnie namno¿one i~aktywowane, po~czym ponownie przetaczane,
+\item terapie komórkowe, które wykorzystuj¹ limfocyty naciekaj¹ce guz (TIL); s¹~one izolowane z~organizmu (nowotworu) pacjenta, nastêpnie namno¿one i~aktywowane, po~czym ponownie przetaczane pacjentowi,
 \item limfocyty krwi obwodowej stymulowane in vitro komórkami prezentuj¹cymi antygen. 
 \end{itemize} 
 
@@ -301,7 +303,7 @@ Model matematyczny wykorzystany w~pracy to~model de Pillis \cite{19}. Zosta³ on 
 
 \section{Za³o¿enia modelu} \label{zalozenia}
 
-W~pierwszym etapie rozwa¿amy model \cite{19} bez uwzglêdnienia procesu leczenia, który obejmuje cztery populacje komórek, tj.:
+W~pierwszym etapie rozwa¿ono model \cite{19}, bez uwzglêdnienia procesu leczenia, który obejmuje cztery populacje komórek, tj.:
 \begin{itemize}
 \item $\mathcal{T}$ -- populacjê komórek nowotworowych,
 \item $\mathcal{N}$ -- populacjê komórek NK,
@@ -311,8 +313,8 @@ W~pierwszym etapie rozwa¿amy model \cite{19} bez uwzglêdnienia procesu leczenia,
 
 W drugim etapie rozwa¿any jest model \cite{19} uwzglêdniaj¹cy proces leczenia i~dodatkowo badane s¹~zmiany stê¿enia w~czasie podawanych leków:
 \begin{itemize}
-\item $M(t)$ -- funkcja stê¿enia cytostatyka u¿ytego w~chemioterapii w~czasie,
-\item $I(t)$ -- funkcja stê¿enia interleukin-2 u¿ytych w~immunoterapii w~czasie.
+\item $M(t)$ -- funkcja czasowej zale¿noœci stê¿enia cytostatyka u¿ytego w~chemioterapii,
+\item $I(t)$ -- funkcja czasowej zale¿noœci stê¿enia interleukin-2 u¿ytych w~immunoterapii.
 \end{itemize}
 
 W równaniach modelu w~pierwszym etapie uwzglêdniono takie czynniki, jak:
@@ -351,7 +353,7 @@ Przyjêto za³o¿enia dla~modelu jak~w~rozdziale \ref{zalozenia}.
 
 \subsection{Równania i~opis modelu}
 
-W~modelu nieleczonego guza rozwa¿amy cztery populacje komórek. S¹~to:~populacja komórek nowotworowych ($\mathcal{T}$), populacja komórek NK ($\mathcal{N}$), populacja limfocytów $T_{CD8+}$ ($\mathcal{L}$) oraz~populacja limfocytów kr¹¿¹cych ($\mathcal{C}$). \newline \newline Model nieleczonego guza nowotworowego \ref{równania_modelu_pillis_bez_leczenia} jest uk³adem równañ ró¿niczkowych zwyczajnych. Równania tego modelu przedstawiaj¹ tempo zmian proliferacji komórek nowotworowych oraz~tempo zmian liczby komórek uk³adu immunologicznego (komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych) w~odpowiedzi na~wzrost liczby komórek nowotworowych. 
+W~modelu nieleczonego guza rozwa¿amy cztery populacje komórek. S¹~to:~populacja komórek nowotworowych ($\mathcal{T}$), populacja komórek NK ($\mathcal{N}$), populacja limfocytów $T_{CD8+}$ ($\mathcal{L}$) oraz~populacja limfocytów kr¹¿¹cych ($\mathcal{C}$). \newline \newline Model \ref{równania_modelu_pillis_bez_leczenia} nieleczonego guza nowotworowego jest uk³adem równañ ró¿niczkowych zwyczajnych. Równania tego modelu przedstawiaj¹ tempo zmian proliferacji komórek nowotworowych oraz~tempo zmian liczby komórek uk³adu immunologicznego (komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych) w~odpowiedzi na~wzrost liczby komórek nowotworowych. 
 
 \small
 \begin{equation}
@@ -379,9 +381,9 @@ gdzie:
 \newpage
 Wyra¿enie $aT(1-bT)$ zwiêksza prêdkoœæ zmian liczebnoœci populacji komórek nowotworowych, gdy¿ okreœla liczbê komórek nowotworowych, które powsta³y w~danej chwili czasowej t w~wyniku ich~proliferacji. Wyra¿enia $-cNT$ oraz~$-DT$ z~kolei hamuj¹ tempo zmian liczebnoœci komórek nowotworowych, gdy¿ przedstawiaj¹ odpowiednio: liczbê komórek nowotworowych zniszczonych na~skutek ich~interakcji z~komórkami NK oraz~z~limfocytami $T_{CD8+}$ w~danej chwili czasowej t. 
 
-Drugie równanie modelu \ref{równania_modelu_pillis_bez_leczenia} okreœla tempo zmian $\dfrac{dN}{dt}$ liczebnoœci populacji komórek NK, w~chwili czasowej t, na~które wp³ywa kilka sk³adników. \newline Sk³adniki $g\dfrac{T^{2}}{h+T^{2}}N$ oraz~$eC$ wp³ywaj¹ na~zwiêkszenie prêdkoœci zmian liczby komórek NK. Pierwszy z~nich oznacza liczbê nowych komórek NK powsta³ych w~chwili czasowej t, natomiast drugi okreœla liczbê komórek NK, które wyodrêbni³y siê z~limfocytów kr¹¿¹cych w~chwili czasowej t. Do~czynników hamuj¹cych tempo zmian liczebnoœci populacji komórek NK nale¿¹ $-fN$, poniewa¿ oznacza liczbê komórek NK ulegaj¹cych apoptozie w~chwili czasowej t oraz~$-pNT$ okreœlaj¹cy liczbê komórek NK dezaktywowanych wskutek ich~interakcji z~komórkami nowotworowymi w~chwili czasowej t.
+Drugie równanie modelu \ref{równania_modelu_pillis_bez_leczenia} okreœla tempo zmian $\dfrac{dN}{dt}$ liczebnoœci populacji komórek NK, w~chwili czasowej t, na~które wp³ywa kilka sk³adników. \newline Sk³adniki $g\dfrac{T^{2}}{h+T^{2}}N$ oraz~$eC$ wp³ywaj¹ na~zwiêkszenie prêdkoœci zmian liczby komórek NK. Pierwszy z~nich oznacza liczbê nowych komórek NK powsta³ych w~chwili czasowej t, natomiast drugi okreœla liczbê komórek NK, które wyodrêbni³y siê z~limfocytów kr¹¿¹cych w~chwili czasowej t. Do~czynników hamuj¹cych tempo zmian liczebnoœci populacji komórek NK nale¿y wyra¿enie $-fN$, oznaczaj¹ce liczbê komórek NK ulegaj¹cych apoptozie w~chwili czasowej t oraz~wyra¿enie $-pNT$ okreœlaj¹ce liczbê komórek NK dezaktywowanych wskutek ich~interakcji z~komórkami nowotworowymi w~chwili czasowej t.
 
-Trzecim równaniem modelu \ref{równania_modelu_pillis_bez_leczenia} zosta³o opisane tempo zmian $\dfrac{dL}{dt}$ liczebnoœci populacji limfocytów $T_{CD8+}$. Wyra¿enia $j\dfrac{D^{2}T^{2}}{k+D^{2}T^{2}}L$ oraz~$(r_{1}N+r_{2}C)T$ zwiêkszaj¹ prêdkoœæ zmian liczebnoœci tej populacji. Wyra¿enia te okreœlaj¹ liczbê limfocytów $T_{CD8+}$ stymulowanych w~chwili czasowej t odpowiednio: komórkami nowotworowymi, które s¹~lizowane przez~inne limfocyty $T_{CD8+}$ oraz~przez~komórki NK, a~tak¿e liczbê limfocytów $T_{CD8+}$ wytwarzanych na~skutek interakcji komórek nowotworowych z~limfocytami kr¹¿¹cymi. Z~kolei wyra¿enia $-mL$, $-qLT$ i~$-uNL^{2}$ hamuj¹ prêdkoœæ zmian liczby limfocytów $T_{CD8+}$. Wyra¿enie $-mL$ oznacza zmniejszenie ekspresji limfocytów $T_{CD8+}$ z~powodu braku komórek nowotworowych, w~zwi¹zku z~czym w~chwili czasowej t powstaje ich mniej. Natomiast liczba dezaktywowanych limfocytów $T_{CD8+}$ w~chwili czasowej t na~skutek ich~interakcji z~komórkami nowotworowymi oraz~na~skutek dzia³ania komórek NK zosta³a okreœlona poprzez wyra¿enia odpowiednio: $-qLT$ i~$-uNL^{2}$.
+Trzecim równaniem modelu \ref{równania_modelu_pillis_bez_leczenia} zosta³o opisane tempo zmian $\dfrac{dL}{dt}$ liczebnoœci populacji limfocytów $T_{CD8+}$. Wyra¿enia $j\dfrac{D^{2}T^{2}}{k+D^{2}T^{2}}L$ oraz~$(r_{1}N+r_{2}C)T$ zwiêkszaj¹ prêdkoœæ zmian liczebnoœci tej populacji. Wyra¿enia te okreœlaj¹ liczbê limfocytów $T_{CD8+}$ stymulowanych w~chwili czasowej t odpowiednio: komórkami nowotworowymi, które s¹~lizowane przez~inne limfocyty $T_{CD8+}$ oraz~komórki NK, a~tak¿e liczbê limfocytów $T_{CD8+}$ wytwarzanych na~skutek interakcji komórek nowotworowych z~limfocytami kr¹¿¹cymi. Z~kolei wyra¿enia $-mL$, $-qLT$ i~$-uNL^{2}$ hamuj¹ prêdkoœæ zmian liczby limfocytów $T_{CD8+}$. Wyra¿enie $-mL$ oznacza zmniejszenie ekspresji limfocytów $T_{CD8+}$ z~powodu braku komórek nowotworowych, w~zwi¹zku z~czym w~chwili czasowej t powstaje ich mniej. Natomiast liczba dezaktywowanych limfocytów $T_{CD8+}$ w~chwili czasowej t na~skutek ich~interakcji z~komórkami nowotworowymi oraz~na~skutek dzia³ania komórek NK zosta³a okreœlona poprzez wyra¿enia odpowiednio: $-qLT$ i~$-uNL^{2}$.
 
 Równanie czwarte okreœla tempo zmian liczebnoœci populacji limfocytów kr¹¿¹cych $\dfrac{dC}{dt}$ w~chwili czasowej t, które jest modulowane poprzez ró¿nicê miêdzy sta³¹ liczb¹ $\alpha$ kr¹¿¹cych limfocytów a~stopniem ich degradacji $-\beta C$, gdzie $\beta$ to~sta³a okreœlaj¹ca tempo wyniszczania kr¹¿¹cych limfocytów. \newline \newline \indent Parametry modelu nieleczonego guza \ref{równania_modelu_pillis_bez_leczenia} przedstawia Tab. \ref{parametry_modelu}.
 
@@ -414,13 +416,13 @@ Równanie czwarte okreœla tempo zmian liczebnoœci populacji limfocytów kr¹¿¹cych 
 \end{table}
 
 \newpage
-\section{Model uwzglêdniaj¹cy proces leczenia}
+\section{Model leczonego guza}
 
 Przyjêto za³o¿enia dla~modelu jak~w~rozdziale \ref{zalozenia}.
  
 \subsection{Równania i~opis modelu}
 
-W~modelu \ref{równania_modelu_pillis_z_leczeniem}, poza czterema populacjami uwzglêdnionymi w~modelu \ref{równania_modelu_pillis_bez_leczenia}, rozwa¿amy dodatkowo zmiany stê¿enia dwóch podawanych leków, czyli cytostatyka u¿ytego w~chemioterapii ($M$) oraz~interleukin-2 ($I$) wykorzystanych do~immunoterapii. Przedstawione w~uk³adzie \ref{równania_modelu_pillis_z_leczeniem} równania okreœlaj¹ tempo zmian liczebnoœci populacji, jak~w~modelu \ref{równania_modelu_pillis_bez_leczenia}, ale~tak¿e opisuj¹ wp³yw podawanych leków na~nowotwór oraz~ich~rozpad w~organizmie. Wyra¿enia odró¿niaj¹ce obydwa modele, odpowiadaj¹ce podawanym lekom zaznaczono w~uk³adzie \ref{równania_modelu_pillis_z_leczeniem} na~czerwono. 
+W~modelu leczonego guza \ref{równania_modelu_pillis_z_leczeniem}, poza czterema populacjami uwzglêdnionymi w~modelu \ref{równania_modelu_pillis_bez_leczenia}, rozwa¿amy dodatkowo zmiany stê¿enia dwóch podawanych leków, cytostatyka u¿ytego w~chemioterapii ($M$) oraz~interleukin-2 ($I$) wykorzystanych do~immunoterapii. Przedstawione w~uk³adzie \ref{równania_modelu_pillis_z_leczeniem} równania okreœlaj¹ tempo zmian liczebnoœci populacji, analogicznie jak~w~modelu \ref{równania_modelu_pillis_bez_leczenia}, ale~tak¿e opisuj¹ wp³yw podawanych leków na~rozwój nowotworu oraz~ich~rozpad w~organizmie. Wyra¿enia odró¿niaj¹ce obydwa modele, odpowiadaj¹ce podawanym lekom zaznaczono w~uk³adzie \ref{równania_modelu_pillis_z_leczeniem} na~czerwono. 
 
 \small
 \begin{equation}
@@ -448,7 +450,7 @@ gdzie:
 
 \normalsize
 \noindent
-W~odró¿nieniu od~modelu \ref{równania_modelu_pillis_bez_leczenia}, w~modelu \ref{równania_modelu_pillis_z_leczeniem} wystêpuj¹ dwa dodatkowe równania odnosz¹ce siê do~tempa zmian stê¿enia cytostatyka $\dfrac{dM}{dt}$ oraz~IL-2 $\dfrac{dI}{dt}$ w~organizmie.
+W~odró¿nieniu od~modelu \ref{równania_modelu_pillis_bez_leczenia}, w~modelu leczonego guza \ref{równania_modelu_pillis_z_leczeniem} wystêpuj¹ dwa dodatkowe równania odnosz¹ce siê do~tempa zmian stê¿enia cytostatyka $\dfrac{dM}{dt}$ oraz~IL-2 $\dfrac{dI}{dt}$ w~organizmie.
 Wyra¿enia $-\gamma M$ oraz~$-\mu_{i}L$ hamuj¹ tempo tych zmian poprzez spadek stê¿enia odpowiednio: cytostatyka i~IL-2 na~skutek rozpadu tych substancji.
 
 Wyra¿enia $\nu_{L}(t)$, $\nu_{M}(t)$ oraz~$\nu_{I}(t)$ odpowiadaj¹ zewnêtrznemu podawaniu leków: TIL (limfocytów naciekaj¹cych nowotwór), cytostatyka oraz~IL-2, w~zwi¹zku z~czym zwiêkszaj¹ tempo zmian stê¿enia tych leków w~organizmie.
@@ -2319,46 +2321,49 @@ Odkryto \cite{15, 17} nieznan¹ dotychczas odmianê limfocytów typu T, która potra
 Obecnie nie~wiadomo czy~limfocyty te~rzadko wystêpuj¹ czy~te¿ znajduj¹ce~siê na~nich receptory w~wiêkszoœci przypadków nigdy nie~zosta³y aktywowane. 
 Odkrycie nowej odmiany limfocytów typu T mo¿e~byæ rozwi¹zaniem problemu selektywnoœci stosowania obecnie znanych terapii opartych na~modyfikowanych w~laboratoriach w³asnych komórek uk³adu odpornoœciowego pacjenta. Terapie te~s¹~stosowane g³ównie w~ró¿nych typach bia³aczki, natomiast nowa odmiana limfocytu typu~T mo¿e~byæ stosowana w~wielu typach nowotworów i~dla dowolnego pacjenta. Du¿ymi zaletami leczenia z~zastosowaniem tego~limfocytu by³aby uniwersalnoœæ terapii, a~co za~tym idzie ni¿szy koszt \cite{15, 17}.
 
+\begin{footnotesize}
 \begin{thebibliography}{9}
 \bibitem{19} L.G. de Pillis, W. Gu, A.E. Radunskay, ,,Mixed immunotherapy and chemotherapy of tumors: modeling, applications and biological interpretations'', 2005
-\bibitem{16} Aleksandra E. Tokarz, Iwona Szuœcik, Agnieszka ¯y³ka, Ewa Stêpieñ, ,,Wykorzystanie mikromacierzy w~ocenie prozapalnych i~proangiogennych cytokin w~patomechanizmie retinopatii cukrzycowej'', 2014
-\bibitem{1} Mustafa Mamat, Subiyanto i~Agus Kartono, ,,Mathematical Model of Cancer Treatments Using Immunotherapy, Chemotherapy and Biochemotherapy",
+\bibitem{16} A. E. Tokarz, I. Szuœcik, A. ¯y³ka, E. Stêpieñ, ,,Wykorzystanie mikromacierzy w~ocenie prozapalnych i~proangiogennych cytokin w~patomechanizmie retinopatii cukrzycowej'', 2014
+\bibitem{41} D. Kirschner, J. C. Panetta, ,,Modeling immunotherapy of the tumor – immune interaction'', Department of Microbiology and Immunology, The University of Michigan Medical School, Ann Arbor, MI 48109-0620, USA; School of Science, Penn State Erie, The Behrend College, Station Road, Erie, PA 16563-0203, USA, J. Math. Biol. (1998) 37: 235-252 Modeling
+\bibitem{1} M. Mamat, Subiyanto i~A. Kartono, ,,Mathematical Model of Cancer Treatments Using Immunotherapy, Chemotherapy and Biochemotherapy",
 \bibitem{2} R. Tadeusiewicz, ,,Biocybernetyka. Metodologiczne podstawy dla~in¿ynierii biomedycznej.”, PWN, 2013
-\bibitem{24} Marcus C.B. Tan, Peter S. Goedegebuure, Timothy J. Eberlein, ,,Chirurgia onkologiczna czêœæ V'',  Chirurgia Sabistona, rozdzia³ 29 ,,Biologia nowotworów i~markery nowotworowe'', 2012
-\bibitem{3} Redaktor naukowy dr n. med. Janusz Meder, ,,Podstawy onkologii klinicznej", Centrum Medyczne Kszta³cenia Podyplomowego w~Warszawie, 2011
-\bibitem{31} Paulina Kwaœnik, Marta Kinga Lemieszek, Wojciech Rzeski, ,,Mo¿liwoœci wykorzystania komórek NK w~immunoterapii nowotworów'', Medycyna Ogólna i~Nauki o~Zdrowiu 2020, Tom 26, Nr 1, 8–16
-\bibitem{12} Ewa Sikora, ,,Cykl komórkowy i~apoptoza: œmieræ starej komórki'', Polskie Towarzystwo Biochemiczne, ,,Postêpy biochemii'', tom 42, nr 2, 1996
-\bibitem{4} Ewelina Dymarska, ,,Czynniki moduluj¹ce uk³ad immunologiczny cz³owieka", Uniwersytet Ekonomiczny we Wroc³awiu, Zeszyty Naukowe Pañstwowej Wy¿szej Szko³y Zawodowej im. Witelona w~Legnicy nr 19(2)/2016
-\bibitem{5} Nadzieja Drela, ,,Immunologiczna teoria starzenia", Wydzia³ Biologii Uniwersytetu Warszawskiego, Instytut Zoologii, Zak³ad Immunologii, Warszawa, 23 kwietnia 2014
-\bibitem{20} Krzysztof Wiktorowicz, Krzysztof Kaszkowiak, ,,Budowa i~funkcja ludzkich antygenów zgodnoœci tkankowej. Czêœæ 1. Kodowanie i~budowa'', Katedra Biologii i~Ochrony Œrodowiska, Uniwersytet Medyczny im. Karola Marcinkowskiego w~Poznaniu, 2018
-\bibitem{7} Emilia Kolarzyk, ,,Wybrane problemy higieny i~ekologii cz³owieka", Wydawnictwo Uniwersytetu Jagielloñskiego, Kraków, 2008, wyd.1
-\bibitem{28} Lek. med. Marta Adamczyk?Korbel, ,,Uk³ad odpornoœciowy cz³owieka a~probiotyki'', Klinika Pneumonologii, Onkologii i~Alergologii, Lublin, Medycyna i~pasje, Medycyna zapobiegawcza, luty 2010
-\bibitem{13} Izabela Klaska, Jerzy Z. Nowak, ,,Rola uk³adu dope³niacza w~fizjologii i~patologii'', £ódŸ, 2007
-\bibitem{6} Marta Sochocka, Zofia B³ach-Olszewska, ,,Mechanizmy wrodzonej odpornoœci", Laboratorium Wirusologii Instytutu Immunologii i~Terapii Doœwiadczalnej Polskiej Akademii Nauk im L. Hirszfelda we Wroc³awiu, Postêpy Hig Med Doœw., 59: 250-258, 2005
-\bibitem{30} Tomasz Jerzy Œlebioda, Lucyna Kaszubowska, Zbigniew Kmieæ, ,,Nowe mechanizmy aktywacji komórek NK w
+\bibitem{24} M. C. B. Tan, P. S. Goedegebuure, T. J. Eberlein, ,,Chirurgia onkologiczna czêœæ V'',  Chirurgia Sabistona, rozdzia³ 29 ,,Biologia nowotworów i~markery nowotworowe'', 2012
+\bibitem{3} Redaktor naukowy dr n. med. J. Meder, ,,Podstawy onkologii klinicznej", Centrum Medyczne Kszta³cenia Podyplomowego w~Warszawie, 2011
+\bibitem{31} P. Kwaœnik, M. K. Lemieszek, W. Rzeski, ,,Mo¿liwoœci wykorzystania komórek NK w~immunoterapii nowotworów'', Medycyna Ogólna i~Nauki o~Zdrowiu 2020, Tom 26, Nr 1, 8–16
+\bibitem{12} E. Sikora, ,,Cykl komórkowy i~apoptoza: œmieræ starej komórki'', Polskie Towarzystwo Biochemiczne, ,,Postêpy biochemii'', tom 42, nr 2, 1996
+\bibitem{4} E. Dymarska, ,,Czynniki moduluj¹ce uk³ad immunologiczny cz³owieka", Uniwersytet Ekonomiczny we Wroc³awiu, Zeszyty Naukowe Pañstwowej Wy¿szej Szko³y Zawodowej im. Witelona w~Legnicy nr 19(2)/2016
+\bibitem{5} N. Drela, ,,Immunologiczna teoria starzenia", Wydzia³ Biologii Uniwersytetu Warszawskiego, Instytut Zoologii, Zak³ad Immunologii, Warszawa, 23 kwietnia 2014
+\bibitem{20} K. Wiktorowicz, K. Kaszkowiak, ,,Budowa i~funkcja ludzkich antygenów zgodnoœci tkankowej. Czêœæ 1. Kodowanie i~budowa'', Katedra Biologii i~Ochrony Œrodowiska, Uniwersytet Medyczny im. Karola Marcinkowskiego w~Poznaniu, 2018
+\bibitem{7} E. Kolarzyk, ,,Wybrane problemy higieny i~ekologii cz³owieka", Wydawnictwo Uniwersytetu Jagielloñskiego, Kraków, 2008, wyd.1
+\bibitem{28} Lek. med. M. Adamczyk Korbel, ,,Uk³ad odpornoœciowy cz³owieka a~probiotyki'', Klinika Pneumonologii, Onkologii i~Alergologii, Lublin, Medycyna i~pasje, Medycyna zapobiegawcza, luty 2010
+\bibitem{13} I. Klaska, J. Z. Nowak, ,,Rola uk³adu dope³niacza w~fizjologii i~patologii'', £ódŸ, 2007
+\bibitem{6} M. Sochocka, Z. B³ach-Olszewska, ,,Mechanizmy wrodzonej odpornoœci", Laboratorium Wirusologii Instytutu Immunologii i~Terapii Doœwiadczalnej Polskiej Akademii Nauk im L. Hirszfelda we Wroc³awiu, Postêpy Hig Med Doœw., 59: 250-258, 2005
+\bibitem{30} T. J. Œlebioda, L. Kaszubowska, Z. Kmieæ, ,,Nowe mechanizmy aktywacji komórek NK w
 przebiegu infekcji wirusowych'', Katedra i~Zak³ad Histologii, Gdañski Uniwersytet Medyczny, 2012
-\bibitem{29} Zuzanna Wyszyñska, Lidia Szulc, Justyna Struzik, Marek Niemia³towski, ,,Immunobiologia komórek NK'', Zak³ad Immunologii Katedry Nauk Przedklinicznych Wydzia³u Medycyny Weterynaryjnej SGGW, Warszawa, 2012
-\bibitem{14} W³odzimierz Maœliñski, Ewa Kontny, ,,Podstawy immunologii dla~reumatologów'', Narodowy Instytut Geriatrii, Reumatologii i~Rehabilitacji, Warszawa, 2015
-\bibitem{32} Marta Sochocka, ,,Rozpoznawanie patogenów przez~wrodzony system odpornoœci'', Laboratorium Wirusologii, Instytut Immunologii i~Terapii Doœwiadczalnej PAN im. L. Hirszfelda we Wroc³awiu, Postepy Hig Med Dosw. (online), 2008; 62: 676-687 
-\bibitem{25} Monika Olszówka, Kamil Maci¹g, ,,Choroby nowotworowe: wybrane zagadnienia'', Fundacja na~rzecz promocji nauki i~rozwoju TYGIEL, Lublin, 2015
-\bibitem{27} Zdzis³aw Gliñski, Krzysztof Kostro, ,,Immunoonkologia – nowe dane'', ¯ycie Weterynaryjne 91(11), Wydzia³ Medycyny Weterynaryjnej w~Lublinie, 2016
-\bibitem{8} Beata Tokarz-Deptu³a, Tymoteusz Miller, Wies³aw Deptu³a, ,,Cytokiny z~rodziny interleukiny-1", Katedra Mikrobiologii i~Immunologii, Wydzia³ Nauk Przyrodniczych, Uniwersytet Szczeciñski
-\bibitem{26} El¿bieta Ograczyk, Magdalena Kowalewicz-Kulbat, Sebastian Wawrocki, Marek Fol, ,,Immunosupresja – wymagaj¹cy sprzymierzeniec na~trudne czasy'', Uniwersytet £ódzki, Katedra Immunologii i~Biologii Infekcyjnej, £ódŸ, 2015
-\bibitem{34} Brygida Knysz, Jacek G¹siorowski, Ma³gonata Inglot, Weronika Rymer, Aleksandra Szymczak, Andrzej G³adysz, ,,Rola i~zastosowanie terapeutyczne interleukiny 2 w~zaka¿eniu HIV'', Katedra i~Klinika Chorób ZakaŸnych Akademii Medycznej we Wroc³awiu, Przegl¹d Epidemiologiczny, 2002; 56:587-93
-\bibitem{21} Dominik Strzelecki, Tomasz Pawe³czyk, Jolanta Rabe-Jab³oñska, ,,Zaburzenia depresyjne w~przebiegu leczenia przewlek³ego wirusowego zapalenia w¹troby interferonem $\alpha$", Postêpy Psychiatrii i~Neurologii, 2005
-\bibitem{38} Marek Z. Wojtukiewicz, Zbigniew Sawicki, Ewa Sierko, Anna Kieszkowska-Grudny, ,,Zespó³ przewlek³ego zmêczenia u~chorych na~nowotwory poddawanych chemioterapii'', Nowotwory, Journal of Oncology, 6, 695-701, 2007 
+\bibitem{29} Z. Wyszyñska, L. Szulc, J. Struzik, M. Niemia³towski, ,,Immunobiologia komórek NK'', Zak³ad Immunologii Katedry Nauk Przedklinicznych Wydzia³u Medycyny Weterynaryjnej SGGW, Warszawa, 2012
+\bibitem{14} W. Maœliñski, E. Kontny, ,,Podstawy immunologii dla~reumatologów'', Narodowy Instytut Geriatrii, Reumatologii i~Rehabilitacji, Warszawa, 2015
+\bibitem{32} M. Sochocka, ,,Rozpoznawanie patogenów przez~wrodzony system odpornoœci'', Laboratorium Wirusologii, Instytut Immunologii i~Terapii Doœwiadczalnej PAN im. L. Hirszfelda we Wroc³awiu, Postepy Hig Med Dosw. (online), 2008; 62: 676-687 
+\bibitem{25} M. Olszówka, K. Maci¹g, ,,Choroby nowotworowe: wybrane zagadnienia'', Fundacja na~rzecz promocji nauki i~rozwoju TYGIEL, Lublin, 2015
+\bibitem{27} Z. Gliñski, K. Kostro, ,,Immunoonkologia – nowe dane'', ¯ycie Weterynaryjne 91(11), Wydzia³ Medycyny Weterynaryjnej w~Lublinie, 2016
+\bibitem{8} B. Tokarz-Deptu³a, T. Miller, W. Deptu³a, ,,Cytokiny z~rodziny interleukiny-1", Katedra Mikrobiologii i~Immunologii, Wydzia³ Nauk Przyrodniczych, Uniwersytet Szczeciñski
+\bibitem{26} E. Ograczyk, M. Kowalewicz-Kulbat, S. Wawrocki, M. Fol, ,,Immunosupresja – wymagaj¹cy sprzymierzeniec na~trudne czasy'', Uniwersytet £ódzki, Katedra Immunologii i~Biologii Infekcyjnej, £ódŸ, 2015
+\bibitem{34} B. Knysz, J. G¹siorowski, M. Inglot, W. Rymer, A. Szymczak, A. G³adysz, ,,Rola i~zastosowanie terapeutyczne interleukiny 2 w~zaka¿eniu HIV'', Katedra i~Klinika Chorób ZakaŸnych Akademii Medycznej we Wroc³awiu, Przegl¹d Epidemiologiczny, 2002; 56:587-93
+\bibitem{21} D. Strzelecki, T. Pawe³czyk, J. Rabe-Jab³oñska, ,,Zaburzenia depresyjne w~przebiegu leczenia przewlek³ego wirusowego zapalenia w¹troby interferonem $\alpha$", Postêpy Psychiatrii i~Neurologii, 2005
+\bibitem{38} M. Z. Wojtukiewicz, Z. Sawicki, E. Sierko, A. Kieszkowska-Grudny, ,,Zespó³ przewlek³ego zmêczenia u~chorych na~nowotwory poddawanych chemioterapii'', Nowotwory, Journal of Oncology, 6, 695-701, 2007 
 \bibitem{9} ,,Chemioterapia, Immunoterapia i~Terapia Celowana Informacje dla~Pacjenta", Centrum Onkologii Ziemi Lubelskiej im. œw. Jana z~Dukli, Lublin, 2011
-\bibitem{37} Beata Zdunek, Monika Olszówka, ,,Najnowsze badania z~zakresu chorób nowotworowych'', Lublin 2016
-\bibitem{36} Renata Zaj¹czkowska, Jerzy Wordliczek, Wojciech Leppert, ,,Mechanizmy i~zespo³y bólu neuropatycznego u~chorych na~nowotwór'', Medycyna Paliatywna w~Praktyce 2014; 8, 2: 66–73
-\bibitem{10} Jacek Mackiewicz, Andrzej Mackiewicz, ,,Immunoterapia nowotworów i~perspektywy jej rozwoju", Zak³ad Immunologii Nowotworów, Katedra Biotechnologii Medycznej, Uniwersytet Medyczny im. Karola Marcinkowskiego w~Poznaniu, Wielkopolskie Centrum Onkologii w~Poznaniu
-\bibitem{39} dr n. med. Jaros³aw Strychar, ,,Zaburzenia czucia koñczyn górnych'', Ursynowskie Centrum Zabiegowe
-\bibitem{40} Andrzej Szczudlik, Monika Rudziñska, ,,Atlas ataksji'', Wydawnictwo Uniwersytetu Jagielloñskiego, Kraków, 2010
-\bibitem{35} Kamila Wojas-Krawczyk, Pawe³ Krawczyk, ,,Rozwój koncepcji przeciwnowotworowej immunoterapii'', Katedra i~Klinika Pneumonologii, Onkologii i~Alergologii Uniwersytetu Medycznego, Onkologia w~Praktyce Klinicznej 2015, tom 11, nr 2, 69–75, Lublin, 2015
-\bibitem{11} Anna Œwieboda-Sadlej, ,,Skojarzone leczenie nowotworów — wspó³praca chirurga i~onkologa klinicznego w~zakresie leczenia raka piersi, jelita grubego i~p³uca", Klinika Hematologii, Onkologii i~Chorób Wewnêtrznych WUM
-\bibitem{23} Ugo Del Monte, ,,Does the cell number $10^{9}$ still really fit one gram of tumor tissue?'', Cell Cycle, 8:3, 505-506, 2009
+\bibitem{37} B. Zdunek, M. Olszówka, ,,Najnowsze badania z~zakresu chorób nowotworowych'', Lublin 2016
+\bibitem{36} R. Zaj¹czkowska, J. Wordliczek, W. Leppert, ,,Mechanizmy i~zespo³y bólu neuropatycznego u~chorych na~nowotwór'', Medycyna Paliatywna w~Praktyce 2014; 8, 2: 66–73
+\bibitem{10} J. Mackiewicz, A. Mackiewicz, ,,Immunoterapia nowotworów i~perspektywy jej rozwoju", Zak³ad Immunologii Nowotworów, Katedra Biotechnologii Medycznej, Uniwersytet Medyczny im. Karola Marcinkowskiego w~Poznaniu, Wielkopolskie Centrum Onkologii w~Poznaniu
+\bibitem{39} dr n. med. J. Strychar, ,,Zaburzenia czucia koñczyn górnych'', Ursynowskie Centrum Zabiegowe
+\bibitem{40} A. Szczudlik, Monika Rudziñska, ,,Atlas ataksji'', Wydawnictwo Uniwersytetu Jagielloñskiego, Kraków, 2010
+\bibitem{35} K. Wojas-Krawczyk, P. Krawczyk, ,,Rozwój koncepcji przeciwnowotworowej immunoterapii'', Katedra i~Klinika Pneumonologii, Onkologii i~Alergologii Uniwersytetu Medycznego, Onkologia w~Praktyce Klinicznej 2015, tom 11, nr 2, 69–75, Lublin, 2015
+\bibitem{11} A. Œwieboda-Sadlej, ,,Skojarzone leczenie nowotworów — wspó³praca chirurga i~onkologa klinicznego w~zakresie leczenia raka piersi, jelita grubego i~p³uca", Klinika Hematologii, Onkologii i~Chorób Wewnêtrznych WUM
+\bibitem{23} U. Del Monte, ,,Does the cell number $10^{9}$ still really fit one gram of tumor tissue?'', Cell Cycle, 8:3, 505-506, 2009
 \bibitem{18} O.G. Isaeva and V.A. Osipov, ,,Different strategies for cancer treatment: Mathematical modelling'', 2009
-\bibitem{22} Waldemar Halota, Ma³gorzata Paw³owska, Michai³ Andrejczyn, ,,Interferony alfa w~leczeniu przewlek³ych zaka¿eñ HCV", Przegl¹d epidemiologiczny, 2004
-\bibitem{33} Anna G³obiñska, Marek L. Kowalski, ,,Interferon alfa: perspektywy zastosowania w~leczeniu wirusowych zaka¿eñ dróg oddechowych'', Klinika Immunologii, Reumatologii i~Alergii, Katedra Immunologii Klinicznej i~Mikrobiologii Uniwersytet Medyczny w~£odzi, 2013
-\bibitem{15} https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-ktora-zabija-wiekszosc-typow-raka
-\bibitem{17} https://healthcare-in-europe.com/en/news/new-t-cell-could-make-universal-cancer-therapy-possible.html
+\bibitem{22} W. Halota, M. Paw³owska, M. Andrejczyn, ,,Interferony alfa w~leczeniu przewlek³ych zaka¿eñ HCV", Przegl¹d epidemiologiczny, 2004
+\bibitem{33} A. G³obiñska, M. L. Kowalski, ,,Interferon alfa: perspektywy zastosowania w~leczeniu wirusowych zaka¿eñ dróg oddechowych'', Klinika Immunologii, Reumatologii i~Alergii, Katedra Immunologii Klinicznej i~Mikrobiologii Uniwersytet Medyczny w~£odzi, 2013
+\bibitem{15} J. Sochaczewski, ,,Ta komórka uk³adu odpornoœciowego potrafi zabiæ wiêkszoœæ typów raka. Naukowcy mówi¹ o prze³omie'', Focus, https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-ktora-zabija-wiekszosc-typow-raka
+\bibitem{17} ,,New T-cell could make ‘universal’ cancer therapy possible'', Cardiff University, https://healthcare-in-europe.com/en/news/new-t-cell-could-make-universal-cancer-therapy-possible.html
 \end{thebibliography}
+\end{footnotesize}
