@@ -29,7 +29,7 @@
 \contentsline {chapter}{\numberline {7.}Leczenie metod\k a chemioterapii -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{39}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Scenariusz I -- zmiana d\IeC {\l }ugo\'sci cyklu}{40}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Scenariusz II -- zmiana dawki dozowanego cytostatyka}{44}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Scenariusz III -- zmiana dawki dozowanego cytostatyka w\nobreakspace {}kolejnych powt\'orzeniach cyklu}{48}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Scenariusz III -- zmiana dawki dozowanego cytostatyka $V_M$ w\nobreakspace {}kolejnych powt\'orzeniach cyklu}{48}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Scenariusz IV -- zmiana liczby powt\'orze\'n cyklu}{52}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Scenariusz V -- zmiana dnia rozpocz\k ecia chemioterapii}{56}{section.7.5}%
 \contentsline {chapter}{\numberline {8.}Leczenie metod\k a immunoterapii -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{61}{chapter.8}%
