@@ -1383,21 +1383,25 @@ Dziêki zwiêkszeniu dawki TIL do~wartoœci $V_L = 2 \cdot 10^{10}$ immunoterapia b
 
 \newpage
 \section{Scenariusz IV -- zmiana liczby powtórzeñ cyklu IL-2}
-\noindent \textbf{Podejmowany problem:} \newline Analiza zmian odpowiedzi uk³adu immunologicznego (tj. liczby komórek nowotworowych oraz~komórek uk³adu odpornoœciowego) po~120 dniach symulacji w~zale¿noœci od~liczby powtórzeñ cyklu IL-2.
+\noindent \textbf{Podejmowany problem:} \newline Zmiany liczby powtórzeñ cyklu IL-2.
 
-\noindent \newline \textbf{Warunki pocz¹tkowe:} \newline Wielkoœæ (tj. pocz¹tkow¹ liczbê komórek) nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1}. Warunki pocz¹tkowe dla~immunoterapii, tj. d³ugoœæ cyklu, czas dozowania, schemat cyklu, dawkê dozowanego leku, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia immunoterapii dla~IL-2 i~TIL przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}.
+\noindent \newline \textbf{Warunki pocz¹tkowe:} 
+\begin{itemize}
+\item dla~pocz¹tkowej wielkoœci badanych populacji, tj. pocz¹tkow¹ liczbê komórek nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1},
+\item dla~immunoterapii, tj. d³ugoœæ cyklu, czas dozowania, schemat cyklu, dawkê dozowanych leków (IL-2 i TIL), liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}.
+\end{itemize}
 
-\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~Tab. \ref{parametry_modelu_z1}.
+\noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~\ref{parametry_modelu_z1}.
 
 \noindent \newline \textbf{Czas symulacji:} \newline Czas symulacji wynosi³ $T_{k}$ = 120 dni. 
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê liczby powtórzeñ cyklu IL-2 \ref{zmiany_liczby_powtorzen_IL2}. \newline
 
-Tab. \ref{zmiany_liczby_powtorzen_IL2} przedstawia jak~zmieniano liczbê powtórzeñ cyklu IL-2, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni $T(120)$, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni. Analizê przeprowadzono dla~pocz¹tkowej liczby komórek nowotworowych równej $T(0) = 1,8 \cdot 10^{7}$ oraz~$T(0) = 1 \cdot 10^{6}$.
+Tab. \ref{zmiany_liczby_powtorzen_IL2} przedstawia jak~zmieniano liczbê powtórzeñ cyklu IL-2. Dodatkowo, zamieszczono w~tabeli dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~pocz¹tkowej liczby komórek nowotworowych równej $T(0) = 1,8 \cdot 10^{7}$ oraz~$T(0) = 1 \cdot 10^{6}$.
 
 \begin{table}[h!]
 	\centering
-	\caption[Wyniki symulacji - immunoterapia, scenariusz IV, zmiana liczby powtórzeñ cyklu IL-2 dla~leczenia z~wykorzystaniem TIL]{Liczba powtórzeñ cyklu IL-2, dzieñ regresji nowotworu, liczba komórek nowotworowych w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni $T(120)$ oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji w~chwili $T_{k}$ = 120 dni dla~pocz¹tkowej liczby komórek nowotworowych równej $T(0) = 1,8 \cdot 10^{7}$ oraz~$T(0) = 1 \cdot 10^{6}$.}
+	\caption[Wyniki symulacji - immunoterapia, scenariusz IV, zmiana liczby powtórzeñ cyklu IL-2 dla~leczenia z~wykorzystaniem TIL]{Liczba powtórzeñ cyklu IL-2, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~pocz¹tkowej liczby komórek nowotworowych równej $T(0) = 1,8 \cdot 10^{7}$ oraz~$T(0) = 1 \cdot 10^{6}$.}
 \label{zmiany_liczby_powtorzen_IL2}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
         \multicolumn{5}{|c|}{Pocz¹tkowa liczba komórek nowotworu $T(0) = 1,8 \cdot 10^{7}$} \\ \hline \hline
@@ -1418,11 +1422,15 @@ Tab. \ref{zmiany_liczby_powtorzen_IL2} przedstawia jak~zmieniano liczbê powtórze
 \end{table} 
 
 \newpage 
-Rys. \ref{wykresy_zmiany_liczby_powtorzen_IL2} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~immunoterapii z~wykorzystaniem IL-2 o~dawce $V_I = 5 \cdot 10^{6}$ i~liczbie powtórzeñ cyklu równej 14 oraz~TIL o~dawce $V_L = 10^{9}$ i~liczbie powtórzeñ cyklu równej 1 (Rys. \ref{wykres_zmiany_liczby_powtorzen_IL2}), a~tak¿e zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 (Rys. \ref{stezenie_zmiany_liczby_powtorzen_IL2}). Czas dawkowania IL-2 wynosi 7 godzin i~12 minut. Czas dawkowania TIL wynosi 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu IL-2 wynosi 4 godziny i~48 minut. Dzieñ rozpoczêcia dozowania IL-2 to~9 dzieñ symulacji, natomiast rozpoczêcie dozowania TIL nastêpuje w~8 dniu symulacji. Mimo wielokrotnego powtarzania cyklu IL-2 regresja nie~nastêpuje, a~liczba komórek nowotworowych stabilizuje siê w~28 dniu symulacji ($T(28) = 9,8 \cdot 10^{8}$). Mo¿na zaobserwowaæ nag³y wzrost liczby limfocytów $T_{CD8+}$ na~skutek podania TIL oraz~nieznaczne zmiany liczby limfocytów $T_{CD8+}$ przy kolejnych powtórzeniach cyklu IL-2.
+Rys. \ref{wykresy_zmiany_liczby_powtorzen_IL2} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~immunoterapii z~wykorzystaniem IL-2 o~dawce $V_I = 5 \cdot 10^{6}$ i~liczbie powtórzeñ cyklu równej 14 oraz~jednokrotnym dozowaniem TIL o~dawce $V_L = 10^{9}$ (Rys. \ref{wykres_zmiany_liczby_powtorzen_IL2}), a~tak¿e zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 (Rys. \ref{stezenie_zmiany_liczby_powtorzen_IL2}). 
+
+Czas dawkowania IL-2 wynosi³ 7 godzin i~12 minut. Czas dawkowania TIL wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu IL-2 wynosi³a 4 godziny i~48 minut. Dzieñ rozpoczêcia dozowania IL-2 to~9 dzieñ symulacji, natomiast rozpoczêcie dozowania TIL nast¹pi³o w~8 dniu symulacji. 
+
+Mimo wielokrotnego powtarzania cyklu IL-2, regresja nie~nast¹pi³a, a~liczba komórek nowotworowych ustabilizowa³a siê w~28 dniu symulacji. Mo¿na by³o zaobserwowaæ nag³y wzrost liczby limfocytów $T_{CD8+}$ na~skutek podania TIL oraz~nieznaczne zmiany liczby limfocytów $T_{CD8+}$ przy kolejnych powtórzeniach cyklu IL-2.
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~liczby powtórzeñ cyklu IL-2 równej 14. Stabilizacja liczby komórek nowotworowych po~czasie $T_{s}$~$\approx$ 28 dni (672 godzin) oko³o wartoœci $9,8 \cdot 10^{8}$. ]{\label{wykres_zmiany_liczby_powtorzen_IL2}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~liczby powtórzeñ cyklu IL-2 równej 14. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~28 dniach oko³o wartoœci $9,8 \cdot 10^{8}$. ]{\label{wykres_zmiany_liczby_powtorzen_IL2}
 \includegraphics[width=0.5\textwidth]{wykres_zmiany_liczby_powtorzen_IL2}}
 \quad
 \subfloat[Zmiany w~czasie stê¿enia dozowanego podczas immunoterapii IL-2 dla~liczby powtórzeñ cyklu IL-2 równej 14.]{\label{stezenie_zmiany_liczby_powtorzen_IL2}
