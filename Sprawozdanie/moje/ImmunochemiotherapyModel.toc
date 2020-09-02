@@ -54,5 +54,5 @@
 \contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{121}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Interferony}{121}{section.11.1}%
 \contentsline {section}{\numberline {11.2}Nowa odmiana limfocyt\'ow typu T}{122}{section.11.2}%
-\contentsline {chapter}{\numberline {12.}Dodatek}{123}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{123}{section.12.1}%
+\contentsline {chapter}{\numberline {12.}Dodatek}{124}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{124}{section.12.1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  2 SEP 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400) (preloaded format=pdflatex 2020.8.11)  2 SEP 2020 21:21
 entering extended mode
 **./ImmunochemiotherapyModel.tex
 (ImmunochemiotherapyModel.tex
@@ -1826,71 +1826,117 @@ Overfull \hbox (0.855pt too wide) in paragraph at lines 2225--2231
  [][] 
  []
 
+[115]
 File: ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg Graphic file (type
  jpg)
 <use ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg>
 Package pdftex.def Info: ./rysunki/wykres_zmiana_immuno_okreslone_chemiopol.jpg
-  used on input line 2242.
+  used on input line 2243.
 (pdftex.def)             Requested size: 198.45662pt x 146.04416pt.
 File: ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.jpg Graphic file (ty
 pe jpg)
 <use ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.jpg>
 Package pdftex.def Info: ./rysunki/stezenie_zmiana_immuno_okreslone_chemiopol.j
-pg  used on input line 2245.
+pg  used on input line 2246.
 (pdftex.def)             Requested size: 198.45662pt x 112.72557pt.
-<./rysunki/wykres_p2.jpg, id=1725, 414.79968pt x 313.9228pt>
+<./rysunki/wykres_p2.jpg, id=1731, 414.79968pt x 313.9228pt>
 File: ./rysunki/wykres_p2.jpg Graphic file (type jpg)
 <use ./rysunki/wykres_p2.jpg>
-Package pdftex.def Info: ./rysunki/wykres_p2.jpg  used on input line 2248.
+Package pdftex.def Info: ./rysunki/wykres_p2.jpg  used on input line 2249.
 (pdftex.def)             Requested size: 198.45662pt x 150.19264pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 2248--2248
+Underfull \hbox (badness 1308) in paragraph at lines 2249--2249
  \OT4/cmr/m/n/10 im-mu-no-te-ra-pii (Tab. [][]9.13[][]) oraz daw-ki IL- 
  []
 
-<./rysunki/stezenie_p2.jpg, id=1734, 380.17032pt x 208.52907pt>
+<./rysunki/stezenie_p2.jpg, id=1740, 380.17032pt x 208.52907pt>
 File: ./rysunki/stezenie_p2.jpg Graphic file (type jpg)
 <use ./rysunki/stezenie_p2.jpg>
-Package pdftex.def Info: ./rysunki/stezenie_p2.jpg  used on input line 2251.
+Package pdftex.def Info: ./rysunki/stezenie_p2.jpg  used on input line 2252.
 (pdftex.def)             Requested size: 198.45662pt x 108.85892pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[115] [116 <./rysunki/wykres_p2.jpg> <./rysunki/stezenie_p2.jpg>] [117]
+[116 <./rysunki/wykres_p2.jpg> <./rysunki/stezenie_p2.jpg>] [117]
 Rozdzia\PlPrIeC {\l } 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2275--2276
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
 
  []
 
 [118
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2284--2285
+Underfull \hbox (badness 10000) in paragraph at lines 2285--2286
 
  []
 
 [119] [120]
 Rozdzia\PlPrIeC {\l } 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2311--2312
+Underfull \hbox (badness 10000) in paragraph at lines 2316--2317
 
  []
 
 [121
 
-] [122]
+] [122] [123]
 Rozdzia\PlPrIeC {\l } 12.
 
-Overfull \hbox (26.34036pt too wide) in paragraph at lines 2335--2360
+Overfull \hbox (26.34036pt too wide) in paragraph at lines 2340--2365
  [][] 
  []
 
-[123
+[124
 
-] [124
+] [125
 
-] [125]) [126]
+] [126]
+Underfull \hbox (badness 7047) in paragraph at lines 2413--2414
+[]\OT4/cmr/m/n/10 K. Pin-kosz, ,,Prof. Pa-weª Wiech-no: W le-cze-niu za-awan-so
+-wa-ne-go ra-ka ner-ki war-
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 2413--2414
+\OT4/cmr/m/n/10 to od po-cz¡t-ku sto-so-wa¢ im-mu-no-te-ra-pi¦'', cza-so-pi-smo
+ ,,Do rze-czy'', do-st¦p 02.09.2020:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2413--2414
+\OT4/cmr/m/n/10 https://dorzeczy.pl/zdrowie/147631/prof-pawel-wiechno-w-leczeni
+u-zaawansowanego-raka-nerki-
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 2414--2415
+[]\OT4/cmr/m/n/10 J. So-cha-czew-ski, ,,Ta ko-mór-ka ukªa-du od-por-no-±cio-we-
+go po-tra-fi za-bi¢ wi¦k-szo±¢ ty-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 2414--2415
+\OT4/cmr/m/n/10 pów ra-ka. Na-ukow-cy mó-wi¡ o prze-ªo-mie'', cza-so-pi-smo ,,F
+o-cus'', do-st¦p 02.09.2020:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2414--2415
+\OT4/cmr/m/n/10 https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-ktor
+a-zabija-wiekszosc-typow-
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 2415--2416
+[]\OT4/cmr/m/n/10 ,,New T-cell co-uld ma-ke `uni-ver-sal' can-cer the-ra-py po-
+ssi-ble'', Car-diff Uni-ver-si-ty, do-st¦p
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2415--2416
+\OT4/cmr/m/n/10 02.09.2020: https://healthcare-in-europe.com/en/news/new-t-cell
+-could-make-universal-cancer-
+ []
+
+) [127]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (ImmunochemiotherapyModel.aux)
@@ -1906,10 +1952,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 10784 strings out of 480930
- 186448 string characters out of 2898823
+ 10791 strings out of 480930
+ 186489 string characters out of 2898823
  621812 words of memory out of 3000000
- 26030 multiletter control sequences out of 15000+200000
+ 26033 multiletter control sequences out of 15000+200000
  551309 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,52p,2189b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1940,9 +1986,9 @@ blic/pl/plsy6.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/pl/plsy7.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/pl/plsy8.pfb><C:/Users/samsung/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/pl/plti12.pfb>
-Output written on ImmunochemiotherapyModel.pdf (135 pages, 3119078 bytes).
+Output written on ImmunochemiotherapyModel.pdf (136 pages, 3122573 bytes).
 PDF statistics:
- 2007 PDF objects out of 2073 (max. 8388607)
- 393 named destinations out of 1000 (max. 500000)
+ 2019 PDF objects out of 2073 (max. 8388607)
+ 397 named destinations out of 1000 (max. 500000)
  805 words of extra memory for PDF output out of 10000 (max. 10000000)
 
