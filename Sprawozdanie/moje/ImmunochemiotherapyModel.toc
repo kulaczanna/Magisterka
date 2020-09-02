@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {4.3}Model leczonego guza}{25}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}R\'ownania i\nobreakspace {}opis modelu}{25}{subsection.4.3.1}%
 \contentsline {chapter}{\numberline {5.}Symulacje - wprowadzenie}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6.}Brak leczenia -- symulacje wykonane dla\nobreakspace {}modelu nieuwzgl\k edniaj\k acego leczenia}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {6.}Symulacje modelu rozwoju nieleczonego guza}{31}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Scenariusz I -- zmiana pocz\k atkowej liczby kom\'orek nowotworowych}{31}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Scenariusz II -- zmiana pocz\k atkowej liczby limfocyt\'ow kr\k a\.z\k acych}{36}{section.6.2}%
 \contentsline {chapter}{\numberline {7.}Leczenie metod\k a chemioterapii -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{39}{chapter.7}%
@@ -48,11 +48,11 @@
 \contentsline {subsection}{\numberline {9.2.2}Zmiana liczby powt\'orze\'n cyklu IL-2 dla\nobreakspace {}leczenia bez wykorzystania TIL}{100}{subsection.9.2.2}%
 \contentsline {subsection}{\numberline {9.2.3}Zmiana dnia rozpocz\k ecia immunoterapii dla\nobreakspace {}leczenia bez wykorzystania TIL}{102}{subsection.9.2.3}%
 \contentsline {section}{\numberline {9.3}Scenariusz III -- zmiana warunk\'ow pocz\k atkowych immunoterapii (dawki IL-2 $V_I$) w\nobreakspace {}celu uzyskania pozytywnego efektu leczenia dla\nobreakspace {}okre\'slonych warunk\'ow pocz\k atkowych chemioterapii (bardzo ma\IeC {\l }ej dawki cytostatyka $V_M$)}{105}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Scenariusz IV -- zmiany kolejno\'sci wdro\.zenia poszczeg\'olnych terapii}{110}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Scenariusz V -- por\'ownanie stanu uk\IeC {\l }adu immunologicznego u\nobreakspace {}r\'o\.znych pacjent\'ow}{114}{section.9.5}%
-\contentsline {chapter}{\numberline {10.}Podsumowanie}{119}{chapter.10}%
-\contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{122}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Interferony}{122}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Nowa odmiana limfocyt\'ow typu T}{123}{section.11.2}%
-\contentsline {chapter}{\numberline {12.}Dodatek}{127}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{127}{section.12.1}%
+\contentsline {section}{\numberline {9.4}Scenariusz IV -- zmiany kolejno\'sci wdro\.zenia poszczeg\'olnych terapii}{109}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Scenariusz V -- por\'ownanie stanu uk\IeC {\l }adu immunologicznego u\nobreakspace {}r\'o\.znych pacjent\'ow}{113}{section.9.5}%
+\contentsline {chapter}{\numberline {10.}Podsumowanie}{118}{chapter.10}%
+\contentsline {chapter}{\numberline {11.}Perspektywy rozwoju}{121}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Interferony}{121}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Nowa odmiana limfocyt\'ow typu T}{122}{section.11.2}%
+\contentsline {chapter}{\numberline {12.}Dodatek}{123}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Tabela skr\'ot\'ow}{123}{section.12.1}%

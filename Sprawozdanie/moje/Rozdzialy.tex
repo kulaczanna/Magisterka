@@ -479,13 +479,14 @@ Wp³yw immunoterapii na~tempo zmian $\dfrac{dL}{dt}$ liczebnoœci populacji limfoc
 
 W pierwszej czêœci pracy przeprowadzono modelowanie odpowiedzi uk³adu immunologicznego na~rozwijaj¹cy siê nowotwór bez uwzglêdnienia procesu leczenia.
 
-Warunki pocz¹tkowe (Tab. \ref{warunki_poczatkowe_bez1}) oraz~wartoœci parametrów (Tab. \ref{parametry_modelu_bez1}) dla~modelu \ref{równania_modelu_pillis_bez_leczenia} dobrano zgodnie z~literatur¹ \cite{19}. Warunki te~reprezentuj¹ zdrowy uk³ad immunologiczny, natomiast wartoœæ pocz¹tkowej liczby komórek nowotworowych $T_{0} = 1 \cdot 10^{6}$ wynika z~faktu, ¿e dopiero przy tej wielkoœci mo¿liwe jest kliniczne rozpoznanie guza \cite{19}.
+Warunki pocz¹tkowe (Tab. \ref{warunki_poczatkowe_bez1}) oraz~wartoœci parametrów (Tab. \ref{parametry_modelu_bez1}) dla~modelu \ref{równania_modelu_pillis_bez_leczenia} dobrano zgodnie z~literatur¹ \cite{19}. Warunki te~reprezentuj¹ zdrowy uk³ad immunologiczny, natomiast wartoœæ pocz¹tkowa liczby komórek nowotworowych $T_{0} = 1 \cdot 10^{6}$ wynika z~faktu, ¿e dopiero przy tej wielkoœci mo¿liwe jest kliniczne rozpoznanie guza \cite{19}.
 
 \begin{table}[!htb]
+\small
 	\centering
 	\caption{Warunki pocz¹tkowe modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór bez uwzglêdnienia procesu leczenia \cite{19}.}\label{warunki_poczatkowe_bez1}
 	\begin{tabular}{|c|c|c|} \hline
-		Wartoœæ $[liczba$ $kom$ó$rek]$ & Rodzaj komórek & Pocz¹tkowa d³ugoœæ \\
+		Pocz¹tkowa liczba komórek & Rodzaj komórek & Pocz¹tkowa d³ugoœæ \\
 		 & & promienia nowotworu $R_{0}$ $[mm]$\\ \hline
 		$T(0) = 1 \cdot 10^{6}$ & Komórki nowotworowe & 0,62 \\ \hline
 		$N(0) = 1 \cdot 10^{5}$ & Komórki NK \\ \cline{1-2}
@@ -497,8 +498,9 @@ Warunki pocz¹tkowe (Tab. \ref{warunki_poczatkowe_bez1}) oraz~wartoœci parametrów
 Dla~wiêkszej czytelnoœci, wielkoœæ nowotworu okreœlono równie¿~poprzez d³ugoœæ jego~promienia, przyjmuj¹c, ¿e~nowotwór ma~kszta³t zbli¿ony do~kuli, a~na~1~cm$^{3}$ przypada $10^{9}$ komórek \cite{23}.
 
 \begin{table}[h!]
+\small
 \centering
-\caption{Wartoœci parametrów modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór bez~oraz~z~uwzglêdnieniem procesu leczenia dla~pacjenta 1 \cite{19}.}\label{parametry_modelu_bez1}
+\caption{Wartoœci parametrów (nazwy w~Tab. \ref{parametry_modelu}) modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór bez~oraz~z~uwzglêdnieniem procesu leczenia dla~pacjenta 1 \cite{19}.}\label{parametry_modelu_bez1}
 	\begin{tabular}{|c|c||c|c|} \hline \hline
 	\multicolumn{4}{|c|}{Pacjent 1} \\ \hline \hline
 		Parametr & Wartoœæ & Parametr & Wartoœæ \\ \hline
@@ -516,7 +518,7 @@ Dla~wiêkszej czytelnoœci, wielkoœæ nowotworu okreœlono równie¿~poprzez d³ugoœæ j
 \end{table}
 
 \newpage
-Zmiany w~czasie liczby komórek ka¿dej z~czterech badanych populacji, tj. komórek nowotworowych $T(t)$, komórek NK $N(t)$, limfocytów $T_{CD8+}$ $L(t)$ i~limfocytów kr¹¿¹cych $C(t)$ dla~warunków pocz¹tkowych (Tab. \ref{warunki_poczatkowe_bez1}) przedstawia Rys. \ref{bez_lecz_stlumienie}, gdzie mo¿na zaobserwowaæ regresjê nowotworu (rozumian¹ jako spadek i~utrzymanie siê liczby komórek nowotworowych poni¿ej T = 1 [liczba komórek]) wskutek dzia³ania uk³adu immunologicznego po~czasie $T_{r} \approx 7$ dni. Du¿a pocz¹tkowa liczba komórek nowotworowych wywo³a³a nag³y wzrost liczby limfocytów $T_{CD8+}$, których liczba po~osi¹gniêciu wartoœci maksymalnej $L = 4,67 \cdot 10^{5}$ zaczê³a spadaæ wraz~ze~zmniejszaj¹c¹ siê liczb¹ komórek nowotworowych. Oznacza to, ¿e~uk³ad immunologiczny na~obecnoœæ nowotworu odpowiada zwiêkszon¹ produkcj¹ limfocytów $T_{CD8+}$ oraz, ¿e pomiêdzy komórkami nowotworowymi i~limfocytami $T_{CD8+}$ wystêpuje interakcja prowadz¹ca do~stopniowego wymierania komórek nowotworowych. Warto te¿ zwróciæ uwagê na~liczbê komórek NK malej¹c¹ do wartoœci $N = 1,82 \cdot 10^{4}$, podczas gdy liczba komórek nowotworowych wzrasta. Natomiast, kiedy komórki nowotworowe zostan¹ zniszczone, liczba komórek NK powraca do pocz¹tkowej wartoœci $N = 10^{5}$. Z tej symulacji wynika, ¿e zarówno komórki NK, jak~i~limfocyty $T_{CD8+}$ bior¹ czynny udzia³ w~zwalczaniu komórek nowotworowych, podczas gdy liczba limfocytów kr¹¿¹cych pozostaje niezmiennie na~poziomie $C \approx 6 \cdot 10^{10}$.
+Zmiany w~czasie liczby komórek ka¿dej z~czterech badanych populacji, tj. komórek nowotworowych $T(t)$, komórek NK $N(t)$, limfocytów $T_{CD8+}$ $L(t)$ i~limfocytów kr¹¿¹cych $C(t)$ dla~warunków pocz¹tkowych (Tab. \ref{warunki_poczatkowe_bez1}) przedstawia Rys. \ref{bez_lecz_stlumienie}, gdzie mo¿na zaobserwowaæ regresjê nowotworu (rozumian¹ jako spadek i~utrzymanie siê liczby komórek nowotworowych poni¿ej T = 1 [liczba komórek]) wskutek dzia³ania uk³adu immunologicznego po~czasie $T_{r} \approx 7$ dni. Du¿a pocz¹tkowa liczba komórek nowotworowych wywo³a³a nag³y wzrost liczby limfocytów $T_{CD8+}$, których liczba po~osi¹gniêciu wartoœci maksymalnej $L = 4,67 \cdot 10^{5}$ zaczê³a spadaæ wraz~ze~zmniejszaj¹c¹ siê liczb¹ komórek nowotworowych. Oznacza to, ¿e~uk³ad immunologiczny na~obecnoœæ nowotworu odpowiada zwiêkszon¹ produkcj¹ limfocytów $T_{CD8+}$ oraz, ¿e pomiêdzy komórkami nowotworowymi i~limfocytami $T_{CD8+}$ wystêpuje interakcja prowadz¹ca do~stopniowego wymierania komórek nowotworowych. Warto te¿ zwróciæ uwagê na~liczbê komórek NK malej¹c¹ do wartoœci $N = 1,82 \cdot 10^{4}$, powracaj¹c¹ do pocz¹tkowej wartoœci $N = 10^{5}$, dopiero gdy liczba komórek nowotworowych spadnie do pewnej wartoœci. Z tej symulacji wynika, ¿e zarówno komórki NK, jak~i~limfocyty $T_{CD8+}$ bior¹ czynny udzia³ w~zwalczaniu komórek nowotworowych, podczas gdy liczba limfocytów kr¹¿¹cych pozostaje niezmiennie na~poziomie $C \approx 6 \cdot 10^{10}$.
 
 \begin{figure}[h!]
 \centering
@@ -541,8 +543,8 @@ Jako warunki pocz¹tkowe przyjêto takie wartoœci pocz¹tkowej liczby komórek nowot
 	\centering
 	\caption{Warunki pocz¹tkowe dla~modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór z~uwzglêdnieniem procesu leczenia.}\label{warunki_poczatkowe_z1}
 	\begin{tabular}{|c|c|c|} \hline
-		Wartoœæ & Rodzaj & Pocz¹tkowa d³ugoœæ\\
-		$[liczba$ $kom$ó$rek]$ & komórek & promienia nowotworu $R_{0}$ [$mm$]\\ \hline
+		Pocz¹tkowa & Rodzaj & Pocz¹tkowa d³ugoœæ\\
+		liczba komórek & komórek & promienia nowotworu $R_{0}$ [$mm$]\\ \hline
 		$T(0) = 1,8 \cdot 10^{7}$ & Komórki nowotworowe & 1,63 \\ \hline
 		$N(0) = 1 \cdot 10^{5}$ & Komórki NK \\ \cline{1-2}
 		$L(0) = 1 \cdot 10^{2}$ & Limfocyty $T_{CD8+}$ \\ \cline{1-2}
@@ -566,10 +568,10 @@ Rys. \ref{diagram_analiz} przedstawia analizy, jakie wykonano oraz~opisano w~nin
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.55\textwidth]{diagram_analiz}
-	\caption{Schemat analiz przeprowadzonych w~niniejszej pracy, zarówno dla~braku leczenia, jak~i~leczenia poszczególnymi metodami.}\label{diagram_analiz} 
+	\caption{Schemat przeprowadzonych w~niniejszej pracy analiz rozwoju guza, bez~i~z~uwzglêdnieniem terapii.}\label{diagram_analiz} 
 \end{figure}
 
-\chapter{Brak leczenia -- symulacje wykonane dla~modelu nieuwzglêdniaj¹cego leczenia}
+\chapter{Symulacje modelu rozwoju nieleczonego guza}
 
 \section{Scenariusz I -- zmiana pocz¹tkowej liczby komórek nowotworowych} \label{bez_s1}
 
@@ -584,7 +586,7 @@ Rys. \ref{diagram_analiz} przedstawia analizy, jakie wykonano oraz~opisano w~nin
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê pocz¹tkowej liczby komórek nowotworowych $T(0)$ zebrano w~Tab. \ref{zmiany_poczatkowej_wartosci_T_brak_leczenia}. \newline
 
 \newpage
-Tab. \ref{zmiany_poczatkowej_wartosci_T_brak_leczenia} przedstawia zale¿noœæ liczby komórek nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni $T(120)$ od zmieniaj¹cej siê pocz¹tkowej liczby komórek nowotworu $T(0)$. Dodatkowo, w~tabeli zamieszczono szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni.
+Tab. \ref{zmiany_poczatkowej_wartosci_T_brak_leczenia} przedstawia zale¿noœæ liczby komórek nowotworu w~ostatnim dniu symulacji, tj. w~chwili $T_{k}$ = 120 dni $T(120)$ od zmieniaj¹cej siê pocz¹tkowej liczby komórek nowotworu $T(0)$. Dodatkowo, w~tabeli zamieszczono szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji.
 
 \begin{table}[h!]
 \small
@@ -619,12 +621,12 @@ Zmiany wielkoœci nowotworu obserwowane w~ostatnim dniu symulacji $T_{k}$ = 120~d
 \quad
 \subfloat[Zale¿noœæ d³ugoœci promienia nowotworu w~ostatnim 120~dniu symulacji ($T_{k}$ = 120 dni) od~pocz¹tkowej liczby komórek nowotworowych $T(0)$.]{\label{wykres_bez_lecz_promien_t0_zmiana_T}
 \includegraphics[width=0.75\textwidth]{wykres_bez_lecz_promien_t0}}
-\caption{Wyniki obserwowane w~ostatnim dniu symulacji $T_{k}$ = 120 dni. Liczba komórek nowotworowych oraz~d³ugoœæ promienia nowotworu [mm] w~ostatnim dniu symulacji $T_{k}$ = 120 dni w~zale¿noœci od~pocz¹tkowej liczby komórek nowotworowych $T(0)$.}
+\caption{Wyniki obserwowane w~ostatnim dniu symulacji $T_{k}$ = 120 dni. Liczba komórek nowotworowych oraz~d³ugoœæ promienia nowotworu [mm] w~ostatnim (120) dniu symulacji w~zale¿noœci od~pocz¹tkowej liczby komórek nowotworowych $T(0)$.}
 \label{zmiany_t120_i_promien_w_zaleznosci_od_t0}
 \end{figure}
 
 \newpage
-Przyk³adowo, Rys. \ref{bez_lecz_brak_stlumienia_zmiana_T} przedstawia przypadek, w~którym uk³ad immunologiczny nie~jest w~stanie zwalczyæ nowotworu -- liczba jego komórek stabilizuje siê po~24 dniach oko³o wartoœci $9,8 \cdot 10^{8}$ (co~odpowiada objêtoœci 980 $mm^{3}$ i~d³ugoœci promienia 6,16 $mm$).
+Przyk³adowo, Rys. \ref{bez_lecz_brak_stlumienia_zmiana_T} przedstawia przypadek, w~którym uk³ad immunologiczny nie~jest w~stanie zwalczyæ nowotworu -- liczba jego komórek stabilizuje siê po~oko³o 24 dniach oko³o wartoœci $9,8 \cdot 10^{8}$ (co~odpowiada objêtoœci 980 $mm^{3}$ i~d³ugoœci promienia 6,16 $mm$).
 
 \begin{figure}[h!]
 \centering
@@ -637,12 +639,12 @@ Przyk³adowo, Rys. \ref{bez_lecz_brak_stlumienia_zmiana_T} przedstawia przypadek,
 \begin{itemize}
 \item zdrowy uk³ad immunologiczny, reprezentowany przez liczbê komórek wystêpuj¹cych naturalnie w~organizmie: komórek NK $N(0) = 10^{5}$, limfocytów $T_{CD8+}$ $L(0) = 10^{2}$ oraz~limfocytów kr¹¿¹cych $C(0) = 6 \cdot 10^{10}$ jest w~stanie zniszczyæ (Rys. \ref{bez_lecz_stlumienie}) komórki nowotworowe bez ingerencji dodatkowych czynników (np. leczenia), jeœli pocz¹tkowa liczba komórek nowotworu wynosi $T(0) = 10^{6}$ komórek (wielkoœæ, przy której guz jest wykrywalny klinicznie);
 \item przy~zbyt~du¿ej pocz¹tkowej liczbie komórek nowotworu ($T(0) \approx 1,8 \cdot 10^{7}$) uk³ad immunologiczny, mimo dobrej kondycji, nie~potrafi samoistnie zwalczyæ nowotworu (Rys. \ref{bez_lecz_brak_stlumienia_zmiana_T});
-\item wzrost liczby komórek nowotworowych powoduje nag³y przyrost limfocytów $T_{CD8+}$ wywo³any brakiem mo¿liwoœci zniszczenia nowotworu; liczba limfocytów $T_{CD8+}$ utrzymuje siê (nie zmniejsza siê) na~poziomie $L \approx 2,8 \cdot 10^{6}$ komórek;
-\item na~skutek interakcji, tj. próby zniszczenia komórek nowotworu przez~komórki NK, liczba komórek NK maleje i~utrzymuje siê na~bardzo niskim poziomie $N \approx 3,78$ komórek;
+\item wzrost liczby komórek nowotworowych powoduje nag³y przyrost limfocytów $T_{CD8+}$ wywo³any nieudan¹ prób¹ zniszczenia nowotworu; liczba limfocytów $T_{CD8+}$ utrzymuje siê (nie zmniejsza siê) na~poziomie $L \approx 2,8 \cdot 10^{6}$ komórek;
+\item na~skutek interakcji, tj. próby zniszczenia komórek nowotworu przez~komórki NK, liczba komórek NK maleje i~utrzymuje siê na~zbyt niskim poziomie $N \approx 3,78$ komórek;
 \item liczba limfocytów kr¹¿¹cych, mimo zmian w~czasie pozosta³ych populacji, utrzymuje siê na~poziomie $C \approx 6 \cdot 10^{10}$ komórek;
 \end{itemize}
 
-Analiza zmian pocz¹tkowej wielkoœci guza wykaza³a, ¿e istnieje mo¿liwoœæ samoistnego pokonania nowotworu przez~organizm pacjenta, o~ile pocz¹tkowa liczba komórek nowotworu T(0) nie~przekroczy pewnej wartoœci. W celu zniszczenia nowotworu u~pacjenta konieczne jest wdro¿enie leczenia, jeœli pocz¹tkowa liczba komórek nowotworowych wynosi co~najmniej $T(0) = 1,8 \cdot 10^{7}$.
+Analiza zmian pocz¹tkowej wielkoœci guza wykaza³a, ¿e istnieje mo¿liwoœæ samoistnego pokonania nowotworu przez~organizm pacjenta, o~ile pocz¹tkowa liczba komórek nowotworu T(0) nie~przekroczy pewnej wartoœci. Jeœli pocz¹tkowa liczba komórek nowotworowych pacjenta przekracza $T(0) = 1,8 \cdot 10^{7}$, konieczne jest wdro¿enie leczenia.
 
 \newpage
 \section{Scenariusz II -- zmiana pocz¹tkowej liczby limfocytów kr¹¿¹cych} \label{bez_s2}
@@ -687,12 +689,12 @@ Zmiany w~czasie wielkoœci nowotworu obserwowane po 120 dniach symulacji ($T_{k}$
 \quad
 \subfloat[Zale¿noœæ d³ugoœci promienia nowotworu w ostatnim (120) dniu symulacji ($T_{k}$ = 120 dni) od~pocz¹tkowej liczby kr¹¿¹cych limfocytów $C(0)$.]{\label{wykres_bez_lecz_promien_c0}
 \includegraphics[width=0.75\textwidth]{wykres_bez_lecz_promien_c0}}
-\caption{Wyniki obserwowane w~ostatnim dniu symulacji $T_{k}$ = 120 dni. Liczba komórek nowotworowych oraz~d³ugoœæ promienia nowotworu [mm] w~ostatnim dniu symulacji $T_{k}$ = 120 dni w~zale¿noœci od~pocz¹tkowej liczby kr¹¿¹cych limfocytów $C(0)$.}
+\caption{Wyniki obserwowane w~ostatnim dniu symulacji $T_{k}$ = 120 dni. Liczba komórek nowotworowych oraz~d³ugoœæ promienia nowotworu [mm] w~ostatnim (120) dniu symulacji w~zale¿noœci od~pocz¹tkowej liczby kr¹¿¹cych limfocytów $C(0)$.}
 \label{zmiany_t120_i_promien_w_zaleznosci_od_c0}
 \end{figure}
 
 \newpage
-Przyk³adowo, Rys. \ref{zmiany_liczby_kom_4_populacjiC} przedstawia sytuacjê, w~której uk³ad immunologiczny ze~wzglêdu na~zmniejszon¹ liczbê kr¹¿¹cych limfocytów jest zbyt s³aby, by~zniszczyæ komórki nowotworu. Liczba komórek nowotworowych roœnie i~po~28 dniach stabilizuje siê oko³o wartoœci $9,8 \cdot 10^{8}$. 
+Przyk³adowo, Rys. \ref{zmiany_liczby_kom_4_populacjiC} przedstawia sytuacjê, w~której uk³ad immunologiczny ze~wzglêdu na~zmniejszon¹ liczbê kr¹¿¹cych limfocytów jest zbyt s³aby, by~zniszczyæ komórki nowotworu. Liczba komórek nowotworowych roœnie i~po~oko³o 28 dniach stabilizuje siê oko³o wartoœci $9,8 \cdot 10^{8}$. 
 
 \begin{figure}[h!]
 \centering
@@ -703,12 +705,12 @@ Przyk³adowo, Rys. \ref{zmiany_liczby_kom_4_populacjiC} przedstawia sytuacjê, w~k
 
 \textbf{Wnioski:}
 \begin{itemize}
-\item przy~du¿ej pocz¹tkowej liczbie ($C(0) \approx 4 \cdot 10^{9}$) kr¹¿¹cych limfocytów, uk³ad immunologiczny jest w~stanie zniszczyæ komórki nowotworowe bez ingerencji zewnêtrznych czynników (np. leczenia),
+\item przy~du¿ej pocz¹tkowej liczbie ($C(0) \approx 4 \cdot 10^{9}$) kr¹¿¹cych limfocytów, uk³ad immunologiczny jest w~stanie zniszczyæ komórki nowotworowe bez ingerencji zewnêtrznych czynników (np. leczenia);
 \item przy~obni¿onej liczbie kr¹¿¹cych limfocytów (oznaczaj¹cej s³ab¹ kondycjê uk³adu immunologicznego) organizm nie~jest w~stanie zniszczyæ komórek nowotworu;
 \item w~symulacji opisanej w rozdziale \ref{bez_s1} liczba kr¹¿¹cych limfocytów pozostawa³a na~sta³ym poziomie, mo¿na wiêc wnioskowaæ, ¿e zmiany liczby komórek nowotworowych i~limfocytów $T_{CD8}$ s¹~niezale¿ne od~liczby limfocytów kr¹¿¹cych, jednak w~symulacji \ref{bez_s2} widaæ, ¿e stosunkowo niewielka zmiana liczby limfocytów kr¹¿¹cych znacz¹co wp³ywa na~wynik symulacji;
 \end{itemize} 
 
-Dziêki analizie zmian pocz¹tkowej liczby limfocytów kr¹¿¹cych C(0) wiadomo, ¿e mimo stosunkowo niewielkiego zmniejszenia liczby tych limfocytów, maj¹~one znaczny wp³yw na~odpowiedŸ immunologiczn¹ organizmu. Mimo liczby limfocytów kr¹¿¹cych o~wartoœci rzêdu $10^{9}$, organizm jest wystarczaj¹co os³abiony, by~mieæ trudnoœæ w~pokonaniu nowotworu.
+Dziêki analizie zmian pocz¹tkowej liczby limfocytów kr¹¿¹cych C(0) mo¿na wnioskowaæ, ¿e mimo stosunkowo niewielkiego zmniejszenia liczby tych limfocytów, maj¹~one znaczny wp³yw na~odpowiedŸ immunologiczn¹ organizmu. Mimo liczby limfocytów kr¹¿¹cych o~wartoœci rzêdu $10^{9}$, organizm jest zbyt os³abiony, by~zwalczyæ nowotwór.
 
 \chapter{Leczenie metod¹ chemioterapii -- symulacje wykonane dla~modelu leczonego guza} \label{sym_ch}
 
@@ -2007,6 +2009,7 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 \end{itemize}
 
 \begin{table}[h!]
+\small
 	\centering
 	\caption{Warunki pocz¹tkowe chemioterapii dla~modelu odpowiedzi immunologicznej na~rozwijaj¹cy siê nowotwór z~uwzglêdnieniem procesu leczenia skojarzonymi metodami chemioterapii i~immunoterapii.}\label{okreslone_warunki_pocz¹tkowe_chemioterapii}
 \begin{tabular}{|c|c|c|c|c|c|} \hline
@@ -2025,6 +2028,7 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê dawki IL-2 $V_I$ i~okreœlonych warunków pocz¹tkowych chemioterapii (bardzo ma³ej dawce cytostatyka $V_M$) zebrano w~Tab. \ref{zmiana_immuno_okreslone_chemio}. \newline \newline \indent Tab. \ref{zmiana_immuno_okreslone_chemio} przedstawia zmiany dawki IL-2. Dodatkowo, umieszczono w~niej dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a tak¿e szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M = 1$ oraz~$V_M = 0,5$.
 
 \begin{table}[h!]
+\small
 	\centering
 	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz III, zmiany dawki $V_I$ IL-2 przy~okreœlonych warunkach chemioterapii (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii})]{Dawka IL-2 $V_I$, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~chemioterapii o~warunkach pocz¹tkowych (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii}) oraz~leczenia z~wykorzystaniem TIL.}
 \label{zmiana_immuno_okreslone_chemio}
@@ -2262,11 +2266,11 @@ W pracy rozwa¿ano model \cite{19} matematyczny pozwalaj¹cy przeprowadziæ symulac
 
 Podobnie, jak~w~literaturze \cite{19}, analizowano odpowiedŸ zdrowego i~os³abionego uk³adu immunologicznego na~rozwijaj¹cy siê nowotwór. 
 
-W~przypadku zdrowego pacjenta warunki pocz¹tkowe (Tab. \ref{warunki_poczatkowe_bez1}) przyjête w~pracy by³y zgodne z~warunkami przyjêtymi w~literaturze \cite{19}. Zarówno w~pracy, jak~i~w~literaturze badano odpowiedŸ zdrowego uk³adu odpornoœciowego dla~pocz¹tkowej liczby komórek nowotworowych $T(0) = 10^{6}$. W~obydwu przypadkach zaobserwowano regresjê nowotworu. W~pracy, dodatkowo badano (rozdzia³ \ref{bez_s1}) zmianê pocz¹tkowej liczby komórek nowotworowych, wyznaczaj¹c tym~samym wartoœæ graniczn¹ $T(0) = 1,8 \cdot 10^{7}$, powy¿ej której uk³ad immunologiczny nie~by³~w~stanie zwalczyæ nowotworu dla~danych wartoœci pocz¹tkowych dla~uk³adu immunologicznego (Tab. \ref{warunki_poczatkowe_bez1}).
+W~przypadku zdrowego pacjenta warunki pocz¹tkowe (Tab. \ref{warunki_poczatkowe_bez1}) przyjête w~pracy by³y zgodne z~warunkami przyjêtymi w~literaturze \cite{19}. Zarówno w~pracy, jak~i~w~literaturze badano odpowiedŸ zdrowego uk³adu odpornoœciowego dla~pocz¹tkowej liczby komórek nowotworowych $T(0) = 10^{6}$. W~obydwu przypadkach zaobserwowano regresjê nowotworu. W~pracy, dodatkowo badano (rozdzia³ \ref{bez_s1}) zmianê pocz¹tkowej liczby komórek nowotworowych, wyznaczaj¹c tym~samym wartoœæ graniczn¹ $T(0) = 1,8 \cdot 10^{7}$, powy¿ej której uk³ad immunologiczny nie~by³~w~stanie zwalczyæ nowotworu dla~danych (Tab. \ref{warunki_poczatkowe_bez1}) wartoœci pocz¹tkowych.
 
-W~dalszej analizie rozwa¿ano os³abiony uk³ad immunologiczny. W~literaturze \cite{19} reprezentowany by³~on przez~zmniejszon¹ pocz¹tkow¹ liczbê komórek uk³adu immunologicznego ka¿dego rodzaju (tj. komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych). W~pracy za³o¿ono zmniejszenie wy³¹cznie pocz¹tkowej wartoœci liczby limfocytów kr¹¿¹cych, badaj¹c, dla~jakiej wartoœci uk³ad immunologiczny jest~zbyt~os³abiony, by~doprowadziæ do regresji nowotworu (zgodnie z~przeprowadzon¹ analiz¹ (rozdzia³ \ref{bez_s2}) jest~to~wartoœæ $C(0) \approx 3,5 \cdot 10^{9}$).
+W~dalszej analizie rozwa¿ano os³abiony uk³ad immunologiczny. W~literaturze \cite{19} reprezentowany by³~on przez~zmniejszon¹ pocz¹tkow¹ liczbê komórek (tj. komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych) uk³adu immunologicznego ka¿dego rodzaju. W~pracy za³o¿ono zmniejszenie wy³¹cznie pocz¹tkowej wartoœci liczby limfocytów kr¹¿¹cych, badaj¹c, dla~jakiej wartoœci uk³ad immunologiczny jest~zbyt~os³abiony, by~doprowadziæ do regresji nowotworu. Zgodnie z~przeprowadzon¹ analiz¹ (rozdzia³ \ref{bez_s2}) jest~to~wartoœæ $C(0) \approx 3,5 \cdot 10^{9}$.
 
-W~kolejnej czêœci pracy analizowano model uwzglêdniaj¹cy leczenie metod¹ chemioterapii, immunoterapii oraz~skojarzonymi metodami chemioterapiii i~immunoterapii. W~pracy przyjêto takie wartoœci pocz¹tkowej liczby komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$ i~limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$, dla~jakich uk³ad immunologiczny bez~leczenia nie~by³~w~stanie zwalczyæ nowotworu.
+W~kolejnej czêœci pracy analizowano model uwzglêdniaj¹cy leczenie metod¹ chemioterapii, immunoterapii oraz~skojarzonymi metodami chemioterapii i~immunoterapii. W~pracy przyjêto takie wartoœci pocz¹tkowej liczby komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$ i~limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$, dla~których uk³ad immunologiczny bez~wsparcia terapi¹ nie~by³~w~stanie zwalczyæ nowotworu.
 
 Literatura \cite{19} przedstawia porównanie symulacji leczenia metod¹ chemioterapii dla~pocz¹tkowej liczby komórek nowotworowych $T(0) = 2 \cdot 10^{7}$, wykorzystuj¹ce 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ dla 5-dniowego (widoczna regresja nowotworu) i~10-dniowego (brak regresji nowotworu) cyklu. Podobnie, w~niniejszej pracy przedstawiono symulacje chemioterapii wykorzystuj¹cej 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ dla~4-dniowego cyklu z~widoczn¹ regresj¹ nowotworu po~oko³o 26 dniach (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu}) oraz~dla~8-dniowego cyklu, gdzie~mimo takiej samej sumarycznej dawki cytostatyka (jak~w~4-dniowym cyklu), nie~wyst¹pi³a regresja nowotworu (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}) ze~wzglêdu na~zbyt du¿e przerwy pomiêdzy kolejnymi cyklami. \newline \newline \indent Ponadto, w~pracy analizowano równie¿ zmiany:
 \begin{itemize}
@@ -2287,21 +2291,21 @@ W~leczeniu metod¹ immunoterapii, literatura \cite{19} przedstawia symulacje wp³y
 
 Ostatnim etapem pracy by³o przedstawienie symulacji leczenia po³¹czonymi metodami chemioterapii i~immunoterapii (tak¹ analizê równie¿ opisano w~literaturze \cite{19}) w~celu wskazania zalet tego~sposobu leczenia w~porównaniu do~oddzielnego zastosowania metod chemioterapii i~immunoterapii. 
 
-Pierwsz¹ z~zalet jest~umo¿liwienie wyst¹pienia regresji nowotworu (\ref{wykres_skojarzone}) po~15 dniach symulacji w~przypadku po³¹czenia chemioterapii i~immunoterapii o~warunkach pocz¹tkowych Tab. \ref{warunki pocz¹tkowe_chemioterapii} i~Tab. \ref{warunki_pocz¹tkowe_immunoterapii}, pocz¹tkowej liczbie komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$ oraz~limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot10^{9}$, co~dla~oddzielnie stosowanych metod nie~wywo³ywa³o regresji nowotworu. 
+Pierwsz¹ z~zalet jest~umo¿liwienie wyst¹pienia regresji nowotworu (Rys. \ref{wykres_skojarzone}) po~15 dniach symulacji w~przypadku po³¹czenia chemioterapii i~immunoterapii o~warunkach pocz¹tkowych Tab. \ref{warunki pocz¹tkowe_chemioterapii} i~Tab. \ref{warunki_pocz¹tkowe_immunoterapii}, pocz¹tkowej liczbie komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$ oraz~limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot10^{9}$, co~dla~oddzielnie stosowanych metod nie~wywo³ywa³o regresji nowotworu. 
 
 Kolejn¹ zalet¹ terapii skojarzonej (wykazan¹ podczas analizy (rozdzia³ \ref{ss1}) zmian: d³ugoœci i~liczby powtórzeñ cyklu chemioterapii, dawki cytostatyka oraz~dnia wdro¿enia chemioterapii przy~sta³ych warunkach pocz¹tkowych immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii})) jest~ograniczenie w~znacznym stopniu skutków ubocznych chemioterapii, m. in. poprzez~znaczne zmniejszenie zastosowanej dawki (równie¿ sumarycznej) dozowanego cytostatyka bez~wp³ywu na~skutecznoœæ leczenia. W~pracy przedstawiono tak¿e sytuacjê odwrotn¹, tj. ograniczenie immunoterapii (zmiana dawki IL-2, liczby powtórzeñ cyklu IL-2 oraz~dnia wdro¿enia immunoterapii) przy~sta³ych warunkach pocz¹tkowych chemioterapii (Tab. \ref{warunki pocz¹tkowe_chemioterapii}).
 
 Ponadto, zmieniano dawkê IL-2 tak, by~dostosowaæ jej~wartoœæ do~okreœlonych warunków pocz¹tkowych chemioterapii (tj. bardzo ma³ej dawki cytostatyka). 
 
-Przedstawiono równie¿ analizê zmian kolejnoœci wdro¿enia poszczególnych terapii. Analiza ta~wykaza³a, ¿e~zastosowanie chemioterapii od~dnia 1, a~nastêpnie immunoterapii (od~dnia 8 \cite{19}) powoduje regresjê guza po~14 dniach symulacji, natomiast dla~odwrotnej kolejnoœci, tj. immunoterapia od~dnia 1 i~chemioterapia od~dnia 8, regresja nowotworu wystêpuje ju¿~w~dniu 9. Pozwala to~przypuszczaæ, ¿e~immunoterapia poprzedzaj¹ca chemioterapiê jest~opcj¹ korzystniejsz¹ dla~pacjenta.
+Przedstawiono równie¿ analizê zmian kolejnoœci wdro¿enia poszczególnych terapii. Analiza ta~wykaza³a, ¿e~zastosowanie chemioterapii od~pierwszego dnia, a~nastêpnie immunoterapii (od~ósmego dnia \cite{19}) powoduje regresjê guza po~14 dniach symulacji, natomiast dla~odwrotnej kolejnoœci, tj. immunoterapia od~pierwszego dnia i~chemioterapia od~ósmego dnia, regresja nowotworu wystêpuje ju¿~w~dziewi¹tym dniu. Pozwala to~przypuszczaæ, ¿e~immunoterapia poprzedzaj¹ca chemioterapiê jest~opcj¹ korzystniejsz¹ dla~pacjenta.
 
-Podczas ostatniej symulacji, obserwowano efekt leczenia skojarzonego dopasowanego do~pacjenta 1 (warunki pocz¹tkowe przedstawia Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light} i~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) u~pacjenta~2. Pacjentów rozró¿nia³y wartoœci pewnych cech osobniczych, np.: tempa dezaktywacji limfocytów $T_{CD8+}$ oraz~komórek NK przez~komórki nowotworu czy~liczba kr¹¿¹cych limfocytów i~tempo ich wymierania. Analiza wykaza³a, ¿e leczenie skuteczne u~pacjenta 1, nie~skutkuje regresj¹ nowotworu u~pacjenta 2, co~sugeruje, ¿e~terapia skojarzona jest~zale¿na od~cech osobniczych i~powinna byæ dobierana indywidualnie dla~danego pacjenta. Z~drugiej strony, z~powy¿szych obserwacji wynika, ¿e~model mo¿e~byæ dopasowywany do~konkretnych przpadków, dziêki czemu mo¿liwa jest~jego personalizacja.
+Podczas ostatniej symulacji, obserwowano efekt leczenia skojarzonego dopasowanego do~pacjenta pierwszego (warunki pocz¹tkowe przedstawia Tab. \ref{warunki_pocz¹tkowe_chemioterapii_light} i~Tab. \ref{warunki_pocz¹tkowe_immunoterapii_dopasowane_do_chemio_light}) u~pacjenta~drugiego. Pacjentów rozró¿nia³y wartoœci pewnych cech osobniczych, np.: tempa dezaktywacji limfocytów $T_{CD8+}$ oraz~komórek NK przez~komórki nowotworu czy~liczba kr¹¿¹cych limfocytów i~tempo ich wymierania. Analiza wykaza³a, ¿e leczenie skuteczne u~pacjenta 1, nie~skutkuje regresj¹ nowotworu u~pacjenta 2, co~sugeruje, ¿e~terapia skojarzona jest~zale¿na od~cech osobniczych i~powinna byæ dobierana indywidualnie dla~danego pacjenta. Jednak, z~powy¿szych obserwacji wynika, ¿e~model mo¿e~byæ dopasowywany do~konkretnych przpadków, dziêki czemu mo¿liwa jest~jego personalizacja.
 
-Matematyczne modelowanie umo¿liwia symulacjê badania przed przeprowadzeniem go~w~rzeczywistoœci, dziêki czemu pozwala poznaæ zbli¿ony efekt leczenia. To z~kolei daje mo¿liwoœæ lepszego dopasowania terapii do~konkretnego pacjenta. Mo¿e tak¿e zapobiec negatywnym efektom ubocznym (ujawnionym podczas symulacji), np. poprzez ograniczenie dawki cytostatyka podawanego pacjentowi do~dawki, dla~której zostaje osi¹gniêty zamierzony efekt (np. zwalczenie nowotworu) przy jednoczesnej jak~najmniejszej szkodliwoœci (tj. jak~najmniejszych skutkach ubocznych) dla~pacjenta. Ponadto, modelowanie mo¿e byæ przydatne w~testowaniu nowych metod leczenia, które nie~s¹ jeszcze wykorzystywane w~praktyce.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+Matematyczne modelowanie umo¿liwia symulacjê terapii przed przeprowadzeniem go~w~rzeczywistoœci, dziêki czemu pozwala poznaæ zbli¿ony efekt leczenia. To z~kolei daje mo¿liwoœæ lepszego dopasowania terapii do~konkretnego pacjenta. Mo¿e tak¿e zapobiec negatywnym efektom ubocznym (ujawnionym podczas symulacji), np. poprzez ograniczenie podawanej dawki cytostatyka do~dawki, dla~której zostaje osi¹gniêty zamierzony efekt (np. zwalczenie nowotworu) przy jednoczesnej jak~najmniejszej szkodliwoœci (tj. jak~najmniejszych skutkach ubocznych) dla~pacjenta. Ponadto, modelowanie mo¿e byæ przydatne w~testowaniu nowych metod leczenia, które nie~s¹ jeszcze wykorzystywane w~praktyce.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 \chapter{Perspektywy rozwoju}
 
-Jedn¹ z~perspektyw rozwoju niniejszej pracy jest~rozszerzenie jej~o~immunoterapiê z~wykorzystaniem interferonu-~$\alpha$. Ten~sposób leczenia opisano m. in. w~literaturze \cite{1, 18}. Warto te¿~zwróciæ uwagê na~nowoodkryt¹ \cite{15, 17} odmianê limfocytów typu T, zdoln¹ do~walki z~wieloma ró¿nymi postaciami nowotworu. Mo¿na równie¿ przeprowadziæ dalsze badania potwierdzaj¹ce przypuszczalne wnioski wynik³e z~analiz przedstawionych w~niniejszej pracy, np. zbadaæ czy~kolejnoœæ wdro¿enia poszczególnych terapii w~leczeniu skojarzonym ma~znaczenie oraz~czy~poprzedzenie chemioterapii immunoterapi¹ jest korzystniejsze dla~pacjenta ni¿~zastosowanie tych~metod leczenia w~odwrotnej kolejnoœci. W~pracy pokazano ró¿nicê pomiêdzy kondycj¹ uk³adu immunologicznego u dwóch pacjentów w~oparciu o~parametry reprezentuj¹ce ich~cechy osobnicze, jednak badano wp³yw kilku cech jednoczeœnie. Pomys³em na~rozwiniêcie tej analizy mo¿e byæ zbadanie, która z~tych cech ma dominuj¹cy wp³yw na wynik leczenia.
+Jedn¹ z~perspektyw rozwoju niniejszej pracy jest~rozszerzenie jej~o~immunoterapiê z~wykorzystaniem interferonu-~$\alpha$. Ten~sposób leczenia opisano m. in. w~literaturze \cite{1, 18}. Warto te¿~zwróciæ uwagê na~nowoodkryt¹ \cite{15, 17} odmianê limfocytów typu T, zdoln¹ do~walki z~wieloma ró¿nymi postaciami nowotworu. Mo¿na równie¿ przeprowadziæ dalsze badania potwierdzaj¹ce nasuwaj¹ce siê hipotezy wynik³e z~analiz przedstawionych w~niniejszej pracy, np. zbadaæ czy~kolejnoœæ wdro¿enia poszczególnych terapii w~leczeniu skojarzonym ma~znaczenie oraz~czy~poprzedzenie chemioterapii immunoterapi¹ jest korzystniejsze dla~pacjenta ni¿~zastosowanie tych~metod leczenia w~odwrotnej kolejnoœci. W~pracy pokazano ró¿nicê pomiêdzy kondycj¹ uk³adu immunologicznego u dwóch pacjentów w~oparciu o~parametry reprezentuj¹ce ich~cechy osobnicze, jednak badano wp³yw kilku cech jednoczeœnie. Pomys³em na~rozwiniêcie tej analizy mo¿e byæ zbadanie, która z~tych cech ma dominuj¹cy wp³yw na wynik leczenia.
 
 \section{Interferony}
 Poza wymienionymi w~pracy elementami uk³adu odpornoœciowego wa¿n¹ rolê odgrywaj¹ tak¿e~interferony. S¹~to~glikoproteiny wytwarzane przez~limfocyty, fibroblasty i~inne komórki, które bior¹ udzia³ w~odpowiedzi immunologicznej \cite{21}. Nale¿¹ one do~humoralnych mechanizmów obronnych odpornoœci nieswoistej. Ich funkcj¹ jest, miêdzy innymi: hamowanie replikacji wirusów w~komórce i~proliferacji komórek (w szczególnoœci nowotworowych), aktywowanie syntezy enzymów (rybonukleazy, syntetazy, kinazy bia³kowej) i~cytotoksycznoœci makrofagów oraz~limfocytów typu T, a~tak¿e zwiêkszenie aktywnoœci komórek cytotoksycznych \cite{7}. \newline \newline \indent Wœród interferonów mo¿na wyró¿niæ interferony \cite{22}:
@@ -2317,9 +2321,45 @@ Spoœród wymienionych interferonów, najwiêksz¹ liczbê podtypów posiada IFN-$\alph
 Interferon posiada~wyraŸne powinowactwo do~komórek nerwowych i~w~du¿ym stê¿eniu dzia³a neurotoksycznie. Podczas leczenia interferonem mog¹ wyst¹piæ niepo¿¹dane zaburzenia psychiczne. Mog¹ to~byæ stany zmêczenia, pogorszenie koncentracji, uwagi i~pamiêci, ale~tak¿e pe³noobjawowe epizody depresji, manii, zaburzenia lêkowe czy~zaburzenia œwiadomoœci \cite{21}. Stopieñ ciê¿koœci zaburzeñ wystêpuj¹cych po~terapii interferonem, zale¿y od~dawki oraz~czêstoœci podawania. Przy~d³ugotrwa³ym leczeniu IFN-$\alpha$ mog¹ wyst¹piæ takie skutki uboczne, takie jak: zaburzenia czynnoœci tarczycy, choroby autoimmunologiczne, retinopatia, cukrzyca, zaburzenia psychiczne, wysypka oraz~utrata w³osów\cite{33}.
 
 \section{Nowa odmiana limfocytów typu T}
-Odkryto \cite{15, 17} nieznan¹ dotychczas odmianê limfocytów typu T, która potrafi zabiæ wiele typów nowotworu. Mimo, ¿e~nie~mo¿na jeszcze wykorzystaæ tej~wiedzy w~praktyce, wiadomo ju¿, ¿e~jest~to~prze³om w~walce z~nowotworami. Nowoodkryte komórki posiadaj¹ receptor wychwytuj¹cy i~zabijaj¹cy komórki nowotworowe, równoczeœnie zupe³nie pomijaj¹c zdrowe tkanki. Dziêki tym~limfocytom typu~T podczas eksperymentów pokonano ju¿~m. in. komórki nowotworu skóry, koœci, jajników oraz~nerek. 
-Obecnie nie~wiadomo czy~limfocyty te~rzadko wystêpuj¹ czy~te¿ znajduj¹ce~siê na~nich receptory w~wiêkszoœci przypadków nigdy nie~zosta³y aktywowane. 
-Odkrycie nowej odmiany limfocytów typu T mo¿e~byæ rozwi¹zaniem problemu selektywnoœci stosowania obecnie znanych terapii opartych na~modyfikowanych w~laboratoriach w³asnych komórek uk³adu odpornoœciowego pacjenta. Terapie te~s¹~stosowane g³ównie w~ró¿nych typach bia³aczki, natomiast nowa odmiana limfocytu typu~T mo¿e~byæ stosowana w~wielu typach nowotworów i~dla dowolnego pacjenta. Du¿ymi zaletami leczenia z~zastosowaniem tego~limfocytu by³aby uniwersalnoœæ terapii, a~co za~tym idzie ni¿szy koszt \cite{15, 17}.
+Na pocz¹tku roku 2020 w czasopiœmie ,,Focus'' ukaza³ siê artyku³ \cite{15, 17} o naukowcach z Cardiff University, którzy dokonali odkrycia nieznanej dotychczas odmiany limfocytów typu T. Przypuszcza siê o~jej~du¿ej skutecznoœci w zwalczaniu ró¿nych typów nowotworu. Mimo, ¿e~nie~mo¿na jeszcze wykorzystaæ tej~wiedzy w~praktyce, wiadomo ju¿, ¿e~jest~to~prze³om w~walce z~nowotworami. Nowoodkryte komórki posiadaj¹ receptor wychwytuj¹cy i~zabijaj¹cy komórki nowotworowe, równoczeœnie zupe³nie pomijaj¹c zdrowe tkanki. Dziêki tym~limfocytom typu~T podczas eksperymentów pokonano ju¿~m. in. komórki nowotworu skóry, koœci, jajników oraz~nerek. 
+Obecnie nie~wiadomo czy~limfocyty te~rzadko wystêpuj¹ czy~te¿ znajduj¹ce~siê na~nich receptory w~wiêkszoœci przypadków nigdy nie~zosta³y aktywowane \cite{15, 17}. 
+Odkrycie nowej odmiany limfocytów typu T mo¿e~byæ rozwi¹zaniem problemu selektywnoœci stosowania obecnie znanych terapii opartych na~modyfikowanych w~laboratoriach w³asnych komórkach uk³adu odpornoœciowego pacjenta. Obecnie, terapie te~s¹~spersonalizowane i~stosowane g³ównie w~ró¿nych typach bia³aczki, natomiast przypuszcza siê, ¿e~nowa odmiana limfocytu typu~T mog³aby~byæ stosowana w~wielu typach nowotworów bez koniecznoœci personalizacji. Niew¹tpliw¹ zalet¹ leczenia z~zastosowaniem nowego typu~limfocytu by³aby uniwersalnoœæ terapii, a~co za~tym idzie ni¿szy koszt \cite{15, 17}.
+
+\chapter{Dodatek}
+
+\section{Tabela skrótów}
+
+\begin{table}[!htb]
+	\centering
+	\topcaption{Skróty wykorzystane w pracy}\label{Tabelka_Tabela}
+	\begin{tabular}{|c|c|c|c|} \hline \hline 
+		Skrót & Nazwa angielska & Nazwa polska \\ \hline
+		NK & Natural killers & Naturalni zabójcy \\ \hline
+		IL-2 & Interleukina-2 & Interleukina-2 \\ \hline
+		TIL & Tumor Infiltrating Lymphocytes & Limfocyty naciekaj¹ce nowotwór \\ \hline		
+		MBL & Mannose Binding Lectin & Lektyna wi¹¿¹ca mannozê \\ \hline
+		TNF & Tumor Necrosis Factor & Czynnik martwicy guza \\ \hline
+		NCRs & Natural Cytotoxicity Receptors & Receptory naturalnej cytotoksycznoœci \\ \hline
+		KIR & Killer cells Inhibitory Receptor & Receptor hamuj¹cy zabójcze komórki \\ \hline
+		APC & Antigen Presenting Cells & Komórki prezentuj¹ce antygen \\ \hline
+		IFN-${\alpha}$ & Interferon-${\alpha}$ & Interferon-${\alpha}$ \\ \hline
+		DC & Dendritic cells & Komórki dendrytyczne \\ \hline
+		TCGF & T Cell Growth Factor & Czynnik wzrostu komórek T \\ \hline
+		FDA & Food and~Drug Administration & Agencja ¿ywnoœci i~leków \\ \hline
+		AICD & Activation-Induced Cell Death & Œmieræ komórek indukowana aktywacj¹ \\ \hline
+		CIPN & Chemotherapy-Induced  & Obwodowa polineuropatia \\	
+		& Peripheral Neuropathy & wywo³ana chemioterapi¹ \\ \hline
+		TSA & Tumor Specific Antigens & Antygeny swoiste dla~nowotworu \\ \hline
+		CARs & Chimeric Antigen & Chimeryczne receptory \\
+		& Receptors & dla~specyficznych antygenów nowotworowych \\ \hline
+		LAK & Lymphokine Activated Killers & Komórki zabójcze aktywowane limfokin¹ \\ \hline
+		HSP & Heat Shock Protein & Bia³ka szoku cieplnego \\ \hline
+%		ISRE & Interferon-Stimulated & Element odpowiedzi \\
+%		& Response Element & stymulowanej przez interferon  \\ \hline
+	\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{footnotesize}
 \begin{thebibliography}{9}
@@ -2363,7 +2403,11 @@ przebiegu infekcji wirusowych'', Katedra i~Zak³ad Histologii, Gdañski Uniwersyte
 \bibitem{18} O.G. Isaeva and V.A. Osipov, ,,Different strategies for cancer treatment: Mathematical modelling'', 2009
 \bibitem{22} W. Halota, M. Paw³owska, M. Andrejczyn, ,,Interferony alfa w~leczeniu przewlek³ych zaka¿eñ HCV", Przegl¹d epidemiologiczny, 2004
 \bibitem{33} A. G³obiñska, M. L. Kowalski, ,,Interferon alfa: perspektywy zastosowania w~leczeniu wirusowych zaka¿eñ dróg oddechowych'', Klinika Immunologii, Reumatologii i~Alergii, Katedra Immunologii Klinicznej i~Mikrobiologii Uniwersytet Medyczny w~£odzi, 2013
-\bibitem{15} J. Sochaczewski, ,,Ta komórka uk³adu odpornoœciowego potrafi zabiæ wiêkszoœæ typów raka. Naukowcy mówi¹ o prze³omie'', Focus, https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-ktora-zabija-wiekszosc-typow-raka
-\bibitem{17} ,,New T-cell could make ‘universal’ cancer therapy possible'', Cardiff University, https://healthcare-in-europe.com/en/news/new-t-cell-could-make-universal-cancer-therapy-possible.html
+\bibitem{15} J. Sochaczewski, ,,Ta komórka uk³adu odpornoœciowego potrafi zabiæ wiêkszoœæ typów raka. Naukowcy mówi¹ o prze³omie'', Focus, 
+
+Dostêp 02.09.2020: https://www.focus.pl/artykul/naukowcy-ktos-w-walii-ma-krew-ktora-zabija-wiekszosc-typow-raka
+\bibitem{17} ,,New T-cell could make ‘universal’ cancer therapy possible'', Cardiff University, 
+
+Dostêp 02.09.2020: https://healthcare-in-europe.com/en/news/new-t-cell-could-make-universal-cancer-therapy-possible.html
 \end{thebibliography}
 \end{footnotesize}
