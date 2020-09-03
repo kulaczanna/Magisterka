@@ -732,8 +732,8 @@ Cykl podawania leku okreœla czas ci¹g³ego podawania leku oraz~przerwy pomiêdzy k
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		D³ugoœæ & Czas dozowania & Schemat & Dawka & Liczba & Dzieñ \\
 		cyklu & cytostatyka & cyklu & dozowanego & powtórzeñ & rozpoczêcia \\
-		$[dni]$ & $[dni]$ & [dozowanie & cytostatyka $V_M$ & cyklu & chemioterapii \\
-		 & & przerwa] &  &  &  \\ \hline 
+		$[dni]$ & $[dni]$ & [dozowanie & cytostatyka & cyklu & chemioterapii \\
+		 & & przerwa] & $V_M$ $[\dfrac{mg}{m^{2}}]$ &  &  \\ \hline 
 		4 & 1 & [1 3] & 5 & 9 & 1 \\ \hline
 		\end{tabular}
 \end{table} 
@@ -786,7 +786,7 @@ Tab. \ref{chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany d³ugoœci cyklu (d³u
 \newpage
 Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~d³ugoœci cyklu chemioterapii wynosz¹cej 4 (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu}) oraz~8 (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}) dni, a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_liczby_dni_cyklu} i~\ref{stezenie_chemio_zmiany_liczby_dni_cyklu8}). 
 
-Symulacja zak³ada³a rozpoczêcie chemioterapii (podanie pierwszej dawki cytostatyka) w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. Ka¿de z~tych powtórzeñ mo¿na zaobserwowaæ w~postaci pików na~wykresach zmian stê¿enia oraz~jako charakterystyczne za³amanie krzywych odpowiadaj¹cych badanym populacjom (Rys. \ref{wykresy_chemio_zmiany_liczby_dni_cyklu}). We wszystkich powtórzeniach dawka cytostatyka $V_M = 5$, zaœ~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami by³a zale¿na od~d³ugoœci i~schematu cyklu. Dla 4-dniowego cyklu (schemat [1 3]) by³y~to 3 dni przerwy, natomiast dla~8-dniowego cyklu (schemat [1 7]) 7 dni przerwy. 
+Symulacja zak³ada³a rozpoczêcie chemioterapii (podanie pierwszej dawki cytostatyka) w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. Ka¿de z~tych powtórzeñ mo¿na zaobserwowaæ w~postaci pików na~wykresach zmian stê¿enia oraz~jako charakterystyczne za³amanie krzywych odpowiadaj¹cych badanym populacjom (Rys. \ref{wykresy_chemio_zmiany_liczby_dni_cyklu}). We wszystkich powtórzeniach dawka cytostatyka $V_M = 5$ $\dfrac{mg}{m^{2}}$, zaœ~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami by³a zale¿na od~d³ugoœci i~schematu cyklu. Dla 4-dniowego cyklu (schemat [1 3]) by³y~to 3 dni przerwy, natomiast dla~8-dniowego cyklu (schemat [1 7]) 7 dni przerwy. 
 
 Podczas ka¿dej z~przerw liczba komórek nowotworowych zaczyna³a ponownie wzrastaæ. W przypadku cyklu trwaj¹cego 4 dni czas przerwy by³ zbyt krótki aby~komórki nowotworu znacznie siê rozmno¿y³y, dlatego mo¿liwa by³a regresja nowotworu, która nast¹pi³a w~26 dniu symulacji. W przypadku cyklu trwaj¹cego 8 dni, czas przerwy pomiêdzy dawkami by³ wystarczaj¹co d³ugi do~niekontrolowanego rozrostu nowotworu. Liczba komórek nowotworowych wzrasta³a i~ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~91 dniu symulacji (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}).
 
@@ -844,7 +844,8 @@ Tab. \ref{chemio_zmiany_dawki} przedstawia zmiany dawki dozowanego cytostatyka $
         \multicolumn{6}{|c|}{\textbf{D³ugoœæ cyklu: 4 dni}} \\ \hline \hline
 		Schemat & Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 	    cyklu & dozowanego & regresji & $[liczba$ & nowotworu & nowotworu\\ 
-	    & cytostatyka $V_M$ & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\ \hline
+	    & cytostatyka & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\
+	    & $V_M$ $[\dfrac{mg}{m^{2}}]$ & & & & \\ \hline
 		[1 3] & 3 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
 		[1 3] & 3,5 & 49,34 & $8,32 \cdot 10^{-8}$ & $8,32 \cdot 10^{-14}$ & $2,7 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 4 & 34 & $9,18 \cdot 10^{-8}$ & $9,18 \cdot 10^{-14}$ & $2,8 \cdot 10^{-5}$ \\ \hline
@@ -858,7 +859,8 @@ Tab. \ref{chemio_zmiany_dawki} przedstawia zmiany dawki dozowanego cytostatyka $
         \multicolumn{6}{|c|}{\textbf{D³ugoœæ cyklu: 8 dni}} \\ \hline \hline
         Schemat & Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 	    cyklu & dozowanego & regresji & $[liczba$ & nowotworu & nowotworu\\ 
-	    & cytostatyka $V_M$ & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\ \hline
+	    & cytostatyka & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\
+	    & $V_M$ $[\dfrac{mg}{m^{2}}]$ & & & & \\ \hline
 		[1 7] & 5 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline 
 		[1 7] & 10 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline 
 		[1 7] & 12 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
@@ -866,7 +868,8 @@ Tab. \ref{chemio_zmiany_dawki} przedstawia zmiany dawki dozowanego cytostatyka $
         \multicolumn{6}{|c|}{\textbf{D³ugoœæ cyklu: 12 dni}} \\ \hline \hline
         Schemat & Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 	    cyklu & dozowanego & regresji & $[liczba$ & nowotworu & nowotworu\\ 
-	    & cytostatyka $V_M$ & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\ \hline
+	    & cytostatyka & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & [$mm$] \\
+	    & $V_M$ $[\dfrac{mg}{m^{2}}]$ & & & & \\ \hline
 		[1 11] & 52 & brak & $7,69 \cdot 10^{8}$ & $769$ & $5,69$ \\ \hline
 		[1 11] & 53 & 98,25 & $1,79 \cdot 10^{-13}$ & $1,79 \cdot 10^{-19}$ & $3,5 \cdot 10^{-7}$ \\ \hline
 		\end{tabular}
@@ -875,22 +878,24 @@ Tab. \ref{chemio_zmiany_dawki} przedstawia zmiany dawki dozowanego cytostatyka $
 \newpage
 Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_dawki} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~4-dniowego cyklu chemioterapii (Rys. \ref{wykres_chemio_zmiany_dawki}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_dawki}). 
 
-Symulacja zak³ada³a rozpoczêcie chemioterapii w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. W~ka¿dym powtórzeniu dawka cytostatyka $V_M = 3$, a~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
+\newpage
+Symulacja zak³ada³a rozpoczêcie chemioterapii w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. W~ka¿dym powtórzeniu dawka cytostatyka $V_M = 3$ $\dfrac{mg}{m^{2}}$, a~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
 
-Mimo d³ugoœci cyklu równej 4 dni, która w~symulacji \ref{chemio_zmiana_dlugosci_cyklu} zapewnia³a skutecznoœæ leczenia, w~przypadku zmniejszenia dawki cytostatyka do~$V_M = 3$ nie~by³a ona wystarczaj¹ca do~wyst¹pienia regresji nowotworu. Po zakoñczeniu leczenia liczba komórek nowotworowych wzrasta³a do~66 dnia symulacji (Rys. \ref{wykres_chemio_zmiany_dawki}) po~czym ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$).  
+Mimo d³ugoœci cyklu równej 4 dni, która w~symulacji \ref{chemio_zmiana_dlugosci_cyklu} zapewnia³a skutecznoœæ leczenia, w~przypadku zmniejszenia dawki cytostatyka do~$V_M = 3$ $\dfrac{mg}{m^{2}}$ nie~by³a ona wystarczaj¹ca do~wyst¹pienia regresji nowotworu. Po zakoñczeniu leczenia liczba komórek nowotworowych wzrasta³a do~66 dnia symulacji (Rys. \ref{wykres_chemio_zmiany_dawki}) po~czym ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$).  
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~66 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_chemio_zmiany_dawki}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$ $\dfrac{mg}{m^{2}}$. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~66 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_chemio_zmiany_dawki}
 \includegraphics[width=0.5\textwidth]{wykres_chemio_zmiany_dawki}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$.]{\label{stezenie_chemio_zmiany_dawki}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$ $\dfrac{mg}{m^{2}}$.]{\label{stezenie_chemio_zmiany_dawki}
 \includegraphics[width=0.5\textwidth]{stezenie_chemio_zmiany_dawki}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka - chemioterapia, scenariusz II, zmiana dawki dozowanego cytostatyka $V_M$]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas chemioterapii cytostatyka dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka - chemioterapia, scenariusz II, zmiana dawki dozowanego cytostatyka $V_M$]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas chemioterapii cytostatyka dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 3$ $\dfrac{mg}{m^{2}}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_chemio_zmiany_dawki}
 \end{figure}
 
-Rys. \ref{dzien_regr_w_zaleznosci_od_dawki} przedstawia zale¿noœæ dnia wyst¹pienia regresji nowotworu od~u¿ytej dawki cytostatyka $V_M$. Powy¿ej pewnego progu ($\sim 10$) zwiêkszanie dawki nie~ma~wp³ywu na~przyspieszenie regresji.
+\newpage
+Rys. \ref{dzien_regr_w_zaleznosci_od_dawki} przedstawia zale¿noœæ dnia wyst¹pienia regresji nowotworu od~u¿ytej dawki cytostatyka $V_M$. Powy¿ej pewnego progu ($\sim 10$ $\dfrac{mg}{m^{2}}$) zwiêkszanie dawki nie~ma~wp³ywu na~przyspieszenie regresji.
 
 \begin{figure}[h!]
 \centering
@@ -898,15 +903,23 @@ Rys. \ref{dzien_regr_w_zaleznosci_od_dawki} przedstawia zale¿noœæ dnia wyst¹pien
 \caption{Dzieñ regresji nowotworu w~zale¿noœci od~dawki dozowanego cytostatyka~$V_M$.}\label{dzien_regr_w_zaleznosci_od_dawki}
 \end{figure}
 
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_7.3}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{slupki_7.3}
+\caption{Liczba komórek nowotworowych $T(120)$  w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od dawki dozowanego cytostatyka.}\label{slupki_7.3}
+\end{figure}
+
 \newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item skutecznoœæ chemioterapii (regresja nowotworu lub jej brak) oraz~czas potrzebny do~regresji nowotworu bêd¹cej skutkiem chemioterapii zale¿y od~dawki dozowanego podczas leczenia cytostatyka; regresja nowotworu nie~wystêpuje dla~dawki $V_M = 3$, natomiast dla~dawki $V_M = 3,5$ wystêpuje w~50 dniu od~rozpoczêcia symulacji (leczenia);
-\item dla~niewielkich wartoœci dawki cytostatyka $V_M$ (np.: $V_M = 3,5$, $V_M = 4$, $V_M = 5$) ma³e zmiany dawki powoduj¹ znaczne skrócenie czasu potrzebnego do~regresji nowotworu (dzieñ regresji, odpowiednio: 50, 34, 26), natomiast przy wiêkszych dawkach (np.: $V_M = 11$, $V_M = 20$, $V_M = 30$), ich zmiana nie~wp³ywa znacz¹co na~dzieñ regresji (dzieñ regresji, odpowiednio: 18, 16, 16);
-\item skuteczna dawka cytostatyka ró¿ni siê w~zale¿noœci od~d³ugoœci cyklu chemioterapii; dla~4-dniowego cyklu chemioterapii do~skutecznego leczenia wystarczaj¹ca jest dawka $V_M = 3,5$, przy dwukrotnie d³u¿szym cyklu (8 dni) konieczna jest prawie 4 razy wiêksza dawka ($V_M = 13$), natomiast przy cyklu trzykrotnie d³u¿szym (12 dni) jest ponad 15 razy wiêksza ($V_M = 53$).
+\item skutecznoœæ chemioterapii (regresja nowotworu lub jej brak) oraz~czas potrzebny do~regresji nowotworu bêd¹cej skutkiem chemioterapii zale¿y od~dawki dozowanego podczas leczenia cytostatyka; regresja nowotworu nie~wystêpuje dla~dawki $V_M = 3$ $\dfrac{mg}{m^{2}}$, natomiast dla~dawki $V_M = 3,5$ $\dfrac{mg}{m^{2}}$ wystêpuje w~50 dniu od~rozpoczêcia symulacji (leczenia);
+\item dla~niewielkich wartoœci dawki cytostatyka $V_M$ (np.: $V_M = 3,5$ $\dfrac{mg}{m^{2}}$, $V_M = 4$ $\dfrac{mg}{m^{2}}$, $V_M = 5$ $\dfrac{mg}{m^{2}}$) ma³e zmiany dawki powoduj¹ znaczne skrócenie czasu potrzebnego do~regresji nowotworu (dzieñ regresji, odpowiednio: 50, 34, 26), natomiast przy wiêkszych dawkach (np.: $V_M = 11$ $\dfrac{mg}{m^{2}}$, $V_M = 20$ $\dfrac{mg}{m^{2}}$, $V_M = 30$ $\dfrac{mg}{m^{2}}$), ich zmiana nie~wp³ywa znacz¹co na~dzieñ regresji (dzieñ regresji, odpowiednio: 18, 16, 16);
+\item skuteczna dawka cytostatyka ró¿ni siê w~zale¿noœci od~d³ugoœci cyklu chemioterapii; dla~4-dniowego cyklu chemioterapii do~skutecznego leczenia wystarczaj¹ca jest dawka $V_M = 3,5$ $\dfrac{mg}{m^{2}}$, przy dwukrotnie d³u¿szym cyklu (8 dni) konieczna jest prawie 4 razy wiêksza dawka ($V_M = 13$ $\dfrac{mg}{m^{2}}$), natomiast przy cyklu trzykrotnie d³u¿szym (12 dni) jest ponad 15 razy wiêksza ($V_M = 53$ $\dfrac{mg}{m^{2}}$).
 \end{itemize}
 
-Analiza zmian dawki podawanego cytostatyka $V_M$ wykaza³a, ¿e mo¿liwe jest uzyskanie podobnych efektów leczenia przy wykorzystaniu ograniczonej iloœci szkodliwego dla~zdrowych komórek cytostatyka. Jedyn¹ ró¿nic¹ przy zmniejszaniu dawki $V_M$ jest wyd³u¿ony czas terapii. Ponadto, wykazano, ¿e dla~danego cytostatyka powy¿ej pewnego progu ($\sim 10$) dalsze zwiêkszanie dawki $V_M$ nie~wp³ywa na~polepszenie skutków leczenia.
+Analiza zmian dawki podawanego cytostatyka $V_M$ wykaza³a, ¿e mo¿liwe jest uzyskanie podobnych efektów leczenia przy wykorzystaniu ograniczonej iloœci szkodliwego dla~zdrowych komórek cytostatyka. Jedyn¹ ró¿nic¹ przy zmniejszaniu dawki $V_M$ jest wyd³u¿ony czas terapii. Ponadto, wykazano, ¿e dla~danego cytostatyka powy¿ej pewnego progu ($\sim 10$ $\dfrac{mg}{m^{2}}$) dalsze zwiêkszanie dawki $V_M$ nie~wp³ywa na~polepszenie skutków leczenia.
 
 \newpage
 \section{Scenariusz III -- zmiana dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu}
@@ -924,17 +937,18 @@ Analiza zmian dawki podawanego cytostatyka $V_M$ wykaza³a, ¿e mo¿liwe jest uzysk
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê dawki cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu zebrano w~Tab.~\ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach}.  \newline
 
-Tab. \ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach} przedstawia zmiany dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu (w~ka¿dym kolejnym cyklu zmniejszano dawkê $V_M$ o~podan¹ wartoœæ, zaczynaj¹c od~$V_M = 5$). Dodatkowo, Tab. \ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach} przedstawia schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).
+Tab. \ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach} przedstawia zmiany dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu (w~ka¿dym kolejnym cyklu zmniejszano dawkê $V_M$ o~podan¹ wartoœæ, zaczynaj¹c od~$V_M = 5$ $\dfrac{mg}{m^{2}}$). Dodatkowo, Tab. \ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach} przedstawia schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).
 
 \begin{table}[h!]
 \small
 	\centering
-	\caption[Wyniki symulacji - chemioterapia, scenariusz III, zmiana dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu]{Schemat cyklu chemioterapii, ró¿nica pomiêdzy kolejnymi dawkami (dawka $V_M$ zmniejszana z~ka¿dym kolejnym powtórzeniem cyklu o~podan¹ w~tabeli wartoœæ, zaczynaj¹c od~$V_M = 5$) dozowanego cytostatyka $V_M$, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).}
+	\caption[Wyniki symulacji - chemioterapia, scenariusz III, zmiana dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu]{Schemat cyklu chemioterapii, ró¿nica pomiêdzy kolejnymi dawkami (dawka $V_M$ zmniejszana z~ka¿dym kolejnym powtórzeniem cyklu o~podan¹ w~tabeli wartoœæ, zaczynaj¹c od~$V_M = 5$ $\dfrac{mg}{m^{2}}$) dozowanego cytostatyka $V_M$, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).}
 \label{chemio_zmiany_dawki_w_kolejnych_powtorzeniach}
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		Schemat & Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ \\
 		cyklu & dozowanego & regresji & $[liczba$ & nowotworu & promienia \\ 
-		& cytostatyka $V_M$ & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$] \\ \hline
+		& cytostatyka & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$] \\ 
+		& $V_M$ $[\dfrac{mg}{m^{2}}]$ & & & & \\ \hline
 		[1 3] & $0,1$ & 26,84 & $1,53 \cdot 10^{-7}$ & $1,53 \cdot 10^{-13}$ & $3,3 \cdot 10^{-5}$ \\ \hline
 		[1 3] & $0,2$ & 27,96 & $3,13 \cdot 10^{-8}$ & $3,13 \cdot 10^{-14}$ & $2 \cdot 10^{-5}$ \\ \hline
 		[1 3] & $0,3$ & 29,34 & $4,25 \cdot 10^{-8}$ & $4,25 \cdot 10^{-14}$ & $2,2 \cdot 10^{-5}$ \\ \hline
@@ -944,33 +958,34 @@ Tab. \ref{chemio_zmiany_dawki_w_kolejnych_powtorzeniach} przedstawia zmiany dawk
 \end{table} 
 
 \newpage
-Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}) oraz~o~$0,5$ (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4} oraz~Rys. \ref{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}). 
+Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~4-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ $\dfrac{mg}{m^{2}}$ (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}) oraz~o~$0,5$ (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4} oraz~Rys. \ref{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}). 
 
-Symulacja zak³ada³a rozpoczêcie chemioterapii w~pierwszym dniu symulacji i~dziewiêciokrotne powtórzenie cyklu, przy czym w~ka¿dym kolejnym powtórzeniu dawka $V_M$ zmniejszana by³a odpowiednio o~$0,4$ i~$0,5$, rozpoczynaj¹c od~dawki pocz¹tkowej $V_M = 5$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
+Symulacja zak³ada³a rozpoczêcie chemioterapii w~pierwszym dniu symulacji i~dziewiêciokrotne powtórzenie cyklu, przy czym w~ka¿dym kolejnym powtórzeniu dawka $V_M$ zmniejszana by³a odpowiednio o~$0,4$ $\dfrac{mg}{m^{2}}$ i~$0,5$ $\dfrac{mg}{m^{2}}$, rozpoczynaj¹c od~dawki pocz¹tkowej $V_M = 5$ $\dfrac{mg}{m^{2}}$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
 
 \newpage
-Zmniejszanie dawki $V_M$ o~$0,4$ pozwoli³o ograniczyæ negatywne skutki dzia³ania cytostatyka przy jednoczesnym zachowaniu skutecznoœci leczenia (regresja nowotworu po~34 dniach (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4})). W przypadku zmniejszania dawki $V_M$ o~$0,5$ regresja nie~nast¹pi³a, a~liczba komórek nowotworowych w~67 dniu symulacji (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}) ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$).  
+Zmniejszanie dawki $V_M$ o~$0,4$ $\dfrac{mg}{m^{2}}$ pozwoli³o ograniczyæ negatywne skutki dzia³ania cytostatyka przy jednoczesnym zachowaniu skutecznoœci leczenia (regresja nowotworu po~34 dniach (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4})). W przypadku zmniejszania dawki $V_M$ o~$0,5$ $\dfrac{mg}{m^{2}}$ regresja nie~nast¹pi³a, a~liczba komórek nowotworowych w~67 dniu symulacji (Rys. \ref{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}) ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$).  
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$. Widoczna (linia czerwona) regresja nowotworu po~34 dniach.]{\label{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ $\dfrac{mg}{m^{2}}$. Widoczna (linia czerwona) regresja nowotworu po~34 dniach.]{\label{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}
 \includegraphics[width=0.45\textwidth]{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}}
 \quad
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,5$. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~67 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,5$ $\dfrac{mg}{m^{2}}$. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~67 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}
 \includegraphics[width=0.45\textwidth]{wykres_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$.]{\label{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ $\dfrac{mg}{m^{2}}$.]{\label{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}
 \includegraphics[width=0.45\textwidth]{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,5$.]{\label{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,5$ $\dfrac{mg}{m^{2}}$.]{\label{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}
 \includegraphics[width=0.45\textwidth]{stezenie_chemio_zmiany_dawki_w_kolejnych_powtorzeniach5}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka - chemioterapia, scenariusz III, zmiana dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas chemioterapii cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ i~$0,5$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka - chemioterapia, scenariusz III, zmiana dawki dozowanego cytostatyka $V_M$ w~kolejnych powtórzeniach cyklu]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas chemioterapii cytostatyka dla~dawki dozowanego cytostatyka $V_M$ zmniejszanej w~kolejnych powtórzeniach o~$0,4$ $\dfrac{mg}{m^{2}}$ i~$0,5$ $\dfrac{mg}{m^{2}}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_chemio_zmiany_dawki_w_kolejnych_powtorzeniach4}
 \end{figure}
 
+\newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item chemioterapia jest skuteczna (wystêpuje regresja nowotworu) w~przypadku zmniejszania wielkoœci dawki z~ka¿dym kolejnym cyklem; leczenie metod¹ chemioterapii przy sta³ej dawce cytostatyka $V_M = 4$ (dzieñ regresji: 34, Tab. \ref{chemio_zmiany_dawki}) ma~czas potrzebny do~wyst¹pienia regresji nowotworu porównywalny do~leczenia ze zmniejszaniem dawki $V_M$ o~0,4 w~kolejnych cyklach rozpoczynaj¹c od~$V_M = 5$ (dzieñ regresji: 34); w~pierwszym przypadku regresja zostaje osi¹gniêta poprzez dziewiêciokrotne u¿ycie takiej samej dawki $V_M = 4$, podczas gdy w~drugim przypadku wykorzystane s¹~3 wiêksze oraz~6 mniejszych dawek, co~pozwala osi¹gn¹æ ten~sam efekt przy mniejszej sumarycznej dawce cytostatyka przyjmowanej przez~pacjenta, tj. mniejszych skutkach ubocznych.
+\item chemioterapia jest skuteczna (wystêpuje regresja nowotworu) w~przypadku zmniejszania wielkoœci dawki z~ka¿dym kolejnym cyklem; leczenie metod¹ chemioterapii przy sta³ej dawce cytostatyka $V_M = 4$ $\dfrac{mg}{m^{2}}$ (dzieñ regresji: 34, Tab. \ref{chemio_zmiany_dawki}) ma~czas potrzebny do~wyst¹pienia regresji nowotworu porównywalny do~leczenia ze zmniejszaniem dawki $V_M$ o~0,4 $\dfrac{mg}{m^{2}}$ w~kolejnych cyklach rozpoczynaj¹c od~$V_M = 5$ $\dfrac{mg}{m^{2}}$ (dzieñ regresji: 34); w~pierwszym przypadku regresja zostaje osi¹gniêta poprzez dziewiêciokrotne u¿ycie takiej samej dawki $V_M = 4$ $\dfrac{mg}{m^{2}}$, podczas gdy w~drugim przypadku wykorzystane s¹~3 wiêksze oraz~6 mniejszych dawek, co~pozwala osi¹gn¹æ ten~sam efekt przy mniejszej sumarycznej dawce cytostatyka przyjmowanej przez~pacjenta, tj. mniejszych skutkach ubocznych.
 \end{itemize}
 
 Poza analiz¹ dawek cytostatyka o~sta³ej wartoœci przez~ca³y czas trwania leczenia, testowano równie¿~zmniejszanie dawki w~kolejnych powtórzeniach cyklu. Z~symulacji wynika, ¿e mo¿e to~byæ sposób na~ograniczenie przyjmowanego przez~pacjenta szkodliwego cytostatyka. 
@@ -982,7 +997,7 @@ Poza analiz¹ dawek cytostatyka o~sta³ej wartoœci przez~ca³y czas trwania leczeni
 \noindent \newline \textbf{Warunki pocz¹tkowe:} 
 \begin{itemize}
 \item dla~pocz¹tkowej wielkoœci badanych populacji, tj. pocz¹tkow¹ liczbê komórek nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1};
-\item dla~chemioterapii, tj. d³ugoœæ cyklu, czas dozowania cytostatyka, schemat cyklu, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia chemioterapii przedstawia Tab.~\ref{warunki pocz¹tkowe_chemioterapii}. Dawka dozowanego cytostatyka $V_M$ wynosi³a 5, 4, 3,5 oraz~3.
+\item dla~chemioterapii, tj. d³ugoœæ cyklu, czas dozowania cytostatyka, schemat cyklu, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia chemioterapii przedstawia Tab.~\ref{warunki pocz¹tkowe_chemioterapii}. Dawka dozowanego cytostatyka $V_M$ wynosi³a 5 $\dfrac{mg}{m^{2}}$, 4 $\dfrac{mg}{m^{2}}$, 3,5 $\dfrac{mg}{m^{2}}$ oraz~3 $\dfrac{mg}{m^{2}}$.
 \end{itemize}
 
 \noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~\ref{parametry_modelu_z1}.
@@ -991,16 +1006,16 @@ Poza analiz¹ dawek cytostatyka o~sta³ej wartoœci przez~ca³y czas trwania leczeni
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê liczby powtórzeñ cyklu chemioterapii zebrano w~Tab. \ref{chemio_zmiany_liczby_powtorzen}. \newline
 
-Tab. \ref{chemio_zmiany_liczby_powtorzen} przedstawia zmiany liczby powtórzeñ cyklu. Dodatkowo, umieszczono w~Tab. \ref{chemio_zmiany_liczby_powtorzen} schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M$ równej 5, 4, 3,5 oraz~3.
+Tab. \ref{chemio_zmiany_liczby_powtorzen} przedstawia zmiany liczby powtórzeñ cyklu. Dodatkowo, umieszczono w~Tab. \ref{chemio_zmiany_liczby_powtorzen} schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M$ równej 5 $\dfrac{mg}{m^{2}}$, 4 $\dfrac{mg}{m^{2}}$, 3,5 $\dfrac{mg}{m^{2}}$ oraz~3 $\dfrac{mg}{m^{2}}$.
 
 \newpage
 \begin{table}[h!]
 \small
 	\centering
-	\caption[Wyniki symulacji - chemioterapia, scenariusz IV, zmiana liczby powtórzeñ cyklu chemioterapii]{Schemat oraz~liczba powtórzeñ cyklu chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~dawki dozowanego cytostatyka $V_M$ równej 5, 4, 3,5 oraz~3.}
+	\caption[Wyniki symulacji - chemioterapia, scenariusz IV, zmiana liczby powtórzeñ cyklu chemioterapii]{Schemat oraz~liczba powtórzeñ cyklu chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~dawki dozowanego cytostatyka $V_M$ równej 5 $\dfrac{mg}{m^{2}}$, 4 $\dfrac{mg}{m^{2}}$, 3,5 $\dfrac{mg}{m^{2}}$ oraz~3 $\dfrac{mg}{m^{2}}$.}
 \label{chemio_zmiany_liczby_powtorzen}
 \begin{tabular}{|c|c|c|c|c|c|} \hline \hline
-        \multicolumn{6}{|c|}{\textbf{$V_M = 5$}} \\ \hline \hline
+        \multicolumn{6}{|c|}{\textbf{$V_M = 5$ $\dfrac{mg}{m^{2}}$}} \\ \hline \hline
 		Schemat & Liczba & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ  \\
 		cyklu & powtórzeñ & regresji & $[liczba$ & nowotworu & promienia \\ 
 		& cyklu & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$]\\ \hline
@@ -1010,7 +1025,7 @@ Tab. \ref{chemio_zmiany_liczby_powtorzen} przedstawia zmiany liczby powtórzeñ cy
 		[1 3] & 6 & 26,5 & $6,08 \cdot 10^{-8}$ & $6,08 \cdot 10^{-14}$ & $2,4 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 5 & 27,92 & $2,31 \cdot 10^{-8}$ & $2,31 \cdot 10^{-14}$ & $1,8 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 4 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline \hline
-        \multicolumn{6}{|c|}{\textbf{$V_M = 4$}} \\ \hline \hline
+        \multicolumn{6}{|c|}{\textbf{$V_M = 4$ $\dfrac{mg}{m^{2}}$}} \\ \hline \hline
 		Schemat & Liczba & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ  \\
 		cyklu & powtórzeñ & regresji & $[liczba$ & nowotworu & promienia \\ 
 		& cyklu & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$]\\ \hline
@@ -1018,13 +1033,13 @@ Tab. \ref{chemio_zmiany_liczby_powtorzen} przedstawia zmiany liczby powtórzeñ cy
 		[1 3] & 8 & 34,67 & $1,19 \cdot 10^{-7}$ & $1,19 \cdot 10^{-13}$ & $3,1 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 7 & 36,04 & $5,37 \cdot 10^{-8}$ & $5,37 \cdot 10^{-14}$ & $2,3 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 6 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline  \hline
-		 \multicolumn{6}{|c|}{\textbf{$V_M = 3,5$}} \\ \hline \hline
+		 \multicolumn{6}{|c|}{\textbf{$V_M = 3,5$} $\dfrac{mg}{m^{2}}$} \\ \hline \hline
 		Schemat & Liczba & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ  \\
 		cyklu & powtórzeñ & regresji & $[liczba$ & nowotworu & promienia \\ 
 		& cyklu & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$]\\ \hline
 		[1 3] & 9 & 49,34 & $8,32 \cdot 10^{-8}$ & $8,32 \cdot 10^{-14}$ & $2,7 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 8 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline  \hline
-		 \multicolumn{6}{|c|}{\textbf{$V_M = 3$}} \\ \hline \hline
+		 \multicolumn{6}{|c|}{\textbf{$V_M = 3$ $\dfrac{mg}{m^{2}}$}} \\ \hline \hline
 		Schemat & Liczba & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ  \\
 		cyklu & powtórzeñ & regresji & $[liczba$ & nowotworu & promienia \\ 
 		& cyklu & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$]\\ \hline
@@ -1038,7 +1053,7 @@ Tab. \ref{chemio_zmiany_liczby_powtorzen} przedstawia zmiany liczby powtórzeñ cy
 \newpage 
 Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_liczby_powtorzen4} ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych 4-dniowego cyklu chemioterapii oraz~4 powtórzeñ cyklu (Rys. \ref{wykres_chemio_zmiany_liczby_powtorzen4}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_liczby_powtorzen4}). 
 
-Za³o¿ono rozpoczêcie chemioterapii w~pierwszym dniu symulacji oraz~dawkê $V_M = 5$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
+Za³o¿ono rozpoczêcie chemioterapii w~pierwszym dniu symulacji oraz~dawkê $V_M = 5$ $\dfrac{mg}{m^{2}}$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
 
 Ograniczenie liczby powtórzeñ cyklu do~4 uniemo¿liwi³o uzyskanie regresji guza. Po zakoñczeniu leczenia liczba komórek nowotworowych wzros³a i~ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~52 dniu symulacji (Rys. \ref{wykres_chemio_zmiany_liczby_powtorzen4}).  
 
@@ -1056,8 +1071,8 @@ Ograniczenie liczby powtórzeñ cyklu do~4 uniemo¿liwi³o uzyskanie regresji guza. 
 \newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item skutecznoœæ chemioterapii (regresja nowotworu) zale¿y od~liczby powtórzeñ cyklu chemioterapii; dla~dawki cytostatyka $V_M = 5$ leczenie jest skuteczne (dzieñ regresji: 28) przy 5 powtórzeniach cyklu, natomiast przy wiêkszej liczbie powtórzeñ (6, 7 powtórzeñ) moment wyst¹pienia regresji nowotworu nastêpuje nieznacznie wczeœniej (dzieñ regresji: 27, 26) lub w~tym samym czasie (8, 9 powtórzeñ - dzieñ regresji: 26, 26);
-\item chemioterapia przy u¿yciu dawki $V_M = 3$, która nie~jest skuteczna dla~9 powtórzeñ cyklu (brak regresji nowotworu) przy wiêkszej iloœci powtórzeñ cyklu (19 powtórzeñ) pozwala osi¹gn¹æ pozytywny wynik leczenia; czas do~wyst¹pienia regresji wynosi w~tym przypadku 87 dni (ponad 3 razy wiêcej ni¿~przy 5 powtórzeniach i~dawce $V_M = 5$), ale~jest to~mo¿liwoœæ zastosowania chemioterapii u~pacjentów, których organizm jest zbyt wyniszczony, by~zastosowaæ wiêksz¹ dawkê cytostatyka $V_M$.
+\item skutecznoœæ chemioterapii (regresja nowotworu) zale¿y od~liczby powtórzeñ cyklu chemioterapii; dla~dawki cytostatyka $V_M = 5$ $\dfrac{mg}{m^{2}}$ leczenie jest skuteczne (dzieñ regresji: 28) przy 5 powtórzeniach cyklu, natomiast przy wiêkszej liczbie powtórzeñ (6, 7 powtórzeñ) moment wyst¹pienia regresji nowotworu nastêpuje nieznacznie wczeœniej (dzieñ regresji: 27, 26) lub w~tym samym czasie (8, 9 powtórzeñ - dzieñ regresji: 26, 26);
+\item chemioterapia przy u¿yciu dawki $V_M = 3$ $\dfrac{mg}{m^{2}}$, która nie~jest skuteczna dla~9 powtórzeñ cyklu (brak regresji nowotworu) przy wiêkszej iloœci powtórzeñ cyklu (19 powtórzeñ) pozwala osi¹gn¹æ pozytywny wynik leczenia; czas do~wyst¹pienia regresji wynosi w~tym przypadku 87 dni (ponad 3 razy wiêcej ni¿~przy 5 powtórzeniach i~dawce $V_M = 5$ $\dfrac{mg}{m^{2}}$), ale~jest to~mo¿liwoœæ zastosowania chemioterapii u~pacjentów, których organizm jest zbyt wyniszczony, by~zastosowaæ wiêksz¹ dawkê cytostatyka $V_M$.
 \end{itemize}
 
 Zgodnie z~przeprowadzon¹ analiz¹ zmian liczby powtórzeñ cyklu mo¿na stwierdziæ, ¿e leczenie metod¹ chemioterapii jest procesem z³o¿onym, w~którym jednym z istotnych czynników jest okreœlenie ile razy nale¿y powtórzyæ dozowanie cytostatyka u~danego pacjenta. Symulacje umo¿liwiaj¹ wyznaczenie momentu, w~którym dzia³anie cytostatyka obni¿a liczbê komórek nowotworowych do~takiej wartoœci, przy której guz ulega regresji i~nie zaczyna na~nowo wzrastaæ.
@@ -1069,7 +1084,7 @@ Zgodnie z~przeprowadzon¹ analiz¹ zmian liczby powtórzeñ cyklu mo¿na stwierdziæ, 
 \noindent \newline \textbf{Warunki pocz¹tkowe:} 
 \begin{itemize}
 \item dla~pocz¹tkowej wielkoœci badanych populacji, tj. pocz¹tkow¹ liczbê komórek nowotworu $T(0)$, liczbê komórek NK $N(0)$, liczbê limfocytów $T_{CD8+}$ oraz~liczbê limfocytów kr¹¿¹cych $C(0)$ przedstawia Tab. \ref{warunki_poczatkowe_z1};
-\item dla~chemioterapii, tj. d³ugoœæ cyklu, czas dozowania cytostatyka, schemat cyklu, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia chemioterapii przedstawia Tab.~\ref{warunki pocz¹tkowe_chemioterapii}. Dawka dozowanego cytostatyka $V_M$ wynosi³a 5 oraz~4,5.
+\item dla~chemioterapii, tj. d³ugoœæ cyklu, czas dozowania cytostatyka, schemat cyklu, liczbê powtórzeñ cyklu oraz~dzieñ rozpoczêcia chemioterapii przedstawia Tab.~\ref{warunki pocz¹tkowe_chemioterapii}. Dawka dozowanego cytostatyka $V_M$ wynosi³a 5 $\dfrac{mg}{m^{2}}$ oraz~4,5 $\dfrac{mg}{m^{2}}$.
 \end{itemize}
 
 \noindent \newline \textbf{Przyjête parametry:} \newline Parametry dla~modelu uwzglêdniaj¹cego leczenie przedstawia Tab. \ref{parametry_modelu_bez1} i~\ref{parametry_modelu_z1}.
@@ -1078,15 +1093,15 @@ Zgodnie z~przeprowadzon¹ analiz¹ zmian liczby powtórzeñ cyklu mo¿na stwierdziæ, 
 
 \noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cego siê dnia rozpoczêcia chemioterapii (dozowania cytostatyka) zebrano w~Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii}. \newline
 
-Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} przedstawia zmiany dnia rozpoczêcia chemioterapii. Dodatkowo, w~Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} umieszczono schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M$ równej 5 oraz~4,5.
+Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} przedstawia zmiany dnia rozpoczêcia chemioterapii. Dodatkowo, w~Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} umieszczono schemat cyklu, dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M$ równej 5 $\dfrac{mg}{m^{2}}$ oraz~4,5 $\dfrac{mg}{m^{2}}$.
 
 \newpage
 \begin{table}[h!]
 	\centering
-	\caption[Wyniki symulacji - chemioterapia, scenariusz V, zmiana dnia rozpoczêcia chemioterapii]{Schemat cyklu oraz~dzieñ rozpoczêcia chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~dawki dozowanego cytostatyka $V_M$ równej 5 oraz~4,5.}
+	\caption[Wyniki symulacji - chemioterapia, scenariusz V, zmiana dnia rozpoczêcia chemioterapii]{Schemat cyklu oraz~dzieñ rozpoczêcia chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~dawki dozowanego cytostatyka $V_M$ równej 5 $\dfrac{mg}{m^{2}}$ oraz~4,5 $\dfrac{mg}{m^{2}}$.}
 \label{zmiany_dnia_rozpoczecia_cehmioterapii}
 \begin{tabular}{|c|c|c|c|c|c|} \hline \hline
-        \multicolumn{6}{|c|}{\textbf{$V_M = 5$}} \\ \hline \hline
+        \multicolumn{6}{|c|}{\textbf{$V_M = 5$ $\dfrac{mg}{m^{2}}$}} \\ \hline \hline
 		Schemat & Dzieñ & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ \\
 		cyklu & rozpoczêcia & regresji & $[liczba$ & nowotworu & promienia \\
 		& chemioterapii & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$] \\ \hline
@@ -1096,7 +1111,7 @@ Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} przedstawia zmiany dnia rozpocz
 		[1 3] & 11 & 59,25 & $2,61 \cdot 10^{-7}$ & $2,61 \cdot 10^{-13}$ & $4 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 12 & 60 & $3,93 \cdot 10^{-8}$ & $3,93 \cdot 10^{-14}$ & $2,1 \cdot 10^{-5}$ \\ \hline
 		[1 3] & 13 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline \hline
-        \multicolumn{6}{|c|}{\textbf{$V_M = 4,5$}} \\ \hline \hline
+        \multicolumn{6}{|c|}{\textbf{$V_M = 4,5$ $\dfrac{mg}{m^{2}}$}} \\ \hline \hline
 		Schemat & Dzieñ & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ \\
 		cyklu & rozpoczêcia & regresji & $[liczba$ & nowotworu & promienia \\
 		& chemioterapii & nowotworu & $kom$ó$rek]$ & [$mm^{3}$] & nowotworu [$mm$] \\ \hline
@@ -1112,12 +1127,10 @@ Tab. \ref{zmiany_dnia_rozpoczecia_cehmioterapii} przedstawia zmiany dnia rozpocz
 
 Przyk³adowo, Rys. \ref{wykresy_zmiany_dnia_rozpoczecia_cehmioterapii13} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~4-dniowego cyklu chemioterapii, rozpoczêtej w~13 dniu symulacji (Rys. \ref{wykres_zmiany_dnia_rozpoczecia_cehmioterapii13}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_zmiany_dnia_rozpoczecia_cehmioterapii13}). 
 
-Symulacja zak³ada³a dziewiêciokrotne powtórzenie dozowania cytostatyka o~dawce $V_M = 5$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
+Symulacja zak³ada³a dziewiêciokrotne powtórzenie dozowania cytostatyka o~dawce $V_M = 5$ $\dfrac{mg}{m^{2}}$. Czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny), natomiast d³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami wynosi³a 3 dni. 
 
+\newpage
 OpóŸnienie leczenia o~nieca³e dwa tygodnie skutkowa³o rozrostem guza i~brakiem wyst¹pienia regresji (Rys. \ref{wykres_zmiany_dnia_rozpoczecia_cehmioterapii13}). Liczba komórek nowotworowych ustabilizowa³a siê w~88 dniu symulacji na~wysokim poziomie ($9,8 \cdot 10^{8}$). 
-
-
-Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_7.5}.
 
 \begin{figure}[h!]
 \centering
@@ -1130,20 +1143,22 @@ Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_7.5}.
 \label{wykresy_zmiany_dnia_rozpoczecia_cehmioterapii13}
 \end{figure}
 
+\newpage
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_7.5}.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.45\textwidth]{slupki_7.5}
+\includegraphics[width=0.8\textwidth]{slupki_7.5}
 \caption{Liczba komórek nowotworowych $T(120)$  w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od dnia rozpoczêcia chemioterapii (dozowania cytostatyka).}\label{slupki_7.5}
 \end{figure}
 
-\newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item skutecznoœæ chemioterapii (regresja nowotworu) zale¿y od~dnia rozpoczêcia leczenia (dozowania cytostatyka); dla~dawki cytostatyka $V_M = 5$ oraz~$V_M = 4,5$ leczenie rozpoczête w~1 dniu symulacji trwa odpowiednio: 26 dni oraz~29 dni (dzieñ regresji nowotworu), podczas gdy rozpoczête 4 dni póŸniej trwa, odpowiednio 40 dni (o~2 tygodnie d³u¿ej) oraz~50 dni (o~3 tygodnie d³u¿ej);
-\item dla~dawki $V_M = 4,5$, przesuniêcie dnia rozpoczêcia chemioterapii zaledwie o~5 dni skutkuje negatywnym wynikiem leczenia (brakiem regresji nowotworu), podczas gdy dla dawki $V_M = 5$ leczenie mo¿na rozpocz¹æ nawet 12 dnia zachowuj¹c skutecznoœæ terapii, jednak ponad dwukrotnie (dzieñ 60) wyd³u¿aj¹c czas do wyst¹pienia regresji nowotworu.
+\item skutecznoœæ chemioterapii (regresja nowotworu) zale¿y od~dnia rozpoczêcia leczenia (dozowania cytostatyka); dla~dawki cytostatyka $V_M = 5$ $\dfrac{mg}{m^{2}}$ oraz~$V_M = 4,5$ $\dfrac{mg}{m^{2}}$ leczenie rozpoczête w~1 dniu symulacji trwa odpowiednio: 26 dni oraz~29 dni (dzieñ regresji nowotworu), podczas gdy rozpoczête 4 dni póŸniej trwa, odpowiednio 40 dni (o~2 tygodnie d³u¿ej) oraz~50 dni (o~3 tygodnie d³u¿ej);
+\item dla~dawki $V_M = 4,5$ $\dfrac{mg}{m^{2}}$, przesuniêcie dnia rozpoczêcia chemioterapii zaledwie o~5 dni skutkuje negatywnym wynikiem leczenia (brakiem regresji nowotworu), podczas gdy dla dawki $V_M = 5$ $\dfrac{mg}{m^{2}}$ leczenie mo¿na rozpocz¹æ nawet 12 dnia zachowuj¹c skutecznoœæ terapii, jednak ponad dwukrotnie (dzieñ 60) wyd³u¿aj¹c czas do wyst¹pienia regresji nowotworu.
 \end{itemize}
 
-Skutecznoœæ chemioterapii w~du¿ym stopniu zale¿y od~dnia jej rozpoczêcia. Jak wynika z~symulacji, w~pewnych przypadkach, nawet niewielkie zmiany (np. opóŸnienie leczenia o~5 dni dla~dawki $V_M = 4,5$) mog¹ decydowaæ o~wyniku leczenia.
+Skutecznoœæ chemioterapii w~du¿ym stopniu zale¿y od~dnia jej rozpoczêcia. Jak wynika z~symulacji, w~pewnych przypadkach, nawet niewielkie zmiany (np. opóŸnienie leczenia o~5 dni dla~dawki $V_M = 4,5$ $\dfrac{mg}{m^{2}}$) mog¹ decydowaæ o~wyniku leczenia.
 
 \newpage
 \chapter{Leczenie metod¹ immunoterapii -- symulacje wykonane dla~modelu leczonego guza} \label{sym_i}
@@ -1548,7 +1563,7 @@ W symulacji leczenia skojarzonymi metodami chemioterapii i~immunoterapii badano:
 \end{itemize}
 
 \newpage
-Przyk³adowo, Rys. \ref{wykresy_skojarzone} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii (Rys. \ref{wykres_skojarzone}), a~tak¿e zmiany w~czasie stê¿enia, cytostatyka i~IL-2, dozowanych podczas leczenia skojarzonego (Rys. \ref{stezenie_skojarzone}). Przyjêto dawki: cytostatyka $V_M = 5$, IL-2 $V_I = 5 \cdot 10^{6}$ oraz~TIL $V_L = 10^{9}$ komórek. Czas dawkowania cytostatyka oraz~TIL wynosi³ 1 dzieñ (24 godziny), a~IL-2 7 godzin i~12 minut. Liczba powtórzeñ cyklu wynosi³a, odpowiednio: chemioterapii 9, IL-2 6, TIL 1. D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu chemioterapii wynosi³a 3 dni, natomiast dla~IL-2 4 godziny i~48 minut. Dozowanie cytostatyka rozpoczêcto pierwszego dnia, TIL 8 dnia, a~IL-2 9 dnia symulacji. D³ugoœæ cyklu chemioterapii by³a równa 8 dni. 
+Przyk³adowo, Rys. \ref{wykresy_skojarzone} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii (Rys. \ref{wykres_skojarzone}), a~tak¿e zmiany w~czasie stê¿enia, cytostatyka i~IL-2, dozowanych podczas leczenia skojarzonego (Rys. \ref{stezenie_skojarzone}). Przyjêto dawki: cytostatyka $V_M = 5$ $\dfrac{mg}{m^{2}}$, IL-2 $V_I = 5 \cdot 10^{6}$ oraz~TIL $V_L = 10^{9}$ komórek. Czas dawkowania cytostatyka oraz~TIL wynosi³ 1 dzieñ (24 godziny), a~IL-2 7 godzin i~12 minut. Liczba powtórzeñ cyklu wynosi³a, odpowiednio: chemioterapii 9, IL-2 6, TIL 1. D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu chemioterapii wynosi³a 3 dni, natomiast dla~IL-2 4 godziny i~48 minut. Dozowanie cytostatyka rozpoczêcto pierwszego dnia, TIL 8 dnia, a~IL-2 9 dnia symulacji. D³ugoœæ cyklu chemioterapii by³a równa 8 dni. 
 
 Symulacja zak³ada³a po³¹czenie metod chemioterapii i~immunoterapii w~leczeniu nowotworu, które dla~podanych warunków stosowane osobno by³y nieskuteczne. Takie skojarzenie chemioterapii i~immunoterapii skutkuje regresj¹ nowotworu w~15 dniu symulacji.
 
@@ -1608,7 +1623,7 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dni_cyklu} przedstawia zmiany d³ugoœci cykl
 
 Przyk³adowo, Rys. \ref{wykresy_skojarzone200} ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie d³ugoœæ cyklu chemioterapii wynosi 120 dni (Rys. \ref{wykres_skojarzone200}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_skojarzone200}). 
 
-Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka $V_M = 5$. Czas dawkowania cytostatyka wynosi³ 1 dzieñ (24 godziny). Liczba powtórzeñ cyklu chemioterapii wynosi³a 9 (czas symulacji $T_{k} = 120$ obejmuje tylko jedno powtórzenie). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu chemioterapii wynosi³a 119 dni. Rozpoczêcie dozowania cytostatyka nast¹pi³o w~pierwszym dniu symulacji. 
+Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka $V_M = 5$ $\dfrac{mg}{m^{2}}$. Czas dawkowania cytostatyka wynosi³ 1 dzieñ (24 godziny). Liczba powtórzeñ cyklu chemioterapii wynosi³a 9 (czas symulacji $T_{k} = 120$ obejmuje tylko jedno powtórzenie). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami cyklu chemioterapii wynosi³a 119 dni. Rozpoczêcie dozowania cytostatyka nast¹pi³o w~pierwszym dniu symulacji. 
 
 Przy równoczesnym wykorzystaniu immunoterapii, regresja nowotworu wyst¹pi³a nawet przy~bardzo d³ugim cyklu dozowania cytostatyka. Regresja nast¹pi³a w~17 dniu symulacji.
 
@@ -1623,10 +1638,13 @@ Przy równoczesnym wykorzystaniu immunoterapii, regresja nowotworu wyst¹pi³a nawe
 \label{wykresy_skojarzone200}
 \end{figure}
 
+\newpage
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_9.1}.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.45\textwidth]{slupki_9.1}
-\caption{}\label{slupki_9.1}
+\includegraphics[width=0.8\textwidth]{slupki_9.1}
+\caption{Liczba komórek nowotworowych $T(120)$  w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od d³ugoœci cyklu chemioterapii w leczeniu skojarzonym.}\label{slupki_9.1}
 \end{figure}
 
 \newpage
@@ -1652,9 +1670,9 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dawka} przedstawia zmiany dawki dozowanego 
 \label{zmiana_cehmio_stale_immuno_dawka}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
         \multicolumn{5}{|c|}{\textbf{D³ugoœæ cyklu: 4 dni}} \\ \hline \hline
-		Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
-		dozowanego & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
-		cytostatyka $V_M$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
+		Dawka dozowanego & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
+		cytostatyka & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
+		$V_M$ $[\dfrac{mg}{m^{2}}]$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
 		5 & 13,25 & $9,43 \cdot 10^{-95}$ & $9,43 \cdot 10^{-101}$ & $2,8 \cdot 10^{-34}$ \\ \hline
 		4 & 13,5 & $5,23 \cdot 10^{-94}$ & $5,23 \cdot 10^{-100}$ & $5 \cdot 10^{-34}$ \\ \hline
 		3 & 13,92 & $1,25 \cdot 10^{-92}$ & $1,25 \cdot 10^{-98}$ & $1,4 \cdot 10^{-33}$ \\ \hline
@@ -1663,9 +1681,9 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dawka} przedstawia zmiany dawki dozowanego 
 		0,75 & 17,75 & $1,13 \cdot 10^{-86}$ & $1,13 \cdot 10^{-92}$ & $1,4 \cdot 10^{-31}$ \\ \hline
 		0,5 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline \hline
         \multicolumn{5}{|c|}{\textbf{D³ugoœæ cyklu: 8 dni}} \\ \hline \hline
-		Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
-		dozowanego & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
-		cytostatyka $V_M$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
+		Dawka dozowanego & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
+		cytostatyka & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
+		$V_M$ $[\dfrac{mg}{m^{2}}]$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
 		5 & 14,79 & $5,57 \cdot 10^{-95}$ & $5,57 \cdot 10^{-101}$ & $2,4 \cdot 10^{-34}$ \\ \hline
 		4 & 15,08 & $5,05 \cdot 10^{-94}$ & $5,05 \cdot 10^{-100}$ & $4,9 \cdot 10^{-34}$ \\ \hline
 		3 & 15,67 & $9,99 \cdot 10^{-93}$ & $9,99 \cdot 10^{-99}$ & $1,3 \cdot 10^{-33}$ \\ \hline
@@ -1674,9 +1692,9 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dawka} przedstawia zmiany dawki dozowanego 
 		1,5 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
 		1 & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline  \hline
 		 \multicolumn{5}{|c|}{\textbf{D³ugoœæ cyklu: 120 dni}} \\ \hline \hline
-		Dawka & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
-		dozowanego & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
-		cytostatyka $V_M$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
+		Dawka dozowanego & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
+		cytostatyka & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\ 
+		$V_M$ $[\dfrac{mg}{m^{2}}]$ & nowotworu & & [$mm^{3}$] & [$mm$] \\ \hline
 		5 & 16,08 & $6,71 \cdot 10^{-87}$ & $6,71 \cdot 10^{-93}$ & $1,2 \cdot 10^{-31}$ \\ \hline
 		4 & 16,25 & $9,35 \cdot 10^{-87}$ & $9,35 \cdot 10^{-93}$ & $1,3 \cdot 10^{-31}$ \\ \hline
 		3 & 16,63 & $1,94 \cdot 10^{-86}$ & $1,94 \cdot 10^{-92}$ & $1,7 \cdot 10^{-31}$ \\ \hline
@@ -1689,22 +1707,31 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dawka} przedstawia zmiany dawki dozowanego 
 \newpage
 Przyk³adowy wynik leczenia metodami skojarzonymi przedstawia Rys. \ref{wykresy_skojarzone_dawka1_75}. Ukazuje on~zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie d³ugoœæ cyklu chemioterapii wynosi 8 dni (Rys. \ref{wykres_skojarzone_dawka1_75}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_skojarzone200}). 
 
-Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawkê cytostatyka zmniejszono do~wartoœci $V_M = 1,75$, poniewa¿ jest to~najmniejsza dawka skuteczna (powoduj¹ca regresjê guza) przy niezmienionych pozosta³ych wartoœciach pocz¹tkowych. Regresja wyst¹pi³a w~18 dniu symulacji.
+Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawkê cytostatyka zmniejszono do~wartoœci $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, poniewa¿ jest to~najmniejsza dawka skuteczna (powoduj¹ca regresjê guza) przy niezmienionych pozosta³ych wartoœciach pocz¹tkowych. Regresja wyst¹pi³a w~18 dniu symulacji.
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$. Regresja nowotworu widoczna (linia czerwona) po~czasie $T_{r}$~$\approx$ 18 dni.]{\label{wykres_skojarzone_dawka1_75}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$. Regresja nowotworu widoczna (linia czerwona) po~czasie $T_{r}$~$\approx$ 18 dni.]{\label{wykres_skojarzone_dawka1_75}
 \includegraphics[width=0.45\textwidth]{wykres_skojarzone_dawka1_75}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$.]{\label{stezenie_skojarzone_dawka1_75}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$.]{\label{stezenie_skojarzone_dawka1_75}
 \includegraphics[width=0.45\textwidth]{stezenie_skojarzone_dawka1_75}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dawki dozowanego cytostatyka $V_M$]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dawki dozowanego cytostatyka $V_M$]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii oraz~dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_skojarzone_dawka1_75}
+\end{figure}
+
+\newpage
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_9.2}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{slupki_9.2}
+\caption{Liczba komórek nowotworowych $T(120)$  w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od dawki dozowanego cytostatyka w leczeniu skojarzonym.}\label{slupki_9.2}
 \end{figure}
 
 \textbf{Wnioski:}
 \begin{itemize}
-\item skutecznoœæ leczenia skojarzonego zale¿y od~wielkoœci dawki dozowanego w~chemioterapii cytostatyka; dla~krótkiego cyklu (4 dni) dawk¹ wystarczaj¹c¹ do~osi¹gniêcia zamierzonego efektu (regresji nowotworu) w~18 dniu symulacji jest $V_M = 0,75$ (w przypadku leczenia wy³¹cznie metod¹ chemioterapii ta~dawka wynosi $V_M = 3,5$ (Tab. \ref{chemio_zmiany_dawki}), czyli ponad cztery razy wiêcej, podczas gdy dzieñ regresji to~50 dzieñ symulacji), natomiast dla~d³u¿szych cykli (8 oraz~120 dni) jest to~dawka $V_M = 1,75$ (wartoœæ t¹ wykorzystano w~dalszych symulacjach), podczas gdy w~leczeniu wy³¹cznie metod¹ chemioterapii dla~cyklu o~d³ugoœci 8 dni regresja nie~wystêpuje lub wystêpuje dla~bardzo du¿ej wartoœci dawki ($V_M = 13$); leczenie skojarzone umo¿liwia osi¹gniêcie regresji nowotworu, co~jest~nieosi¹galne w~leczeniu wy³¹cznie metod¹ chemioterapii (dla takich samych warunków pocz¹tkowych);
+\item skutecznoœæ leczenia skojarzonego zale¿y od~wielkoœci dawki dozowanego w~chemioterapii cytostatyka; dla~krótkiego cyklu (4 dni) dawk¹ wystarczaj¹c¹ do~osi¹gniêcia zamierzonego efektu (regresji nowotworu) w~18 dniu symulacji jest $V_M = 0,75$ $\dfrac{mg}{m^{2}}$ (w przypadku leczenia wy³¹cznie metod¹ chemioterapii ta~dawka wynosi $V_M = 3,5$ $\dfrac{mg}{m^{2}}$ (Tab. \ref{chemio_zmiany_dawki}), czyli ponad cztery razy wiêcej, podczas gdy dzieñ regresji to~50 dzieñ symulacji), natomiast dla~d³u¿szych cykli (8 oraz~120 dni) jest to~dawka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ (wartoœæ t¹ wykorzystano w~dalszych symulacjach), podczas gdy w~leczeniu wy³¹cznie metod¹ chemioterapii dla~cyklu o~d³ugoœci 8 dni regresja nie~wystêpuje lub wystêpuje dla~bardzo du¿ej wartoœci dawki ($V_M = 13$ $\dfrac{mg}{m^{2}}$); leczenie skojarzone umo¿liwia osi¹gniêcie regresji nowotworu, co~jest~nieosi¹galne w~leczeniu wy³¹cznie metod¹ chemioterapii (dla takich samych warunków pocz¹tkowych);
 \item w~przypadku leczenia metodami skojarzonymi, dawka mo¿e zostaæ kilkakrotnie zmniejszona w~porównaniu do~leczenia wy³¹cznie metod¹ chemioterapii, co~zabezpiecza pacjenta przed~negatywnymi skutkami ubocznymi stosowania cytostatyków.
 \end{itemize}
 
@@ -1712,15 +1739,15 @@ Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immuno
 
 \subsection{Zmiana liczby powtórzeñ cyklu chemioterapii}
 
-Tab. \ref{zmiana_cehmio_stale_immuno_liczba_powtorzen_cyklu} przedstawia zmiany liczby powtórzeñ cyklu chemioterapii. Dodatkowo, w~tabeli umieszczono dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~d³ugoœci cyklu równej 8 dni (wybrano tak¹ d³ugoœæ cyklu ze wzglêdu na~porównanie pozytywnego efektu (wyst¹pienia regresji) leczenia skojarzonego dla~tej wartoœci z~brakiem wyst¹pienia tego efektu w~leczeniu wy³¹cznie metod¹ chemioterapii dla~tej d³ugoœci cyklu) oraz~dawki cytostatyka $V_M = 1,75$ (analizê przeprowadzono dla~takiej wartoœci dawki, poniewa¿ jest to~najmniejsza, a~tym samym najmniej szkodliwa dawka, przy której nastêpuje regresja nowotworu dla~d³ugich cykli (8 oraz~120 dni)).
+Tab. \ref{zmiana_cehmio_stale_immuno_liczba_powtorzen_cyklu} przedstawia zmiany liczby powtórzeñ cyklu chemioterapii. Dodatkowo, w~tabeli umieszczono dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~d³ugoœci cyklu równej 8 dni (wybrano tak¹ d³ugoœæ cyklu ze wzglêdu na~porównanie pozytywnego efektu (wyst¹pienia regresji) leczenia skojarzonego dla~tej wartoœci z~brakiem wyst¹pienia tego efektu w~leczeniu wy³¹cznie metod¹ chemioterapii dla~tej d³ugoœci cyklu) oraz~dawki cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ (analizê przeprowadzono dla~takiej wartoœci dawki, poniewa¿ jest to~najmniejsza, a~tym samym najmniej szkodliwa dawka, przy której nastêpuje regresja nowotworu dla~d³ugich cykli (8 oraz~120 dni)).
 
 \begin{table}[h!]
 \small
 	\centering
-	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana liczby powtórzeñ cyklu chemioterapii]{Liczba powtórzeñ cyklu chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~immunoterapii o~warunkach pocz¹tkowych (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) dla~d³ugoœci cyklu równej 8 dni oraz~dawki cytostatyka $V_M = 1,75$.}
+	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana liczby powtórzeñ cyklu chemioterapii]{Liczba powtórzeñ cyklu chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~immunoterapii o~warunkach pocz¹tkowych (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) dla~d³ugoœci cyklu równej 8 dni oraz~dawki cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$.}
 \label{zmiana_cehmio_stale_immuno_liczba_powtorzen_cyklu}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
-        \multicolumn{5}{|c|}{D³ugoœæ cyklu: 8 dni, $V_M = 1,75$} \\ \hline \hline
+        \multicolumn{5}{|c|}{D³ugoœæ cyklu: 8 dni, $V_M = 1,75$ $\dfrac{mg}{m^{2}}$} \\ \hline \hline
 		Liczba & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 		powtórzeñ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu [$mm^{3}$] & nowotworu [$mm$] \\ \hline
 		9 & 17,34 & $3,14 \cdot 10^{-89}$ & $3,14 \cdot 10^{-95}$ & $2 \cdot 10^{-32}$ \\ \hline
@@ -1737,26 +1764,29 @@ Tab. \ref{zmiana_cehmio_stale_immuno_liczba_powtorzen_cyklu} przedstawia zmiany 
 
 Przyk³adowy wynik symulacji przedstawia Rys. \ref{wykresy_skojarzone_l_powt1}, który ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie d³ugoœæ cyklu chemioterapii wynosi³a 8 dni (Rys. \ref{wykres_skojarzone_l_powt1}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_skojarzone_l_powt1}). 
 
-Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka wynosi³a $V_M = 1,75$. Ju¿ jeden cykl chemioterapii skutkowa³ regresj¹ nowotworu w~20 dniu symulacji.
+\newpage
+Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka wynosi³a $V_M = 1,75$ $\dfrac{mg}{m^{2}}$. Ju¿ jeden cykl chemioterapii skutkowa³ regresj¹ nowotworu w~20 dniu symulacji (Rys. \ref{wykres_skojarzone_l_powt1}).
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ oraz~jednokrotnego cyklu chemioteapii. Widoczna (linia czerwona) regresja nowotworu po~20 dniach.]{\label{wykres_skojarzone_l_powt1}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ oraz~jednokrotnego cyklu chemioteapii. Widoczna (linia czerwona) regresja nowotworu po~20 dniach.]{\label{wykres_skojarzone_l_powt1}
 \includegraphics[width=0.45\textwidth]{wykres_skojarzone_l_powt1}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ oraz~pojedynczego cyklu chemioterapii.]{\label{stezenie_skojarzone_l_powt1}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ oraz~pojedynczego cyklu chemioterapii.]{\label{stezenie_skojarzone_l_powt1}
 \includegraphics[width=0.45\textwidth]{stezenie_skojarzone_l_powt1}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana liczby powtórzeñ cyklu chemioterapii]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ pojedynczego cyklu chemioterapii. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana liczby powtórzeñ cyklu chemioterapii]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ pojedynczego cyklu chemioterapii. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_skojarzone_l_powt1}
 \end{figure}
 
+\newpage
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_9.3}.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{slupki_9.3}
-\caption{}\label{slupki_9.3}
+\includegraphics[width=0.8\textwidth]{slupki_9.3}
+\caption{Liczba komórek nowotworowych $T(120)$ w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od liczby powtórzeñ cyklu chemioterapii w leczeniu skojarzonym.}\label{slupki_9.3}
 \end{figure}
 
-\newpage
 \textbf{Wnioski:}
 \begin{itemize}
 \item liczba powtórzeñ cyklu nie~ma~wp³ywu na~skutecznoœæ leczenia (wyst¹pienie regresji nowotworu) w~leczeniu skojarzonym; zarówno dla~9 powtórzeñ (podobnie jak~we wczeœniejszych symulacjach dla~leczenia wy³¹cznie metod¹ chemioterapii oraz~wy³¹cznie metod¹ immunoterapii), jak~i~dla pojedynczego cyklu dozowania cytostatyka (brak regresji we wczeœniejszych symulacjach) nastêpuje regresja nowotworu;
@@ -1764,16 +1794,15 @@ Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immuno
 \end{itemize}
 
 \newpage
-
 \subsection{Zmiana dnia rozpoczêcia chemioterapii}
 
-Tab. \ref{zmiana_cehmio_stale_immuno_dzien_rozpoczecia} przedstawia zmiany dnia rozpoczêcia chemioterapii. Ponadto, tabela przedstawia dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji. Dodatkowo, w~tabeli umieszczono szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~8-dniowego cyklu, dawki cytostatyka $V_M = 1,75$ oraz~pojedynczego cyklu dozowania.
+Tab. \ref{zmiana_cehmio_stale_immuno_dzien_rozpoczecia} przedstawia zmiany dnia rozpoczêcia chemioterapii. Ponadto, tabela przedstawia dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji. Dodatkowo, w~tabeli umieszczono szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~8-dniowego cyklu, dawki cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ oraz~pojedynczego cyklu dozowania.
 
 \begin{table}[h!]
 	\centering
-	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dnia rozpoczêcia chemioterapii]{Dzieñ rozpoczêcia chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~immunoterapii o~warunkach pocz¹tkowych (\ref{warunki_pocz¹tkowe_immunoterapii}) dla~d³ugoœci cyklu równej 8 dni, dawki cytostatyka $V_M = 1,75$ oraz~pojedynczego cyklu dozowania.}
+	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dnia rozpoczêcia chemioterapii]{Dzieñ rozpoczêcia chemioterapii, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~immunoterapii o~warunkach pocz¹tkowych (\ref{warunki_pocz¹tkowe_immunoterapii}) dla~d³ugoœci cyklu równej 8 dni, dawki cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$ oraz~pojedynczego cyklu dozowania.}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
-\multicolumn{5}{|c|}{D³ugoœæ cyklu: 8 dni, $V_M = 1,75$, liczba powtórzeñ cyklu: 1} \\ \hline \hline
+\multicolumn{5}{|c|}{D³ugoœæ cyklu: 8 dni, $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, liczba powtórzeñ cyklu: 1} \\ \hline \hline
 		Dzieñ & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 		rozpoczêcia & regresji & $[liczba$ $kom$ó$rek]$ & nowotworu & nowotworu \\
 		chemioterapii & nowotworu & & [$mm^{3}$] & [$mm$]\\ \hline
@@ -1785,28 +1814,28 @@ Tab. \ref{zmiana_cehmio_stale_immuno_dzien_rozpoczecia} przedstawia zmiany dnia 
 
 Przyk³adowy wynik symulacji przedstawia Rys. \ref{wykresy_skojarzone_l_powt1_drozp2}. S¹~to~zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie d³ugoœæ cyklu chemioterapii wynosi 8 dni (Rys. \ref{wykres_skojarzone_l_powt1_drozp2}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_skojarzone_l_powt1_drozp2}). 
 
-Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka wynosi³a $V_M = 1,75$. Stosowano pojedynczy cykl chemioterapii.
+Warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Dawka cytostatyka wynosi³a $V_M = 1,75$ $\dfrac{mg}{m^{2}}$. Stosowano pojedynczy cykl chemioterapii.
 
 Dla podanych warunków chemioterapii, opóŸnienie rozpoczêcia leczenia o~1 dzieñ skutkuje brakiem regresji nowotworu i~stabilizacj¹ komórek nowotworowych w~32 dniu symulacji na~poziomie $9,8 \cdot 10^{8}$.
 
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~32 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_skojarzone_l_powt1_drozp2}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia. Widoczna (linia czerwona) stabilizacja liczby komórek nowotworowych po~32 dniach oko³o wartoœci $9,8 \cdot 10^{8}$.]{\label{wykres_skojarzone_l_powt1_drozp2}
 \includegraphics[width=0.45\textwidth]{wykres_skojarzone_l_powt1_drozp2}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia.]{\label{stezenie_skojarzone_l_powt1_drozp2}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia.]{\label{stezenie_skojarzone_l_powt1_drozp2}
 \includegraphics[width=0.45\textwidth]{stezenie_skojarzone_l_powt1_drozp2}}
-\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dnia rozpoczêcia chemioterapii]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas leczenia skojarzonego cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption[Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz I, zmiana dnia rozpoczêcia chemioterapii]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas leczenia skojarzonego cytostatyka oraz~IL-2 dla~8-dniowego cyklu chemioterapii, dawki dozowanego cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania oraz~chemioterapii rozpoczêtej 2 dnia. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_skojarzone_l_powt1_drozp2}
 \end{figure}
 
 \newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item leczenie skojarzone dla~warunków pocz¹tkowych immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) daje pozytywny skutek (rozumiany jako regresja nowotworu) dla~rozwa¿anego typu chemioterapii (d³ugoœæ cyklu = 8 dni, dawka cytostatyka $V_M = 1,75$, liczba powtórzeñ cyklu: 1) tylko w~przypadku, gdy pierwszy dzieñ symulacji jest równoczeœnie pierwszym dniem leczenia (rozpoczêcie dozowania cytostatyka nastêpuje w~pierwszym dniu symulacji); chemioterapia dla~rozwa¿anych warunków jest~wiêc~ograniczona (przy warunkach pocz¹tkowych immunoterapii) tak, aby~otrzymaæ oczekiwany efekt przy~jednoczesnych jak~najmniejszych skutkach ubocznych chemioterapii (które mog¹ byæ spowodowane zbyt du¿¹ dawk¹ cytostatyka czy~d³ugim czasem leczenia metod¹ chemioterapii).
+\item leczenie skojarzone dla~warunków pocz¹tkowych immunoterapii (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) daje pozytywny skutek (rozumiany jako regresja nowotworu) dla~rozwa¿anego typu chemioterapii (d³ugoœæ cyklu = 8 dni, dawka cytostatyka $V_M = 1,75$ $\dfrac{mg}{m^{2}}$, liczba powtórzeñ cyklu: 1) tylko w~przypadku, gdy pierwszy dzieñ symulacji jest równoczeœnie pierwszym dniem leczenia (rozpoczêcie dozowania cytostatyka nastêpuje w~pierwszym dniu symulacji); chemioterapia dla~rozwa¿anych warunków jest~wiêc~ograniczona (przy warunkach pocz¹tkowych immunoterapii) tak, aby~otrzymaæ oczekiwany efekt przy~jednoczesnych jak~najmniejszych skutkach ubocznych chemioterapii (które mog¹ byæ spowodowane zbyt du¿¹ dawk¹ cytostatyka czy~d³ugim czasem leczenia metod¹ chemioterapii).
 \end{itemize}
 
-Leczenie skojarzone metodami chemioterapii i~immunoterapii umo¿liwia zniszczenie nowotworu dla~warunków, dla~których nie~jest to~mo¿liwe przy zastosowaniu tych terapii osobno, co~pokazuje przewagê leczenia skojarzonego nad pozosta³ymi metodami. Poza umo¿liwieniem regresji nowotworu, leczenie skojarzone znacznie skraca czas konieczny do~jej wyst¹pienia. Dziêki w³¹czeniu do~leczenia immunoterapii, mo¿liwe jest równie¿~znaczne ograniczenie bardziej szkodliwej dla~organizmu chemioterapii, np. wyd³u¿enie cyklu chemioterapii (nawet do~120 dni), ograniczenie dawki cytostatyka $V_M =5$ do~$V_M = 1,75$ oraz~za³o¿enie pojedynczego cyklu dozowania cytostatyka (zamiast 9 powtórzeñ). Leczenie (od dnia dozowania cytostatyka do~dnia regresji nowotworu) w~takim przypadku trwa 20 dni, zak³adaj¹c rozpoczêcie leczenia w~pierwszym dniu symulacji.
+Leczenie skojarzone metodami chemioterapii i~immunoterapii umo¿liwia zniszczenie nowotworu dla~warunków, dla~których nie~jest to~mo¿liwe przy zastosowaniu tych terapii osobno, co~pokazuje przewagê leczenia skojarzonego nad pozosta³ymi metodami. Poza umo¿liwieniem regresji nowotworu, leczenie skojarzone znacznie skraca czas konieczny do~jej wyst¹pienia. Dziêki w³¹czeniu do~leczenia immunoterapii, mo¿liwe jest równie¿~znaczne ograniczenie bardziej szkodliwej dla~organizmu chemioterapii, np. wyd³u¿enie cyklu chemioterapii (nawet do~120 dni), ograniczenie dawki cytostatyka $V_M =5$ $\dfrac{mg}{m^{2}}$ do~$V_M = 1,75$ $\dfrac{mg}{m^{2}}$ oraz~za³o¿enie pojedynczego cyklu dozowania cytostatyka (zamiast 9 powtórzeñ). Leczenie (od dnia dozowania cytostatyka do~dnia regresji nowotworu) w~takim przypadku trwa 20 dni, zak³adaj¹c rozpoczêcie leczenia w~pierwszym dniu symulacji.
 
 \newpage
 \section{Scenariusz II -- zmiana warunków pocz¹tkowych immunoterapii}
@@ -1827,8 +1856,8 @@ Leczenie skojarzone metodami chemioterapii i~immunoterapii umo¿liwia zniszczenie
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		D³ugoœæ & Czas dozowania & Schemat & Dawka & Liczba & Dzieñ \\
 		cyklu & cytostatyka & cyklu & dozowanego & powtórzeñ & rozpoczêcia \\
-		$[dni]$ & $[dni]$ & [dozowanie & cytostatyka $V_M$ & cyklu & chemioterapii \\ 
-		 & &  przerwa] &  &  &  \\ \hline 
+		$[dni]$ & $[dni]$ & [dozowanie & cytostatyka & cyklu & chemioterapii \\ 
+		 & &  przerwa] & $V_M$ $[\dfrac{mg}{m^{2}}]$ &  &  \\ \hline 
 		8 & 1 & [1 7] & 5 & 9 & 1 \\ \hline
 		\end{tabular}
 \end{table} 
@@ -1966,11 +1995,11 @@ Tab. \ref{zmiana_immuno_stale_chemio_dzien_rozpoczecia_IL2_bez_TIL} przedstawia 
 		\end{tabular}
 \end{table} 
 
-\newpage
 Przyk³adowy wynik symulacji leczenia przedstawia Rys. \ref{wykresy_immuno_stale_chemio_dzien_rozpoczecia_IL2_bez_TIL}, który ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie d³ugoœæ cyklu chemioterapii wynosi 8 dni, dawka IL-2 $V_I = 2 \cdot 10^{6}$, a~liczba powtórzeñ cyklu IL-2 wynosi 2 (Rys. \ref{wykres_immuno_stale_chemio_dzien_rozpoczecia_IL2_bez_TIL}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_immuno_stale_chemio_dzien_rozpoczecia_IL2_bez_TIL}). 
 
 Pozosta³e warunki pocz¹tkowe chemioterapii przedstawia Tab. \ref{warunki pocz¹tkowe_chemioterapii}. Symulacja nie~obejmowa³a leczenia z~wykorzystaniem TIL. 
 
+\newpage
 Dla wymienionych warunków, po³¹czona z~chemioterapi¹, immunoterapia (dozowanie IL-2) rozpoczynaj¹ca siê w~15 dniu symulacji nie~by³a skuteczna, a~liczba komórek nowotworowych ustabilizowa³a siê na~poziomie $9,8 \cdot 10^{8}$ w~91 dniu symulacji. \newline
 
 \begin{figure}[h!]
@@ -1984,10 +2013,13 @@ Dla wymienionych warunków, po³¹czona z~chemioterapi¹, immunoterapia (dozowanie I
 \label{wykresy_immuno_stale_chemio_dzien_rozpoczecia_IL2_bez_TIL}
 \end{figure} 
 
+\newpage
+Czêœæ wyników symulacji w~formie graficznej, przedstawia Rys. \ref{slupki_9.8}.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{slupki_9.8}
-\caption{}\label{slupki_9.8}
+\includegraphics[width=0.8\textwidth]{slupki_9.8}
+\caption{Liczba komórek nowotworowych $T(120)$ w ostatnim dniu symulacji w chwili $T_{k} = 120$ dni w zale¿noœci od dnia rozpoczêcia immunoterapii (dozowania IL-2) w~leczeniu skojarzonym.}\label{slupki_9.8}
 \end{figure}
 
 \textbf{Wnioski:}
@@ -2017,7 +2049,8 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		D³ugoœæ & Czas dozowania& Schemat & Dawka & Liczba & Dzieñ  \\
 		cyklu & cytostatyka & cyklu & dozowanego & powtórzeñ & rozpoczêcia  \\
-		$[dni]$ & $[dni]$ & & cytostatyka $V_M$ & cyklu & chemioterapii\\ \hline
+		$[dni]$ & $[dni]$ & & cytostatyka & cyklu & chemioterapii\\
+		& & & $V_M$ $[\dfrac{mg}{m^{2}}]$ & & \\ \hline
 		8 & 1 & [1 7] & 1 & 1 & 1 \\ \hline
 		8 & 1 & [1 7] & 0,5 & 1 & 1 \\ \hline
 		\end{tabular}
@@ -2027,7 +2060,7 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 
 \noindent \newline \textbf{Czas symulacji:} \newline Czas symulacji wynosi³ $T_{k}$ = 120 dni. 
 
-\noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê dawki IL-2 $V_I$ i~okreœlonych warunków pocz¹tkowych chemioterapii (bardzo ma³ej dawce cytostatyka $V_M$) zebrano w~Tab. \ref{zmiana_immuno_okreslone_chemio}. \newline \newline \indent Tab. \ref{zmiana_immuno_okreslone_chemio} przedstawia zmiany dawki IL-2. Dodatkowo, umieszczono w~niej dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a tak¿e szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M = 1$ oraz~$V_M = 0,5$.
+\noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê dawki IL-2 $V_I$ i~okreœlonych warunków pocz¹tkowych chemioterapii (bardzo ma³ej dawce cytostatyka $V_M$) zebrano w~Tab. \ref{zmiana_immuno_okreslone_chemio}. \newline \newline \indent Tab. \ref{zmiana_immuno_okreslone_chemio} przedstawia zmiany dawki IL-2. Dodatkowo, umieszczono w~niej dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a tak¿e szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~dawki dozowanego cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$ oraz~$V_M = 0,5$ $\dfrac{mg}{m^{2}}$.
 
 \begin{table}[h!]
 \small
@@ -2035,14 +2068,14 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz III, zmiany dawki $V_I$ IL-2 przy~okreœlonych warunkach chemioterapii (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii})]{Dawka IL-2 $V_I$, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~chemioterapii o~warunkach pocz¹tkowych (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii}) oraz~leczenia z~wykorzystaniem TIL.}
 \label{zmiana_immuno_okreslone_chemio}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
-        \multicolumn{5}{|c|}{$V_M = 1$} \\ \hline \hline
+        \multicolumn{5}{|c|}{$V_M = 1$ $\dfrac{mg}{m^{2}}$} \\ \hline \hline
 		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 		IL-2 $V_I$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu [$mm^{3}$] & nowotworu [$mm$] \\ \hline
 		$5 \cdot 10^{6}$ & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
 		$6 \cdot 10^{6}$ & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
 		$7 \cdot 10^{6}$ & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
 		$8 \cdot 10^{6}$ & 18,96 & $1,72 \cdot 10^{-84}$ & $1,72 \cdot 10^{-90}$ & $7,4 \cdot 10^{-31}$ \\ \hline \hline
-		\multicolumn{5}{|c|}{$V_M = 0,5$} \\ \hline \hline
+		\multicolumn{5}{|c|}{$V_M = 0,5$ $\dfrac{mg}{m^{2}}$} \\ \hline \hline
 		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
 		IL-2 $V_I$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu [$mm^{3}$] & nowotworu [$mm$] \\ \hline
 		$5 \cdot 10^{6}$ & brak & $9,8 \cdot 10^{8}$ & $980$ & $6,16$ \\ \hline
@@ -2051,37 +2084,37 @@ W leczeniu skojarzonym mo¿liwe jest uzyskanie regresji nowotworu przy pocz¹tkowy
 		\end{tabular}
 \end{table} 
 
-Przyk³adowy wynik symulacji przedstawia Rys. \ref{wykresy_zmiana_immuno_okreslone_chemio}. S¹~to~zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie dawka cytostatyka $V_M = 1$, dawka IL-2 $V_I = 8 \cdot 10^{6}$ (Rysw. \ref{wykres_zmiana_immuno_okreslone_chemio}) oraz~dawka cytostatyka $V_M = 0,5$, dawka IL-2 $V_I = 2 \cdot 10^{7}$ (Rys. \ref{wykres_zmiana_immuno_okreslone_chemiopol}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_zmiana_immuno_okreslone_chemio} i~Rys. \ref{stezenie_zmiana_immuno_okreslone_chemiopol}). 
+Przyk³adowy wynik symulacji przedstawia Rys. \ref{wykresy_zmiana_immuno_okreslone_chemio}. S¹~to~zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, gdzie dawka cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$, dawka IL-2 $V_I = 8 \cdot 10^{6}$ (Rysw. \ref{wykres_zmiana_immuno_okreslone_chemio}) oraz~dawka cytostatyka $V_M = 0,5$ $\dfrac{mg}{m^{2}}$, dawka IL-2 $V_I = 2 \cdot 10^{7}$ (Rys. \ref{wykres_zmiana_immuno_okreslone_chemiopol}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_zmiana_immuno_okreslone_chemio} i~Rys. \ref{stezenie_zmiana_immuno_okreslone_chemiopol}). 
 
 Pozosta³e warunki pocz¹tkowe immunoterapii przedstawia Tab. \ref{warunki_pocz¹tkowe_immunoterapii}. Symulacja nie~obejmowa³a leczenia z~wykorzystaniem TIL. D³ugoœæ cyklu chemioterapii wynosi³a 8 dni. Czas dozowania cytostatyka wynosi³ 1 dzieñ (24 godziny). Chemioterapia o~pojedynczym cyklu dozowania rozpoczê³a siê w~pierwszym dniu symulacji. 
 
-Dla dawki cytostatyka $V_M = 1$, dawk¹ skuteczn¹ IL-2 konieczn¹ do~regresji nowotworu by³a $V_I = 8 \cdot 10^{6}$ (regresja w~19 dniu symulacji), natomiast dla~dawki $V_M = 0,5$ konieczna by³a dawka IL-2 $V_I = 2 \cdot 10^{7}$ (regresja w~19 dniu symulacji). 
+Dla dawki cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$, dawk¹ skuteczn¹ IL-2 konieczn¹ do~regresji nowotworu by³a $V_I = 8 \cdot 10^{6}$ (regresja w~19 dniu symulacji), natomiast dla~dawki $V_M = 0,5$ $\dfrac{mg}{m^{2}}$ konieczna by³a dawka IL-2 $V_I = 2 \cdot 10^{7}$ (regresja w~19 dniu symulacji). 
 
 \newpage
 \begin{figure}[h!]
 \centering
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$. Regresja nowotworu widoczna (linia czerwona) po~19 dniach.]{\label{wykres_zmiana_immuno_okreslone_chemio}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$. Regresja nowotworu widoczna (linia czerwona) po~19 dniach.]{\label{wykres_zmiana_immuno_okreslone_chemio}
 \includegraphics[width=0.45\textwidth]{wykres_zmiana_immuno_okreslone_chemio}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$.]{\label{stezenie_zmiana_immuno_okreslone_chemio}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$.]{\label{stezenie_zmiana_immuno_okreslone_chemio}
 \includegraphics[width=0.45\textwidth]{stezenie_zmiana_immuno_okreslone_chemio}}
 \quad
-\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 0,5$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Regresja nowotworu widoczna (linia czerwona) po~19 dniach.]{\label{wykres_zmiana_immuno_okreslone_chemiopol}
+\subfloat[Zmiany w~czasie liczby komórek badanych populacji dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 0,5$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$. Regresja nowotworu widoczna (linia czerwona) po~19 dniach.]{\label{wykres_zmiana_immuno_okreslone_chemiopol}
 \includegraphics[width=0.45\textwidth]{wykres_zmiana_immuno_okreslone_chemiopol}}
 \quad
-\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 0,5$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_zmiana_immuno_okreslone_chemiopol}
+\subfloat[Zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 0,5$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 2 \cdot 10^{7}$.]{\label{stezenie_zmiana_immuno_okreslone_chemiopol}
 \includegraphics[width=0.45\textwidth]{stezenie_zmiana_immuno_okreslone_chemiopol}}
-\caption [Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz III, zmiany dawki $V_I$ IL-2 konieczne do~uzyskania okreœlonych warunków chemioterapii (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii})]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas leczenia skojarzonego cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$ i~$V_M = 0,5$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$ i~$V_I = 2 \cdot 10^{7}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
+\caption [Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia cytostatyka i~IL-2 - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz III, zmiany dawki $V_I$ IL-2 konieczne do~uzyskania okreœlonych warunków chemioterapii (\ref{okreslone_warunki_pocz¹tkowe_chemioterapii})]{Zmiany w~czasie liczby komórek badanych populacji oraz~stê¿enia dozowanego podczas leczenia skojarzonego cytostatyka oraz~IL-2 dla~d³ugoœci cyklu chemioterapii równej 8 dni, dawki cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$ i~$V_M = 0,5$ $\dfrac{mg}{m^{2}}$, pojedynczego cyklu dozowania, chemioterapii rozpoczêtej 1 dnia oraz~dawki IL-2 $V_I = 8 \cdot 10^{6}$ i~$V_I = 2 \cdot 10^{7}$. Pocz¹tkowa liczba komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$, pocz¹tkowa liczba komórek NK $N(0) = 10^{5}$, pocz¹tkowa liczba limfocytów $T_{CD8+}$ $L(0) = 10^{2}$, pocz¹tkowa liczba limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$.}
 \label{wykresy_zmiana_immuno_okreslone_chemio}
 \end{figure}
 
 \newpage
 \textbf{Wnioski:}
 \begin{itemize}
-\item w~leczeniu skojarzonym wykorzystuj¹cym chemioterapiê zgodnie z~warunkami pocz¹tkowymi (Tab. \ref{okreslone_warunki_pocz¹tkowe_chemioterapii}) oraz~immunoterapiê w~oparciu o~IL-2 oraz~TIL (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) mo¿liwe jest uzyskanie regresji nowotworu dla~dawki dozowanego cytostatyka $V_M = 1$ oraz~$V_M = 0,5$, poprzez nieznaczne zwiêkszenie dawki IL-2 (dla dawki $V_M = 1$ oraz~$V_M = 0,5$ dawka IL-2 wynosi odpowiednio: $V_I = 8 \cdot 10^{6}$ oraz~$V_I = 2 \cdot 10^{7}$, podczas gdy dawka pocz¹tkowa IL-2 jest równa $V_I = 5 \cdot 10^{6}$); dawki cytostatyka u¿yte w~tej~symulacji s¹~kilka razy mniejsze ni¿~dawki wykorzystane we wczeœniejszych symulacjach (dawka pocz¹tkowa $V_M = 5$) oraz~znacznie mniejsze ni¿~dawka konieczna do~wyst¹pienia regresji nowotworu w~leczeniu metod¹ wy³¹cznie chemioterapii dla~8-dniowego cyklu chemioterapii ($V_M = 13$); leczenie skojarzone umo¿liwia wiêc zminimalizowanie skutków ubocznych dzia³ania cytostatyka poprzez wzmocnienie organizmu wiêksz¹ dawk¹ IL-2.
+\item w~leczeniu skojarzonym wykorzystuj¹cym chemioterapiê zgodnie z~warunkami pocz¹tkowymi (Tab. \ref{okreslone_warunki_pocz¹tkowe_chemioterapii}) oraz~immunoterapiê w~oparciu o~IL-2 oraz~TIL (Tab. \ref{warunki_pocz¹tkowe_immunoterapii}) mo¿liwe jest uzyskanie regresji nowotworu dla~dawki dozowanego cytostatyka $V_M = 1$ $\dfrac{mg}{m^{2}}$ oraz~$V_M = 0,5$ $\dfrac{mg}{m^{2}}$, poprzez nieznaczne zwiêkszenie dawki IL-2 (dla dawki $V_M = 1$ $\dfrac{mg}{m^{2}}$ oraz~$V_M = 0,5$ $\dfrac{mg}{m^{2}}$ dawka IL-2 wynosi odpowiednio: $V_I = 8 \cdot 10^{6}$ oraz~$V_I = 2 \cdot 10^{7}$, podczas gdy dawka pocz¹tkowa IL-2 jest równa $V_I = 5 \cdot 10^{6}$); dawki cytostatyka u¿yte w~tej~symulacji s¹~kilka razy mniejsze ni¿~dawki wykorzystane we wczeœniejszych symulacjach (dawka pocz¹tkowa $V_M = 5$ $\dfrac{mg}{m^{2}}$) oraz~znacznie mniejsze ni¿~dawka konieczna do~wyst¹pienia regresji nowotworu w~leczeniu metod¹ wy³¹cznie chemioterapii dla~8-dniowego cyklu chemioterapii ($V_M = 13$ $\dfrac{mg}{m^{2}}$); leczenie skojarzone umo¿liwia wiêc zminimalizowanie skutków ubocznych dzia³ania cytostatyka poprzez wzmocnienie organizmu wiêksz¹ dawk¹ IL-2.
 \end{itemize}
 
-Dziêki leczeniu skojarzonemu mo¿liwe jest znaczne zmniejszenie dawki cytostatyka (np. do~$V_M = 1$ lub $V_M = 0,5$), a~w zwi¹zku z~tym ograniczenie do~minimum nara¿ania pacjenta na~mo¿liwe skutki uboczne zwi¹zane z~dzia³aniem cytostatyka.
+Dziêki leczeniu skojarzonemu mo¿liwe jest znaczne zmniejszenie dawki cytostatyka (np. do~$V_M = 1$ $\dfrac{mg}{m^{2}}$ lub $V_M = 0,5$ $\dfrac{mg}{m^{2}}$), a~w zwi¹zku z~tym ograniczenie do~minimum nara¿ania pacjenta na~mo¿liwe skutki uboczne zwi¹zane z~dzia³aniem cytostatyka.
 
 \newpage
 \section{Scenariusz IV -- zmiany kolejnoœci wdro¿enia poszczególnych terapii}
@@ -2170,7 +2203,8 @@ W leczeniu skojarzonym, poza tym jakie metody s¹~wykorzystywane, wa¿ne jest tak¿
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		D³ugoœæ & Czas dozowania & Schemat & Dawka & Liczba & Dzieñ \\
 		cyklu & cytostatyka & cyklu & dozowanego & powtórzeñ & rozpoczêcia \\ 
-		$[dni]$ & $[dni]$ & & cytostatyka $V_M$ & cyklu & chemioterapii \\ \hline
+		$[dni]$ & $[dni]$ & & cytostatyka & cyklu & chemioterapii \\ 
+		& & & $V_M$ $[\dfrac{mg}{m^{2}}]$ & & \\ \hline
 		8 & 1 & [1 7] & 0,5 & 1 & 1 \\ \hline
 		\end{tabular}
 \end{table} 
@@ -2276,7 +2310,7 @@ W~dalszej analizie rozwa¿ano os³abiony uk³ad immunologiczny. W~literaturze \cite
 
 W~kolejnej czêœci pracy analizowano model uwzglêdniaj¹cy leczenie metod¹ chemioterapii, immunoterapii oraz~skojarzonymi metodami chemioterapii i~immunoterapii. W~pracy przyjêto takie wartoœci pocz¹tkowej liczby komórek nowotworowych $T(0) = 1,8 \cdot 10^{7}$ i~limfocytów kr¹¿¹cych $C(0) = 3,5 \cdot 10^{9}$, dla~których uk³ad immunologiczny bez~wsparcia terapi¹ nie~by³~w~stanie zwalczyæ nowotworu.
 
-Literatura \cite{19} przedstawia porównanie symulacji leczenia metod¹ chemioterapii dla~pocz¹tkowej liczby komórek nowotworowych $T(0) = 2 \cdot 10^{7}$, wykorzystuj¹ce 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ dla 5-dniowego (widoczna regresja nowotworu) i~10-dniowego (brak regresji nowotworu) cyklu. Podobnie, w~niniejszej pracy przedstawiono symulacje chemioterapii wykorzystuj¹cej 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ dla~4-dniowego cyklu z~widoczn¹ regresj¹ nowotworu po~oko³o 26 dniach (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu}) oraz~dla~8-dniowego cyklu, gdzie~mimo takiej samej sumarycznej dawki cytostatyka (jak~w~4-dniowym cyklu), nie~wyst¹pi³a regresja nowotworu (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}) ze~wzglêdu na~zbyt du¿e przerwy pomiêdzy kolejnymi cyklami. \newline \newline \indent Ponadto, w~pracy analizowano równie¿ zmiany:
+Literatura \cite{19} przedstawia porównanie symulacji leczenia metod¹ chemioterapii dla~pocz¹tkowej liczby komórek nowotworowych $T(0) = 2 \cdot 10^{7}$, wykorzystuj¹ce 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ $\dfrac{mg}{m^{2}}$ dla 5-dniowego (widoczna regresja nowotworu) i~10-dniowego (brak regresji nowotworu) cyklu. Podobnie, w~niniejszej pracy przedstawiono symulacje chemioterapii wykorzystuj¹cej 9 powtórzeñ cyklu dozowania cytostatyka o~dawce $V_M = 5$ $\dfrac{mg}{m^{2}}$ dla~4-dniowego cyklu z~widoczn¹ regresj¹ nowotworu po~oko³o 26 dniach (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu}) oraz~dla~8-dniowego cyklu, gdzie~mimo takiej samej sumarycznej dawki cytostatyka (jak~w~4-dniowym cyklu), nie~wyst¹pi³a regresja nowotworu (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}) ze~wzglêdu na~zbyt du¿e przerwy pomiêdzy kolejnymi cyklami. \newline \newline \indent Ponadto, w~pracy analizowano równie¿ zmiany:
 \begin{itemize}
 \item d³ugoœci dozowania cytostatyka w~pojedynczym cyklu,
 \item dawki dozowanego cytostatyka (sta³ej dla~ka¿dego cyklu),
