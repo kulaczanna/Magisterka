@@ -568,7 +568,7 @@ Rys. \ref{diagram_analiz} przedstawia analizy, jakie wykonano oraz~opisano w~nin
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.55\textwidth]{diagram_analiz}
-	\caption{Schemat przeprowadzonych w~niniejszej pracy analiz rozwoju guza, bez~i~z~uwzglêdnieniem terapii.}\label{diagram_analiz} 
+	\caption{Schemat przeprowadzonych w~niniejszej pracy analiz rozwoju guza, bez i~z~uwzglêdnieniem terapii.}\label{diagram_analiz} 
 \end{figure}
 
 \chapter{Symulacje modelu rozwoju nieleczonego guza}
@@ -723,7 +723,7 @@ W symulacji leczenia metod¹ chemioterapii wziêto pod uwagê takie zmienne, jak:
 \item dzieñ rozpoczêcia leczenia.
 \end{itemize} 
 
-Cykl podawania leku okreœla czas ci¹g³ego podawania leku oraz~przerwy pomiêdzy kolejnymi dawkami konieczne do~regeneracji organizmu. Przyk³adowy schemat cyklu [1 5] oznacza podawanie leku przez~1 dzieñ (24 godziny) oraz~5 dni (120 godzin) przerwy. Nastêpnie cykl mo¿e byæ powtórzony, co~oznacza kolejny 1 dzieñ podawania leku, a~nastêpnie 5 dni przerwy.
+Cykl podawania leku okreœla czas ci¹g³ego podawania leku oraz~przerwy pomiêdzy kolejnymi dawkami konieczne do~regeneracji organizmu. Przyk³adowy schemat cyklu [1 5] oznacza podawanie leku przez~1-dzieñ (24 godziny) oraz~5-dni (120 godzin) przerwy. Podczas terapii cykl mo¿e zostaæ powtórzony, co~oznacza kolejny 1 dzieñ podawania leku, i~kolejne 5 dni przerwy.
 
 \begin{table}[h!]
 \small
@@ -743,7 +743,7 @@ We~wszystkich symulacjach leczenia metod¹ chemioterapii analizowano zmiany odpow
 \newpage
 \section{Scenariusz I -- zmiana d³ugoœci cyklu}\label{chemio_zmiana_dlugosci_cyklu}
 
-\noindent \textbf{Podejmowany problem:} \newline Zmiany d³ugoœci cyklu chemioterapii, tj. d³ugoœci dozowania cytostatyka oraz~przerw pomiêdzy kolejnymi dozowanymi dawkami.
+\noindent \textbf{Podejmowany problem:} \newline Wp³yw zmian d³ugoœci cyklu chemioterapii, tj. d³ugoœci dozowania cytostatyka oraz~przerw pomiêdzy kolejnymi dozowanymi dawkami na~skutecznoœæ terapii.
 
 \noindent \newline \textbf{Warunki pocz¹tkowe:} 
 \begin{itemize}
@@ -755,9 +755,9 @@ We~wszystkich symulacjach leczenia metod¹ chemioterapii analizowano zmiany odpow
 
 \noindent \newline \textbf{Czas symulacji:} \newline Czas symulacji wynosi³ $T_{k}$ = 120 dni. 
 
-\noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmieniaj¹cej siê d³ugoœci cyklu zebrano w~Tab.~\ref{chemio_zmiany_liczby_dni_cyklu}. \newline
+\noindent \newline \textbf{Wyniki symulacji:} \newline Wyniki przeprowadzonych symulacji dla~zmian d³ugoœci cyklu zebrano w~Tab.~\ref{chemio_zmiany_liczby_dni_cyklu}. \newline
 
-Tab. \ref{chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany d³ugoœci cyklu (d³ugoœæ przerw pomiêdzy dawkami przy sta³ym czasie dozowania cytostatyka oraz~czas dozowania cytostatyka przy sta³ej d³ugoœci przerw pomiêdzy dawkami) chemioterapii oraz~schemat cyklu. Dodatkowo, w~tabeli umieszczono dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e~szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).
+Tab. \ref{chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany d³ugoœci cyklu (d³ugoœæ przerw pomiêdzy dawkami przy sta³ym czasie dozowania cytostatyka oraz~czas dozowania cytostatyka przy sta³ej d³ugoœci przerw pomiêdzy dawkami) chemioterapii oraz~schemat cyklu. Dodatkowo, w~Tab. \ref{chemio_zmiany_liczby_dni_cyklu} umieszczono dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji, a~tak¿e, dla~³atwiejszego zobrazowania otrzymanych wyników, szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni).
 
 \begin{table}[h!]
 	\centering
@@ -786,9 +786,9 @@ Tab. \ref{chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany d³ugoœci cyklu (d³u
 \newpage
 Przyk³adowo, Rys. \ref{wykresy_chemio_zmiany_liczby_dni_cyklu} przedstawia zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~d³ugoœci cyklu chemioterapii wynosz¹cej 4 (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu}) oraz~8 (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}) dni, a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas chemioterapii, cytostatyka (Rys. \ref{stezenie_chemio_zmiany_liczby_dni_cyklu} i~\ref{stezenie_chemio_zmiany_liczby_dni_cyklu8}). 
 
-Symulacja zak³ada³a rozpoczêcie chemioterapii (podanie pierwszej dawki cytostatyka) w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. Ka¿de z~tych powtórzeñ mo¿na zaobserwowaæ w~postaci pików na~wykresach zmian stê¿enia oraz~jako charakterystyczne za³amanie krzywych odpowiadaj¹cych badanym populacjom. We wszystkich powtórzeniach dawka cytostatyka $V_M = 5$, a~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami by³a zale¿na od~d³ugoœci i~schematu cyklu. Dla 4 dni cyklu (schemat [1 3]) by³y~to 3 dni przerwy, natomiast dla~8 dni cyklu (schemat [1 7]) 7 dni przerwy. 
+Symulacja zak³ada³a rozpoczêcie chemioterapii (podanie pierwszej dawki cytostatyka) w~pierwszym dniu symulacji oraz~dziewiêciokrotne powtórzenie cyklu. Ka¿de z~tych powtórzeñ mo¿na zaobserwowaæ w~postaci pików na~wykresach zmian stê¿enia oraz~jako charakterystyczne za³amanie krzywych odpowiadaj¹cych badanym populacjom (Rys. \ref{wykresy_chemio_zmiany_liczby_dni_cyklu}). We wszystkich powtórzeniach dawka cytostatyka $V_M = 5$, zaœ~czas podawania cytostatyka wynosi³ 1 dzieñ (24 godziny). D³ugoœæ przerwy pomiêdzy kolejnymi powtórzeniami by³a zale¿na od~d³ugoœci i~schematu cyklu. Dla 4-dniowego cyklu (schemat [1 3]) by³y~to 3 dni przerwy, natomiast dla~8-dniowego cyklu (schemat [1 7]) 7 dni przerwy. 
 
-Podczas ka¿dej z~przerw liczba komórek nowotworowych zaczyna³a ponownie wzrastaæ. W przypadku cyklu trwaj¹cego 4 dni czas przerwy by³ zbyt krótki aby~komórki nowotworu rozmno¿y³y siê w~du¿ym stopniu, dlatego mo¿liwa by³a regresja nowotworu, która nast¹pi³a w~26 dniu symulacji. W przypadku cyklu trwaj¹cego 8 dni, czas przerwy pomiêdzy dawkami by³ wystarczaj¹co d³ugi do~niekontrolowanego rozrostu nowotworu. Liczba komórek nowotworowych wzrasta³a i~ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~91 dniu symulacji.
+Podczas ka¿dej z~przerw liczba komórek nowotworowych zaczyna³a ponownie wzrastaæ. W przypadku cyklu trwaj¹cego 4 dni czas przerwy by³ zbyt krótki aby~komórki nowotworu znacznie siê rozmno¿y³y, dlatego mo¿liwa by³a regresja nowotworu, która nast¹pi³a w~26 dniu symulacji. W przypadku cyklu trwaj¹cego 8 dni, czas przerwy pomiêdzy dawkami by³ wystarczaj¹co d³ugi do~niekontrolowanego rozrostu nowotworu. Liczba komórek nowotworowych wzrasta³a i~ustabilizowa³a siê na~wysokim poziomie ($9,8 \cdot 10^{8}$) w~91 dniu symulacji (Rys. \ref{wykres_chemio_zmiany_liczby_dni_cyklu8}).
 
 \begin{figure}[h!]
 \centering
