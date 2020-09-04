@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {8.3}Scenariusz III -- zmiana dawki TIL $V_L$}{70}{section.8.3}%
 \contentsline {section}{\numberline {8.4}Scenariusz IV -- zmiana liczby powt\'orze\'n cyklu IL-2}{74}{section.8.4}%
 \contentsline {section}{\numberline {8.5}Scenariusz V -- zmiana dnia rozpocz\k ecia immunoterapii}{78}{section.8.5}%
-\contentsline {chapter}{\numberline {9.}Leczenie metodami skojarzonymi -- symulacje wykonane dla\nobreakspace {}modelu leczonego guza}{82}{chapter.9}%
+\contentsline {chapter}{\numberline {9.}Biochemioterapia -- leczenie metodami skojarzonymi}{82}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Scenariusz I -- zmiana warunk\'ow pocz\k atkowych chemioterapii}{84}{section.9.1}%
 \contentsline {subsection}{\numberline {9.1.1}Zmiana d\IeC {\l }ugo\'sci cyklu chemioterapii}{85}{subsection.9.1.1}%
 \contentsline {subsection}{\numberline {9.1.2}Zmiana dawki dozowanego cytostatyka}{88}{subsection.9.1.2}%
