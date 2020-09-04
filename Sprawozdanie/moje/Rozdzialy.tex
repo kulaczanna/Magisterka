@@ -1887,20 +1887,23 @@ Leczenie skojarzone metodami chemioterapii i~immunoterapii umo¿liwia zniszczenie
 Tab. \ref{zmiana_immuno_stale_chemio_dawka_IL2_z_TIL} przedstawia zmiany dawki IL-2 $V_I$. Ponadto, zamieszczono w~niej dzieñ regresji nowotworu oraz~liczbê komórek nowotworu T(120) w~ostatnim (120) dniu symulacji. Dodatkowo, w~tabeli umieszczono szacowan¹ objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni). Analizê przeprowadzono dla~leczenia z~wykorzystaniem oraz~bez wykorzystania TIL.
 
 \begin{table}[h!]
+\small
 	\centering
 	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz II, zmiana dawki IL-2 $V_I$]{Dawka IL-2 $V_I$, dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~chemioterapii o~warunkach pocz¹tkowych (\ref{warunki_pocz¹tkowe_chemioterapii_w_skojarzonym_ze_zmiana_immuno}) i~leczenia z~wykorzystaniem oraz~bez wykorzystania TIL.}
 \label{zmiana_immuno_stale_chemio_dawka_IL2_z_TIL}
 \begin{tabular}{|c|c|c|c|c|} \hline \hline
  \multicolumn{5}{|c|}{Leczenie z~wykorzystaniem TIL} \\ \hline \hline
-		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
-		IL-2 $V_I$ $[\dfrac{IU}{kg}]$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu [$mm^{3}$] & nowotworu [$mm$] \\ \hline
+		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ \\
+		IL-2 $V_I$ $[\dfrac{IU}{kg}]$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu & promienia \\ 
+		& & & [$mm^{3}$] & nowotworu [$mm$] \\ \hline
 		$5 \cdot 10^{6}$ & 14,79 & $5,57 \cdot 10^{-95}$ & $5,57 \cdot 10^{-101}$ & $1,4 \cdot 10^{-34}$ \\ \hline
 		$1 \cdot 10^{6}$ & 14,79 & $5,46 \cdot 10^{-95}$ & $5,46 \cdot 10^{-101}$ & $2,4 \cdot 10^{-34}$ \\ \hline
 		$9 \cdot 10^{5}$ & 14,79 & $3,06 \cdot 10^{-95}$ & $3,06 \cdot 10^{-101}$ & $1,9 \cdot 10^{-34}$ \\ \hline
 		$0$ & 14,79 & $6,7 \cdot 10^{-35}$ & $6,7 \cdot 10^{-41}$ & $2,5 \cdot 10^{-14}$ \\ \hline \hline
 		 \multicolumn{5}{|c|}{Leczenie bez wykorzystania TIL} \\ \hline \hline
-		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ promienia \\
-		IL-2 $V_I$ $[\dfrac{IU}{kg}]$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu [$mm^{3}$] & nowotworu [$mm$] \\ \hline
+		Dawka & Dzieñ regresji & $T(120)$ & Objêtoœæ & D³ugoœæ \\
+		IL-2 $V_I$ $[\dfrac{IU}{kg}]$ & nowotworu & $[liczba$ $kom$ó$rek]$ & nowotworu & promienia \\ 
+		& & & [$mm^{3}$] & nowotworu [$mm$] \\ \hline
 		$5 \cdot 10^{6}$ & 16,08 & $3,69 \cdot 10^{-94}$ & $3,69 \cdot 10^{-100}$ & $4,5 \cdot 10^{-34}$ \\ \hline
 		$4 \cdot 10^{6}$ & 16,08 & $5,93 \cdot 10^{-94}$ & $5,93 \cdot 10^{-100}$ & $5,2 \cdot 10^{-34}$ \\ \hline
 		$3 \cdot 10^{6}$ & 16,13 & $6,64 \cdot 10^{-94}$ & $6,64 \cdot 10^{-100}$ & $5,4 \cdot 10^{-34}$ \\ \hline
@@ -1911,7 +1914,7 @@ Tab. \ref{zmiana_immuno_stale_chemio_dawka_IL2_z_TIL} przedstawia zmiany dawki I
 
 Przyk³adowy wynik symulacji przedstawia Rys. \ref{wykresy_zmiana_immuno_stale_chemio_dawka_IL2_z_TIL}, który ukazuje zmiany w~czasie liczby komórek badanych populacji, tj. komórek nowotworowych, komórek NK, limfocytów $T_{CD8+}$ oraz~limfocytów kr¹¿¹cych dla~leczenia skojarzonego metodami chemioterapii i~immunoterapii, dla~8-dniowego cyklu chemioterapii i~dawki IL-2 $V_I = 1 \cdot 10^{6}$ $\dfrac{IU}{kg}$ (Rys. \ref{wykres_zmiana_immuno_stale_chemio_dawka_IL2_z_TIL}) oraz~$V_I = 2 \cdot 10^{6}$ $\dfrac{IU}{kg}$ (Rys. \ref{wykres_zmiana_immuno_stale_chemio_dawka_IL2_z_TIL2e6}), a~tak¿e zmiany w~czasie stê¿enia, dozowanego podczas leczenia skojarzonego, cytostatyka i~IL-2 (Rys. \ref{stezenie_zmiana_immuno_stale_chemio_dawka_IL2_z_TIL} i~Rys. \ref{stezenie_zmiana_immuno_stale_chemio_dawka_IL2_z_TIL2e6}). 
 
-Pozosta³e warunki pocz¹tkowe chemioterapii przedstawia Tab. \ref{warunki pocz¹tkowe_chemioterapii}. Symulacja nie~obejmowa³a leczenia z~wykorzystaniem TIL. Dawkê IL-2 zmniejszono do~wartoœci $V_I = 2 \cdot 10^{6}$ $\dfrac{IU}{kg}$, poniewa¿ jest to~najmniejsza dawka skuteczna (powoduj¹ca regresjê guza) przy niezmienionych pozosta³ych wartoœciach pocz¹tkowych. Regresja wyst¹pi³a 17~dnia~symulacji.
+Pozosta³e warunki pocz¹tkowe chemioterapii przedstawia Tab. \ref{warunki pocz¹tkowe_chemioterapii}. Symulacja nie~obejmowa³a leczenia z~wykorzystaniem TIL. Dawkê IL-2 zmniejszono do~wartoœci $V_I = 2 \cdot 10^{6}$ $\dfrac{IU}{kg}$, poniewa¿ jest to~najmniejsza dawka powoduj¹ca regresjê guza przy niezmienionych pozosta³ych wartoœciach pocz¹tkowych. Regresja wyst¹pi³a 17~dnia~symulacji.
 
 \begin{figure}[h!]
 \centering
@@ -2165,7 +2168,7 @@ Tab. \ref{czasy_wdrozenia_roznych_terapii} przedstawia zmiany dnia wdro¿enia che
 \begin{table}[h!]
 \footnotesize
 	\centering
-	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz IV, zmiany kolejnoœci wdro¿enia poszczególnych terapii]{Dzieñ rozpoczêcia chemioterapii (dozowania cytostatyka) oraz~immunoterapii (dozowania TIL oraz~bezpoœrednio po~tym dozowania IL-2), dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim (120) dniu symulacji (tj. w~chwili $T_{k}$ = 120 dni) dla~warunków pocz¹tkowych (Tab. \ref{warunki pocz¹tkowe_chemioterapii} oraz~\ref{warunki_pocz¹tkowe_immunoterapii}).}
+	\caption[Wyniki symulacji - leczenie skojarzonymi metodami chemioterapii i~immunoterapii, scenariusz IV, zmiany kolejnoœci wdro¿enia poszczególnych terapii]{Dzieñ rozpoczêcia chemioterapii (dozowania cytostatyka) oraz~immunoterapii (dozowania TIL oraz~bezpoœrednio po~tym dozowania IL-2), dzieñ regresji nowotworu, liczba komórek nowotworowych T(120) w~ostatnim (120) dniu symulacji oraz~szacowana objêtoœæ i~d³ugoœæ promienia nowotworu w~ostatnim dniu symulacji (tj.~w~chwili $T_{k}$ = 120 dni) dla~warunków pocz¹tkowych (Tab. \ref{warunki pocz¹tkowe_chemioterapii} oraz~\ref{warunki_pocz¹tkowe_immunoterapii}).}
 \label{czasy_wdrozenia_roznych_terapii}
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 		Dzieñ & Dzieñ & Dzieñ & $T(120)$ & Objêtoœæ & D³ugoœæ \\
