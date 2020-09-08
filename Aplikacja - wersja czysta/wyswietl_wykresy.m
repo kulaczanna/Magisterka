@@ -1,39 +1,32 @@
 function [] = wyswietl_wykresy(t, y)
 
 figure
-semilogy(t, y(:,1), 'r');
+semilogy(t, y(:,1), 'r'); % wyœwietlenie liczby komórek nowotworowych
 hold on
-semilogy(t, y(:,2), 'g');
+semilogy(t, y(:,2), 'g'); % wyœwietlenie liczby komórek NK
 hold on
-semilogy(t, y(:,3), 'b');
+semilogy(t, y(:,3), 'b'); % wyœwietlenie liczby limfocytów TCD8+
 hold on
-semilogy(t, y(:,4), 'c');
+semilogy(t, y(:,4), 'c'); % wyœwietlenie liczby limfocytów kr¹¿¹cych
 axis([0, 120, 10e-1, 10e12])
-% axis([0, 120, 0, 10e12])
 legend('Komórki nowotworowe', 'Komórki NK', 'Limfocyty T_{CD8+}', 'Kr¹¿¹ce limfocyty');
 title({'Zmiany w czasie liczby komórek badanych populacji';'dla wartoœci pocz¹tkowych:';'T(0) = 1,8*10^7, N(0) = 10^5, L(0) = 10^2, C(0) = 3,5*10^9'})
 ylabel('Liczba komórek [log]')
 xlabel('Czas [dni]')
 
-figure
+figure % wyœwietenie stê¿enia leków
 subplot(3, 1, 1)
 plot(t, y(:, 5), 'g');
 title('Stê¿enie cytostatyka')
 legend('Cytostatyk')
-ylabel('Stê¿enie')
+ylabel('Stê¿enie [ng/mL]')
 xlabel('Czas [dni]')
 hold on
 subplot(3, 1, 2)
 plot(t, y(:, 6), 'g');
 legend('IL-2')
 title('Stê¿enie IL-2')
-ylabel('Stê¿enie')
+ylabel('Stê¿enie [IU/mL]')
 xlabel('Czas [dni]')
-% hold on
-% subplot(3, 1, 3)
-% plot(t, y(:, 6), 'g');
-% legend('IL-2')
-% ylabel('Stê¿enie')
-% xlabel('Czas [dni]')
 
 end

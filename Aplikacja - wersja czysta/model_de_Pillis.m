@@ -1,19 +1,20 @@
 function rownania = model_de_Pillis(t, x)
 
 %% wartoœci pocz¹tkowe
-T = x(1);
-N = x(2);
-L = x(3);
-C = x(4);
-M = x(5);
-I = x(6);
+T = x(1); % komórki nowotworowe
+N = x(2); % komórki NK
+L = x(3); % limfocyty CD8+
+C = x(4); % limfocyty kr¹¿¹ce
+M = x(5); % cytostatyk
+I = x(6); % IL-2
 
-liczba_dni_w_cyklu = x(7);
+liczba_dni_w_cyklu = x(7); % liczba dni cyklu chemioterapii
 metoda_leczenia = x(8);
 pacjent = x(9);
-dni_dawkowania = x(10);
+dni_dawkowania = x(10); % czas dozowania cytostatyka
 
-%% wartoœci parametrów
+%% wartoœci parametrów 
+% parametry reprezentuj¹ce kondycjê uk³adu immunologicznego pacjentów
 a = 4.31e-1;
 b = 1.02e-9;
 c = 6.41e-11;
@@ -28,12 +29,12 @@ u = 3e-10;
 
 gamma = 9e-1;
 
-p_I = 9e3; %p_I = 1.25e-1; %p_I = 1.25e3;
+p_I = 9e3;
 g_I = 2e7;
 mi_I = 1e1;
 
     switch pacjent
-        case 9
+        case 1
             d = 2.34;
             l = 2.09;
             k = 3.66e7;
@@ -45,7 +46,7 @@ mi_I = 1e1;
             alfa = 7.5e8;
             beta = 1.2e-2;
 
-        case 10
+        case 2
             d = 1.88;
             l = 1.81;
             k = 5.66e7;
@@ -72,9 +73,9 @@ mi_I = 1e1;
 
 %% leczenie
 
-V_L = 0; % liczba TIL tumor infiltrating lymphocytes = limfocyty TCD8+
-V_M = 0; % iloœæ cytostatyku
-V_I = 0; % iloœæ IL-2
+V_L = 0; % TIL
+V_M = 0; % cytostatyk
+V_I = 0; % IL-2
 
 %% chemioterapia
 % parametry
@@ -84,23 +85,27 @@ K_L = 6e-1;
 K_C = 6e-1;
 
 % podanie cytostatyku
-    if(metoda_leczenia == 3 || metoda_leczenia == 4 || metoda_leczenia == 7)
+    if(metoda_leczenia == 2 || metoda_leczenia == 4) % 2 - chemioterapia, 4 -biochemioterapia
         
-        V_M = podaj_cytostatyk(t, liczba_dni_w_cyklu, dni_dawkowania);
-        
-    end
+        V_M = podaj_cytostatyk(t, liczba_dni_w_cyklu, dni_dawkowania); % t - moment podczas symulacji
+                                        % liczba_dni_w_cyklu - d³ugoœæ cyklu chemioterapii
+    end                                 % dni_dawkowania - czas dozowania cytostatyka                                                                                                                    
     
 % podanie TIL
-    if(metoda_leczenia == 5 || metoda_leczenia == 6 || metoda_leczenia == 7)
+    if(metoda_leczenia == 3 || metoda_leczenia == 4) % 2 - immunoterapia, 4 -biochemioterapia
       
-        V_L = podaj_TIL(t, 7, 8);
-
+        V_L = podaj_TIL(t, 7, 8); % t - moment podczas symulacji, 
+                                  % 7 / 8 - czas rozpoczêcia / zakoñczenia
+                                  % podawania TIL (tj. dozowanie ósmego
+                                  % dnia) 
+                                  % schemat cyklu TIL [1 0]
 % podanie IL-2
        
-        V_I = podaj_IL2(t, 8, 0.3, 0.2);
-
-    end
-
+        V_I = podaj_IL2(t, 8, 0.3, 0.2); % t - moment podczas symulacji, 
+                                  % 8 - czas rozpoczêcia podawania IL-2
+                                  % (tj. rozpoczêcie dziewi¹tego dnia)
+    end                           % 0.3 - dozowanie IL-2 0.2 - przerwa
+                                  % schemat cklu IL-2 [0,3 0,2]
     D = licz_D(d, L, T, s, l);
 
 %% równania modelu

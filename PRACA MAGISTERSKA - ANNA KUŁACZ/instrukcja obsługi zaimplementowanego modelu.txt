@@ -1,0 +1,23 @@
+Program g³ówny: aplikacja_de_Pillis
+
+Domyœlne dane wejœciowe:
+ - symulacja leczenia skojarzonego
+ - pacjent 1 
+
+schemat cyklu:
+- chemioterapii [1 7],
+- IL-2 [0,3 0,2], 
+- TIL [1 0]
+
+pocz¹tkowa liczba komórek:
+- nowotworowych 1,8 x 10^7
+- NK 1 x 10^5
+- T_CD8+ 1 x 10^2
+- limfocytów kr¹¿¹cych 3,5 x 10^9
+
+dawka leków:
+- cytostatyk 1,75 [mg/m^2]
+- IL-2 5 x 10^6 [IU/kg]
+- TIL 1 x 10^9 [komórek]
+
+Dodatkowe informacje znajduj¹ siê w komentarzach w programie.
